@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oppty – Future-Ready Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/ITES_services.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="">
+    <style>
+        .page-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #080a0c;
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .35s ease, visibility .35s ease
+        }
+
+        .page-loader.is-visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all
+        }
+
+        .page-loader.is-exiting {
+            opacity: 0;
+            transition: opacity .4s ease
+        }
+
+        .page-loader__logo {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            filter: drop-shadow(0 0 20px rgba(242, 101, 34, .5)) drop-shadow(0 0 60px rgba(242, 101, 34, .25))
+        }
+
+        .page-loader__ring {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #f26522;
+            animation: loaderSpin .9s linear infinite
+        }
+
+        .page-loader__ring:nth-child(2) {
+            inset: 12px;
+            border-top-color: rgba(59, 130, 246, .6);
+            animation-duration: 1.4s;
+            animation-direction: reverse
+        }
+
+        .page-loader__ring:nth-child(3) {
+            inset: 24px;
+            border-top-color: rgba(242, 101, 34, .35);
+            animation-duration: 1.8s
+        }
+
+        .page-loader__img {
+            position: absolute;
+            inset: 30px;
+            width: calc(100% - 60px);
+            height: calc(100% - 60px);
+            object-fit: contain;
+            animation: loaderPulse 1.2s ease-in-out infinite
+        }
+
+        @keyframes loaderSpin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes loaderPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1
+            }
+
+            50% {
+                transform: scale(1.08);
+                opacity: .8
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ── PAGE LOADER ── -->
+    <div class="page-loader is-visible" id="pageLoader">
+        <div class="page-loader__logo">
+            <div class="page-loader__ring"></div>
+            <div class="page-loader__ring"></div>
+            <div class="page-loader__ring"></div>
+            <img class="page-loader__img" src="../ASSETS/images/oppty.png" alt="Loading" />
+        </div>
+    </div>
+
+    <!-- ── FLOATING SOCIAL BAR ── -->
+    <div class="social-bar">
+        <a href="https://www.instagram.com/opptytech?igsh=YTExdTBsc3Y4ejU2" target="_blank" rel="noopener"
+            aria-label="Instagram" class="social-bar__link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+        </a>
+        <a href="https://youtube.com/@mroppty?si=NbpyNIM-vkHyeLYM" target="_blank" rel="noopener" aria-label="YouTube"
+            class="social-bar__link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/opptytech/" target="_blank" rel="noopener" aria-label="LinkedIn"
+            class="social-bar__link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- ── NAVBAR ── -->
+    <header id="navbar">
+        <div class="nav-inner">
+
+            <a href="../index.html" class="logo">
+                <img class="logo-img" src="../ASSETS/images/oppty.png" alt="Oppty Logo" />
+            </a>
+
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown__toggle nav-active"
+                        onclick="toggleNavDropdown(this); return false;">Our Services
+                        <svg class="nav-dropdown__arrow" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <ul class="nav-dropdown__menu">
+                        <li><a href="IT_services.html">
+                                <span class="dd-icon dd-icon--blue">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor"
+                                            stroke-width="1.6" />
+                                        <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                                <span class="dd-label">IT Services</span>
+                            </a></li>
+                        <li><a href="./ITES_services.html">
+                                <span class="dd-icon dd-icon--orange">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6" />
+                                        <path d="M6.3 6.3a8 8 0 0 0 0 11.4M17.7 6.3a8 8 0 0 1 0 11.4"
+                                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                                <span class="dd-label">ITES Services</span>
+                            </a></li>
+                        <li><a href="./BPO.html">
+                                <span class="dd-icon dd-icon--green">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor"
+                                            stroke-width="1.6" stroke-linecap="round" />
+                                        <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.6" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+
+                                <span class="dd-label">Oppty Learn</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <a href="./resources.html">Resources</a>
+                <a href="./contact.html">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-academy">Academy</a>
+                <a href="#" class="btn btn-training">Training Partner</a>
+                <a href="tel:+919491209900" class="phone-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57-.11.34-.03.74-.24 1.01L6.6 10.8z" />
+                    </svg>
+                    +91 9491209900
+                </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="../index.html">Home</a>
+            <a href="#">About Us</a>
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown__toggle" onclick="toggleMobileDropdown(this)" aria-expanded="false">
+                    Our Services
+                    <svg class="mobile-dropdown__arrow" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <ul class="mobile-dropdown__menu">
+                    <li><a href="./IT_services.html">IT Services</a></li>
+                    <li><a href="./ITES_services.html">ITES Services</a></li>
+
+                    <li><a href="./Oppty_learn.html">Oppty Learn</a></li>
+                </ul>
+            </div>
+            <a href="#">Contact Us</a>
+            <a href="#">Careers</a>
+            <div class="mobile-btns">
+                <a href="#" class="btn btn-academy">Academy</a>
+                <a href="#" class="btn btn-training">Training Partner</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-gradient-mesh"></div>
+        <div class="hero-grid-lines"></div>
+
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <span class="eyebrow-pulse"></span>
+                    <span class="eyebrow-text">Next-Gen IT Enabled Services</span>
+                    <span class="eyebrow-arrow">→</span>
+                </div>
+
+                <h1 class="hero-title reveal-text">
+                    Powering Business
+                    <span class="title-highlight">
+                        <span class="gradient-text">Operations</span>
+                        <svg class="title-underline" viewBox="0 0 300 12" fill="none">
+                            <path d="M2 10C50 2 250 2 298 10" stroke="url(#underline-grad)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="underline-grad" x1="0" y1="0" x2="300" y2="0">
+                                    <stop offset="0%" stop-color="#6366F1" />
+                                    <stop offset="100%" stop-color="#06B6D4" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                    <br>With Intelligent Precision
+                </h1>
+
+                <p class="hero-description">
+                    Oppty delivers world-class IT enabled services — from business process outsourcing
+                    to AI-driven customer support — helping enterprises optimize workflows, reduce costs,
+                    and scale operations globally.
+                </p>
+
+                <div class="hero-cta-row">
+                    <a href="#contact" class="btn btn-glow">
+                        <span>Start Your Transformation</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-ghost">
+                        <span class="btn-ghost-icon"><i class="fas fa-play"></i></span>
+                        <span>See How It Works</span>
+                    </a>
+                </div>
+
+                <div class="hero-trust-row">
+                    <div class="trust-avatars">
+                        <div class="avatar" style="background:#6366F1;">A</div>
+                        <div class="avatar" style="background:#06B6D4;">B</div>
+                        <div class="avatar" style="background:#8B5CF6;">C</div>
+                        <div class="avatar" style="background:#EC4899;">D</div>
+                        <div class="avatar" style="background:#10B981;">E</div>
+                    </div>
+                    <div class="trust-info">
+                        <div class="trust-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span>Trusted by <strong>1,200+</strong> enterprises worldwide</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-main-card glass-card">
+                    <div class="card-header-bar">
+                        <div class="window-dots"><span></span><span></span><span></span></div>
+                        <span class="card-header-title">Operations Dashboard</span>
+                        <span class="card-status live"><span class="live-dot"></span> Live</span>
+                    </div>
+                    <div class="card-body-dash">
+                        <div class="dash-metric">
+                            <div class="metric-icon green"><i class="fas fa-headset"></i></div>
+                            <div class="metric-info">
+                                <span class="metric-value">12,847</span>
+                                <span class="metric-label">Tickets Resolved</span>
+                            </div>
+                            <span class="metric-badge up"><i class="fas fa-arrow-up"></i> 23%</span>
+                        </div>
+                        <div class="dash-metric">
+                            <div class="metric-icon blue"><i class="fas fa-gears"></i></div>
+                            <div class="metric-info">
+                                <span class="metric-value">99.8%</span>
+                                <span class="metric-label">Process Accuracy</span>
+                            </div>
+                            <span class="metric-badge up"><i class="fas fa-arrow-up"></i> 5%</span>
+                        </div>
+                        <div class="dash-metric">
+                            <div class="metric-icon purple"><i class="fas fa-clock"></i></div>
+                            <div class="metric-info">
+                                <span class="metric-value">1.2s</span>
+                                <span class="metric-label">Avg Response Time</span>
+                            </div>
+                            <span class="metric-badge down"><i class="fas fa-arrow-down"></i> 40%</span>
+                        </div>
+                        <div class="dash-chart">
+                            <div class="chart-label">Workflow Efficiency</div>
+                            <div class="chart-wave">
+                                <svg viewBox="0 0 400 80" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="wave-fill" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="rgba(99,102,241,0.3)" />
+                                            <stop offset="100%" stop-color="rgba(99,102,241,0)" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path class="wave-area" d="M0,60 Q50,20 100,40 T200,30 T300,45 T400,15 V80 H0 Z"
+                                        fill="url(#wave-fill)" />
+                                    <path class="wave-line" d="M0,60 Q50,20 100,40 T200,30 T300,45 T400,15" fill="none"
+                                        stroke="#6366F1" stroke-width="2.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-mini glass-mini float-1">
+                    <i class="fas fa-robot"></i>
+                    <div>
+                        <strong>AI Automation</strong>
+                        <span>Active</span>
+                    </div>
+                </div>
+                <div class="floating-mini glass-mini float-2">
+                    <i class="fas fa-shield-check"></i>
+                    <div>
+                        <strong>Compliance</strong>
+                        <span>100% Passed</span>
+                    </div>
+                </div>
+                <div class="floating-mini glass-mini float-3">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <strong>Cost Savings</strong>
+                        <span>$4.2M/year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-cue">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ===================== PARTNERS ===================== -->
+    <section class="partners">
+        <div class="container">
+            <p class="partners-label">Empowering operations for industry leaders</p>
+            <div class="partners-marquee">
+                <div class="marquee-track">
+                    <div class="partner-logo"><i class="fab fa-microsoft"></i><span>Microsoft</span></div>
+                    <div class="partner-logo"><i class="fab fa-google"></i><span>Google</span></div>
+                    <div class="partner-logo"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="partner-logo"><i class="fab fa-salesforce"></i><span>Salesforce</span></div>
+                    <div class="partner-logo"><i class="fab fa-hubspot"></i><span>HubSpot</span></div>
+                    <div class="partner-logo"><i class="fab fa-slack"></i><span>Slack</span></div>
+                    <div class="partner-logo"><i class="fab fa-stripe"></i><span>Stripe</span></div>
+                    <div class="partner-logo"><i class="fab fa-shopify"></i><span>Shopify</span></div>
+                    <!-- Duplicate for infinite scroll -->
+                    <div class="partner-logo"><i class="fab fa-microsoft"></i><span>Microsoft</span></div>
+                    <div class="partner-logo"><i class="fab fa-google"></i><span>Google</span></div>
+                    <div class="partner-logo"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="partner-logo"><i class="fab fa-salesforce"></i><span>Salesforce</span></div>
+                    <div class="partner-logo"><i class="fab fa-hubspot"></i><span>HubSpot</span></div>
+                    <div class="partner-logo"><i class="fab fa-slack"></i><span>Slack</span></div>
+                    <div class="partner-logo"><i class="fab fa-stripe"></i><span>Stripe</span></div>
+                    <div class="partner-logo"><i class="fab fa-shopify"></i><span>Shopify</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="pill-tag">What We Do</span>
+                <h2 class="section-title">
+                    End-to-End IT Enabled Services
+                    <br>for the <span class="gradient-text">Modern Enterprise</span>
+                </h2>
+                <p class="section-subtitle">
+                    We combine human expertise with intelligent automation to transform your business
+                    operations — from front-office engagement to back-office excellence.
+                </p>
+            </div>
+
+            <div class="services-bento">
+                <!-- Large card -->
+                <div class="bento-card bento-large glass-card-light" data-anim="fade-up">
+                    <div class="bento-illustration">
+                        <div class="illo-circle">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="illo-ring ring-1"></div>
+                        <div class="illo-ring ring-2"></div>
+                        <div class="illo-dot dot-1"></div>
+                        <div class="illo-dot dot-2"></div>
+                        <div class="illo-dot dot-3"></div>
+                    </div>
+                    <div class="bento-content">
+                        <span class="bento-tag">Core Service</span>
+                        <h3>Customer Experience & Support</h3>
+                        <p>Omnichannel customer support powered by AI — voice, chat, email, and social — delivering 24/7
+                            resolutions with human empathy and machine speed.</p>
+                        <ul class="bento-features">
+                            <li><i class="fas fa-check-circle"></i> Multilingual support in 30+ languages</li>
+                            <li><i class="fas fa-check-circle"></i> AI-first triage & escalation</li>
+                            <li><i class="fas fa-check-circle"></i> CSAT scores 95%+</li>
+                        </ul>
+                        <a href="#" class="link-arrow">Explore CX Solutions <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Medium cards row -->
+                <div class="bento-card bento-medium glass-card-light" data-anim="fade-up">
+                    <div class="bento-icon-wrap">
+                        <div class="bento-icon"><i class="fas fa-file-invoice"></i></div>
+                    </div>
+                    <h3>Back-Office Management</h3>
+                    <p>Streamline finance, HR, procurement, and data management with automated workflows and real-time
+                        reporting.</p>
+                    <a href="#" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="bento-card bento-medium glass-card-light" data-anim="fade-up">
+                    <div class="bento-icon-wrap">
+                        <div class="bento-icon"><i class="fas fa-diagram-project"></i></div>
+                    </div>
+                    <h3>Business Process Outsourcing</h3>
+                    <p>Outsource complex business processes to our expert teams — reduce overhead, increase quality, and
+                        accelerate delivery timelines.</p>
+                    <a href="#" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Small cards row -->
+                <div class="bento-card bento-small glass-card-light" data-anim="fade-up">
+                    <div class="bento-icon-sm"><i class="fas fa-robot"></i></div>
+                    <h4>Intelligent Automation</h4>
+                    <p>RPA, AI/ML, and process mining to eliminate manual tasks and boost productivity by 60%+.</p>
+                </div>
+
+                <div class="bento-card bento-small glass-card-light" data-anim="fade-up">
+                    <div class="bento-icon-sm"><i class="fas fa-database"></i></div>
+                    <h4>Data Processing & Analytics</h4>
+                    <p>High-volume data entry, cleansing, transformation, and actionable business intelligence.</p>
+                </div>
+
+                <div class="bento-card bento-small glass-card-light" data-anim="fade-up">
+                    <div class="bento-icon-sm"><i class="fas fa-scale-balanced"></i></div>
+                    <h4>Compliance & Risk</h4>
+                    <p>KYC, AML, regulatory compliance processing with built-in audit trails and governance.</p>
+                </div>
+
+                <div class="bento-card bento-small glass-card-light" data-anim="fade-up">
+                    <div class="bento-icon-sm"><i class="fas fa-arrows-rotate"></i></div>
+                    <h4>Workflow Optimization</h4>
+                    <p>End-to-end process redesign leveraging Lean Six Sigma, automation, and continuous improvement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OPERATIONAL EXCELLENCE ===================== -->
+    <section class="excellence" id="excellence">
+        <div class="container">
+            <div class="excellence-grid">
+                <div class="excellence-content">
+                    <span class="pill-tag">Operational Excellence</span>
+                    <h2 class="section-title">
+                        Why 1,200+ Enterprises <br>
+                        Choose <span class="gradient-text">Oppty</span>
+                    </h2>
+                    <p class="section-subtitle left-align">
+                        We don't just run your operations — we transform them. Our unique combination of
+                        domain expertise, technology, and global talent delivers measurable outcomes.
+                    </p>
+
+                    <div class="excellence-pillars">
+                        <div class="pillar" data-anim="fade-right">
+                            <div class="pillar-num">01</div>
+                            <div class="pillar-body">
+                                <h4>Human + AI Hybrid Model</h4>
+                                <p>The perfect blend of skilled professionals and intelligent automation — handling
+                                    complexity with consistency.</p>
+                                <div class="pillar-progress">
+                                    <div class="progress-bar" style="--progress: 94%;">
+                                        <span>94% Automation Coverage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pillar" data-anim="fade-right">
+                            <div class="pillar-num">02</div>
+                            <div class="pillar-body">
+                                <h4>Global Delivery Network</h4>
+                                <p>12 delivery centers across 8 countries with follow-the-sun coverage and cultural
+                                    alignment.</p>
+                                <div class="pillar-tags">
+                                    <span class="micro-tag">🇺🇸 USA</span>
+                                    <span class="micro-tag">🇬🇧 UK</span>
+                                    <span class="micro-tag">🇮🇳 India</span>
+                                    <span class="micro-tag">🇵🇭 Philippines</span>
+                                    <span class="micro-tag">🇩🇪 Germany</span>
+                                    <span class="micro-tag">+3 more</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pillar" data-anim="fade-right">
+                            <div class="pillar-num">03</div>
+                            <div class="pillar-body">
+                                <h4>Continuous Improvement Engine</h4>
+                                <p>Lean Six Sigma methodology with real-time dashboards, SLA tracking, and proactive
+                                    optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="excellence-visual">
+                    <div class="visual-stack">
+                        <div class="stack-card glass-card sc-1" data-anim="fade-left">
+                            <div class="sc-header">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Cost Reduction</span>
+                            </div>
+                            <div class="sc-big-num">42%</div>
+                            <p>Average operational cost reduction within first 12 months</p>
+                            <div class="sc-bar-group">
+                                <div class="sc-bar">
+                                    <div class="sc-bar-fill" style="width:85%;"></div><span>Before</span>
+                                </div>
+                                <div class="sc-bar">
+                                    <div class="sc-bar-fill accent" style="width:49%;"></div><span>After</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stack-card glass-card sc-2" data-anim="fade-left">
+                            <div class="sc-header">
+                                <i class="fas fa-bolt"></i>
+                                <span>Speed to Value</span>
+                            </div>
+                            <div class="sc-big-num">3x</div>
+                            <p>Faster process execution vs. industry benchmarks</p>
+                            <div class="sc-speed-bars">
+                                <div class="speed-row">
+                                    <span>Industry Avg</span>
+                                    <div class="speed-track">
+                                        <div class="speed-fill" style="width:33%;"></div>
+                                    </div>
+                                </div>
+                                <div class="speed-row active">
+                                    <span>Oppty</span>
+                                    <div class="speed-track">
+                                        <div class="speed-fill oppty" style="width:100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stack-card glass-card sc-3" data-anim="fade-left">
+                            <div class="sc-header">
+                                <i class="fas fa-user-check"></i>
+                                <span>Quality Score</span>
+                            </div>
+                            <div class="sc-ring-wrap">
+                                <svg class="sc-ring" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)"
+                                        stroke-width="8" />
+                                    <circle cx="50" cy="50" r="42" fill="none" stroke="url(#ring-grad)" stroke-width="8"
+                                        stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="16"
+                                        transform="rotate(-90 50 50)" />
+                                    <defs>
+                                        <linearGradient id="ring-grad" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stop-color="#6366F1" />
+                                            <stop offset="100%" stop-color="#06B6D4" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="ring-center">
+                                    <span>99.8%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS / PROCESS ===================== -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="pill-tag">How It Works</span>
+                <h2 class="section-title">
+                    From Discovery to Delivery <br>in <span class="gradient-text">Four Phases</span>
+                </h2>
+                <p class="section-subtitle">
+                    Our proven engagement model ensures rapid onboarding, seamless integration, and continuous value
+                    creation.
+                </p>
+            </div>
+
+            <div class="process-flow">
+                <div class="process-connector"></div>
+
+                <div class="process-step" data-anim="fade-up">
+                    <div class="step-marker">
+                        <div class="marker-ring">
+                            <span>01</span>
+                        </div>
+                    </div>
+                    <div class="step-card glass-card-light">
+                        <div class="step-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+                        <h3>Discover & Assess</h3>
+                        <p>Deep-dive into your current processes, pain points, technology stack, and strategic
+                            objectives.</p>
+                        <div class="step-detail">
+                            <span><i class="fas fa-clock"></i> 1–2 Weeks</span>
+                            <span><i class="fas fa-file-lines"></i> Assessment Report</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-anim="fade-up">
+                    <div class="step-marker">
+                        <div class="marker-ring">
+                            <span>02</span>
+                        </div>
+                    </div>
+                    <div class="step-card glass-card-light">
+                        <div class="step-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Design & Architect</h3>
+                        <p>Create optimized operating models with automation blueprints, SLA definitions, and governance
+                            frameworks.</p>
+                        <div class="step-detail">
+                            <span><i class="fas fa-clock"></i> 2–3 Weeks</span>
+                            <span><i class="fas fa-file-lines"></i> Solution Blueprint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-anim="fade-up">
+                    <div class="step-marker">
+                        <div class="marker-ring">
+                            <span>03</span>
+                        </div>
+                    </div>
+                    <div class="step-card glass-card-light">
+                        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Deploy & Integrate</h3>
+                        <p>Phased rollout with knowledge transfer, team training, technology integration, and
+                            parallel-run validation.</p>
+                        <div class="step-detail">
+                            <span><i class="fas fa-clock"></i> 4–6 Weeks</span>
+                            <span><i class="fas fa-file-lines"></i> Go-Live Readiness</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-anim="fade-up">
+                    <div class="step-marker">
+                        <div class="marker-ring">
+                            <span>04</span>
+                        </div>
+                    </div>
+                    <div class="step-card glass-card-light">
+                        <div class="step-icon"><i class="fas fa-arrows-spin"></i></div>
+                        <h3>Optimize & Scale</h3>
+                        <p>Continuous improvement with AI insights, performance analytics, and elastic scaling to match
+                            business growth.</p>
+                        <div class="step-detail">
+                            <span><i class="fas fa-clock"></i> Ongoing</span>
+                            <span><i class="fas fa-file-lines"></i> Monthly Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== IMPACT METRICS ===================== -->
+    <section class="metrics">
+        <div class="metrics-bg"></div>
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-block" data-anim="zoom-in">
+                    <div class="metric-number" data-target="42">0%</div>
+                    <div class="metric-desc">Average Cost Reduction</div>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-block" data-anim="zoom-in">
+                    <div class="metric-number">15M+</div>
+                    <div class="metric-desc">Transactions Processed Monthly</div>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-block" data-anim="zoom-in">
+                    <div class="metric-number">99.9%</div>
+                    <div class="metric-desc">Service Availability SLA</div>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-block" data-anim="zoom-in">
+                    <div class="metric-number">8,500+</div>
+                    <div class="metric-desc">Skilled Professionals</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CASE STUDIES ===================== -->
+    <section class="case-studies" id="case-studies">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="pill-tag">Case Studies</span>
+                <h2 class="section-title">
+                    Real Results for <span class="gradient-text">Real Enterprises</span>
+                </h2>
+                <p class="section-subtitle">See how we've transformed operations for leading organizations across
+                    industries.</p>
+            </div>
+
+            <div class="cases-grid">
+                <div class="case-card" data-anim="fade-up">
+                    <div class="case-image" style="background: linear-gradient(135deg, #667eea22, #764ba222);">
+                        <div class="case-industry">Financial Services</div>
+                        <div class="case-illo">
+                            <i class="fas fa-building-columns"></i>
+                        </div>
+                    </div>
+                    <div class="case-body">
+                        <h3>Global Bank Reduces Processing Time by 65%</h3>
+                        <p>Automated loan processing and KYC verification for a top-10 global bank, handling 50,000+
+                            applications monthly.</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <span class="cs-value">65%</span>
+                                <span class="cs-label">Faster Processing</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="cs-value">$8M</span>
+                                <span class="cs-label">Annual Savings</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="cs-value">99.7%</span>
+                                <span class="cs-label">Accuracy Rate</span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-arrow">Read Full Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="case-card" data-anim="fade-up">
+                    <div class="case-image" style="background: linear-gradient(135deg, #06b6d422, #10b98122);">
+                        <div class="case-industry">Healthcare</div>
+                        <div class="case-illo">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                    </div>
+                    <div class="case-body">
+                        <h3>Healthcare Network Achieves 95% Patient Satisfaction</h3>
+                        <p>Deployed omnichannel patient support with AI triage for a 200-facility healthcare network
+                            across 3 countries.</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <span class="cs-value">95%</span>
+                                <span class="cs-label">CSAT Score</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="cs-value">40%</span>
+                                <span class="cs-label">Cost Reduction</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="cs-value">24/7</span>
+                                <span class="cs-label">Coverage</span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-arrow">Read Full Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="case-card" data-anim="fade-up">
+                    <div class="case-image" style="background: linear-gradient(135deg, #f59e0b22, #ef444422);">
+                        <div class="case-industry">Retail & E-Commerce</div>
+                        <div class="case-illo">
+                            <i class="fas fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="case-body">
+                        <h3>E-Commerce Giant Scales to 1M Orders/Day</h3>
+                        <p>End-to-end order management, returns processing, and customer support for peak season
+                            scaling.</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <span class="cs-value">1M+</span>
+                                <span class="cs-label">Daily Orders</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="cs-value">3x</span>
+                                <span class="cs-label">Peak Handling</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="cs-value">12s</span>
+                                <span class="cs-label">Avg Handle Time</span>
+                            </div>
+                        </div>
+                        <a href="#" class="link-arrow">Read Full Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="pill-tag">Client Voices</span>
+                <h2 class="section-title">
+                    Leaders Who Trust <span class="gradient-text">Oppty</span>
+                </h2>
+            </div>
+
+            <div class="testimonials-carousel">
+                <div class="testi-card glass-card" data-anim="fade-up">
+                    <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Oppty didn't just outsource our processes — they reinvented them. Within 6 months, our
+                        back-office efficiency improved by 70%, and our team could finally focus on strategic
+                        initiatives."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#6366F1,#8B5CF6);">RK</div>
+                        <div>
+                            <strong>Rajesh Kumar</strong>
+                            <span>COO, FinanceCore Global</span>
+                        </div>
+                    </div>
+                    <div class="testi-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testi-card glass-card" data-anim="fade-up">
+                    <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"The transition was seamless. Oppty's team integrated with ours like they'd been part of the
+                        company for years. Our customer satisfaction scores hit all-time highs within the first
+                        quarter."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#06B6D4,#10B981);">AM</div>
+                        <div>
+                            <strong>Amanda Mitchell</strong>
+                            <span>VP Operations, MedConnect Health</span>
+                        </div>
+                    </div>
+                    <div class="testi-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testi-card glass-card" data-anim="fade-up">
+                    <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"We scaled from 10,000 to 1 million daily orders without missing a beat. Oppty's elastic delivery
+                        model and automation-first approach made the impossible possible."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#F59E0B,#EF4444);">DL</div>
+                        <div>
+                            <strong>Daniel Lee</strong>
+                            <span>CTO, ShopWave Commerce</span>
+                        </div>
+                    </div>
+                    <div class="testi-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TECHNOLOGY STACK ===================== -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="tech-layout">
+                <div class="tech-content">
+                    <span class="pill-tag">Our Technology</span>
+                    <h2 class="section-title">
+                        Powered by a <span class="gradient-text">World-Class</span> Technology Stack
+                    </h2>
+                    <p class="section-subtitle left-align">
+                        Our proprietary platform integrates with 200+ enterprise tools and leverages cutting-edge AI
+                        to deliver consistent, high-quality outcomes at scale.
+                    </p>
+
+                    <div class="tech-features">
+                        <div class="tech-feat" data-anim="fade-right">
+                            <div class="tf-icon"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h4>OpptyAI™ Engine</h4>
+                                <p>Proprietary AI that learns from every interaction, continuously optimizing processes
+                                    and predicting issues before they occur.</p>
+                            </div>
+                        </div>
+                        <div class="tech-feat" data-anim="fade-right">
+                            <div class="tf-icon"><i class="fas fa-plug"></i></div>
+                            <div>
+                                <h4>Universal Integration Hub</h4>
+                                <p>Pre-built connectors for Salesforce, SAP, ServiceNow, Workday, and 200+ enterprise
+                                    platforms.</p>
+                            </div>
+                        </div>
+                        <div class="tech-feat" data-anim="fade-right">
+                            <div class="tf-icon"><i class="fas fa-eye"></i></div>
+                            <div>
+                                <h4>Real-Time Operations Center</h4>
+                                <p>Live dashboards, predictive analytics, and automated alerting for complete
+                                    operational visibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-visual">
+                    <div class="tech-orbit-wrapper">
+                        <div class="orbit-center">
+                            <div class="orbit-logo">
+                                <img src="../ASSETS/images/oppty.png" alt="Oppty" class="orbit-logo-img" />
+                            </div>
+                        </div>
+                        <div class="orbit-ring orbit-ring-1">
+                            <div class="orbit-node node-1"><i class="fab fa-salesforce"></i></div>
+                            <div class="orbit-node node-2"><i class="fab fa-aws"></i></div>
+                            <div class="orbit-node node-3"><i class="fab fa-microsoft"></i></div>
+                        </div>
+                        <div class="orbit-ring orbit-ring-2">
+                            <div class="orbit-node node-4"><i class="fab fa-slack"></i></div>
+                            <div class="orbit-node node-5"><i class="fab fa-google"></i></div>
+                            <div class="orbit-node node-6"><i class="fab fa-docker"></i></div>
+                            <div class="orbit-node node-7"><i class="fab fa-python"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="pill-tag">Trust & Compliance</span>
+                <h2 class="section-title">Enterprise-Grade <span class="gradient-text">Security & Compliance</span></h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-item glass-card-light" data-anim="zoom-in">
+                    <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h4>SOC 2 Type II</h4>
+                    <p>Certified</p>
+                </div>
+                <div class="cert-item glass-card-light" data-anim="zoom-in">
+                    <div class="cert-icon"><i class="fas fa-lock"></i></div>
+                    <h4>ISO 27001</h4>
+                    <p>Certified</p>
+                </div>
+                <div class="cert-item glass-card-light" data-anim="zoom-in">
+                    <div class="cert-icon"><i class="fas fa-user-shield"></i></div>
+                    <h4>GDPR</h4>
+                    <p>Compliant</p>
+                </div>
+                <div class="cert-item glass-card-light" data-anim="zoom-in">
+                    <div class="cert-icon"><i class="fas fa-hospital"></i></div>
+                    <h4>HIPAA</h4>
+                    <p>Compliant</p>
+                </div>
+                <div class="cert-item glass-card-light" data-anim="zoom-in">
+                    <div class="cert-icon"><i class="fas fa-credit-card"></i></div>
+                    <h4>PCI DSS</h4>
+                    <p>Level 1</p>
+                </div>
+                <div class="cert-item glass-card-light" data-anim="zoom-in">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>CMMI Level 5</h4>
+                    <p>Assessed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        /* ============ INTERSECTION OBSERVER ANIMATIONS ============ */
+        const animObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('[data-anim]').forEach(el => animObserver.observe(el));
+
+        /* ============ PARTICLE GENERATOR ============ */
+        const particleContainer = document.getElementById('particles');
+        if (particleContainer) {
+            for (let i = 0; i < 40; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.top = Math.random() * 100 + '%';
+                p.style.animationDelay = Math.random() * 8 + 's';
+                p.style.animationDuration = (4 + Math.random() * 6) + 's';
+                p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+                particleContainer.appendChild(p);
+            }
+        }
+
+        /* ============ SMOOTH SCROLL ============ */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        /* ============ COUNTER ANIMATION ============ */
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const text = el.textContent;
+                    if (text.includes('%') && !el.dataset.animated) {
+                        el.dataset.animated = 'true';
+                        const target = parseInt(text);
+                        if (!isNaN(target)) {
+                            let current = 0;
+                            const increment = target / 60;
+                            const timer = setInterval(() => {
+                                current += increment;
+                                if (current >= target) {
+                                    current = target;
+                                    clearInterval(timer);
+                                }
+                                el.textContent = Math.floor(current) + '%';
+                            }, 20);
+                        }
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.metric-number').forEach(el => counterObserver.observe(el));
+
+        /* ============ PROGRESS BAR ANIMATION ============ */
+        const progressObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.style.getPropertyValue('--progress') || entry.target.getAttribute('style').match(/width:\s*(\d+%)/)?.[1] || '0%';
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.progress-bar, .sc-bar-fill, .speed-fill').forEach(el => {
+            const w = el.style.width;
+            el.dataset.targetWidth = w;
+            el.style.width = '0%';
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => { el.style.width = el.dataset.targetWidth; }, 200);
+                    }
+                });
+            }, { threshold: 0.3 });
+            obs.observe(el);
+        });
+    </script>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="footer-bg" aria-hidden="true">
+            <svg class="footer-bg-svg" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMid slice"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="fo1" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#f26522" stop-opacity="0.22" />
+                        <stop offset="100%" stop-color="#f26522" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="fo2" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.16" />
+                        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="fo3" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#a855f7" stop-opacity="0.14" />
+                        <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+                    </radialGradient>
+                    <pattern id="fdots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+                        <circle cx="1.4" cy="1.4" r="1.1" fill="rgba(255,255,255,0.05)" />
+                    </pattern>
+                </defs>
+                <rect width="1440" height="560" fill="url(#fdots)" />
+                <ellipse class="fo fo--1" cx="100" cy="100" rx="340" ry="320" fill="url(#fo1)" />
+                <ellipse class="fo fo--2" cx="1360" cy="460" rx="360" ry="340" fill="url(#fo2)" />
+                <ellipse class="fo fo--3" cx="720" cy="280" rx="260" ry="240" fill="url(#fo3)" />
+                <circle class="fr fr--a" cx="180" cy="460" r="130" fill="none" stroke="rgba(242,101,34,0.12)"
+                    stroke-width="1" stroke-dasharray="11 7" />
+                <circle class="fr fr--b" cx="1280" cy="80" r="95" fill="none" stroke="rgba(168,85,247,0.12)"
+                    stroke-width="1" stroke-dasharray="9 6" />
+                <circle class="fr fr--c" cx="720" cy="280" r="68" fill="none" stroke="rgba(59,130,246,0.09)"
+                    stroke-width="1" stroke-dasharray="7 5" />
+                <line x1="0" y1="560" x2="480" y2="0" stroke="rgba(242,101,34,0.05)" stroke-width="1" />
+                <line x1="480" y1="560" x2="960" y2="0" stroke="rgba(59,130,246,0.04)" stroke-width="1" />
+                <line x1="960" y1="560" x2="1440" y2="0" stroke="rgba(168,85,247,0.04)" stroke-width="1" />
+            </svg>
+        </div>
+        <div class="footer-topline"></div>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo-wrap">
+                    <div class="footer-logo-icon"><img src="../ASSETS/images/oppty.png" alt="Oppty Logo" /></div>
+                </a>
+                <p class="footer-tagline">Future-Ready Technology.<br />Powered by People.</p>
+                <div class="footer-contact-list">
+                    <p class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                                fill="currentColor" />
+                        </svg>
+                        Hyderabad, Telangana, India
+                    </p>
+                    <p class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57-.11.34-.03.74-.24 1.01L6.6 10.8z"
+                                fill="currentColor" />
+                        </svg>
+                        <a href="tel:+919491209900">+91 9491209900</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                fill="currentColor" />
+                        </svg>
+                        <a href="mailto:info@oppty.in">info@oppty.in</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-heading">Quick Links</h4>
+                <ul class="footer-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-heading">Our Services</h4>
+                <ul class="footer-nav">
+                    <li><a href="IT_services.html">IT Services</a></li>
+                    <li><a href="ITES_services.html">ITES Services</a></li>
+                    <li><a href="BPO.html">BPO Services</a></li>
+                    <li><a href="Oppty_learn.html">Oppty Learn</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-heading">Company</h4>
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-mid-divider"></div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; Copyright 2025 <strong>Oppty TechHub</strong>. All Rights Reserved.</p>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/company/opptytech/" target="_blank" aria-label="LinkedIn"
+                    class="fsoc">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/opptytech" target="_blank" aria-label="Instagram" class="fsoc">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@mroppty" target="_blank" aria-label="YouTube" class="fsoc">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-legal">
+                <a href="#">Terms of Service</a>
+                <span class="fl-sep">&middot;</span>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-watermark" aria-hidden="true">OPPTY</div>
+    </footer>
+
+    <script>
+        // ── Navbar scroll + past-hero ──
+        const navbar = document.getElementById('navbar');
+        const heroSection = document.querySelector('.hero');
+        window.addEventListener('scroll', () => {
+            const heroH = heroSection ? heroSection.offsetHeight : 0;
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+            navbar.classList.toggle('past-hero', window.scrollY > heroH - 60);
+        });
+
+        // ── Mobile menu ──
+        function toggleMenu() {
+            document.getElementById('mobileNav').classList.toggle('open');
+        }
+
+        // ── Mobile dropdown ──
+        function toggleMobileDropdown(btn) {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !expanded);
+            btn.closest('.mobile-dropdown').classList.toggle('open');
+        }
+
+        // ── Desktop nav dropdown (click) ──
+        function toggleNavDropdown(toggle) {
+            const dropdown = toggle.closest('.nav-dropdown');
+            const isOpen = dropdown.classList.contains('open');
+            document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+            if (!isOpen) dropdown.classList.add('open');
+        }
+
+        // -- Service dropdown item selection --
+        (function () {
+            document.querySelectorAll('.nav-dropdown__menu li a').forEach(function (item) {
+                item.addEventListener('click', function (e) {
+                    var dropdown = this.closest('.nav-dropdown');
+                    var toggle = dropdown.querySelector('.nav-dropdown__toggle');
+                    var labelEl = this.querySelector('.dd-label');
+                    var label = labelEl ? labelEl.textContent.trim() : this.textContent.trim();
+                    // Update toggle text node
+                    toggle.childNodes.forEach(function (node) {
+                        if (node.nodeType === 3) node.textContent = label + ' ';
+                    });
+                    // Mark selected
+                    dropdown.querySelectorAll('.nav-dropdown__menu li a').forEach(function (a) { a.classList.remove('dd-selected'); });
+                    this.classList.add('dd-selected');
+                    toggle.classList.add('nav-active');
+                    dropdown.classList.remove('open');
+                });
+            });
+        })();
+
+        // Close desktop dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.nav-dropdown')) {
+                document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+            }
+        });
+    </script>
+
+    <script>
+        /* ── Page Loader on Nav Clicks ── */
+        (function () {
+            var loader = document.getElementById('pageLoader');
+            if (!loader) return;
+            function showLoaderAndGo(href) {
+                loader.classList.add('is-visible');
+                setTimeout(function () { window.location.href = href; }, 600);
+            }
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest('a');
+                if (!link) return;
+                var href = link.getAttribute('href');
+                if (!href) return;
+                if (href.startsWith('#') || href.startsWith('tel:') || href.startsWith('mailto:') ||
+                    link.target === '_blank' || href.startsWith('http')) return;
+                if (link.pathname === window.location.pathname && !link.hash) return;
+                e.preventDefault();
+                showLoaderAndGo(href);
+            });
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    loader.classList.add('is-exiting');
+                    loader.classList.remove('is-visible');
+                    setTimeout(function () { loader.classList.remove('is-exiting'); }, 400);
+                }, 500);
+            });
+            setTimeout(function () { loader.classList.remove('is-visible'); }, 1500);
+        })();
+    </script>
+
+</body>
+
+</html>

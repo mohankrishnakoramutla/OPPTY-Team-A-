@@ -1,0 +1,3429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppty — All-in-One Business Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700,800,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+
+    <!-- ── PAGE LOADER ── -->
+    <div class="page-loader is-visible" id="pageLoader">
+        <div class="page-loader__logo">
+            <div class="page-loader__ring"></div>
+            <div class="page-loader__ring"></div>
+            <div class="page-loader__ring"></div>
+            <img class="page-loader__img" src="./ASSETS/images/oppty.png" alt="Loading" />
+        </div>
+    </div>
+
+    <!-- ── FLOATING SOCIAL BAR ── -->
+    <div class="social-bar">
+        <a href="https://www.instagram.com/opptytech?igsh=YTExdTBsc3Y4ejU2" target="_blank" rel="noopener" aria-label="Instagram" class="social-bar__link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://youtube.com/@mroppty?si=NbpyNIM-vkHyeLYM" target="_blank" rel="noopener" aria-label="YouTube" class="social-bar__link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/opptytech/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-bar__link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+    </div>
+
+    <!-- ── NAVBAR ── -->
+    <header id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <img class="logo-img" src="./ASSETS/images/oppty.png" alt="Oppty Logo" />
+            </a>
+            <nav>
+                <a href="index.html" class="nav-active">Home</a>
+                <a href="./HTML/about.html">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown__toggle" onclick="toggleNavDropdown(this); return false;">Our Services
+                        <svg class="nav-dropdown__arrow" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <ul class="nav-dropdown__menu">
+                        <li><a href="./HTML/IT_services.html"><span class="dd-icon dd-icon--blue"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="dd-label">IT Services</span></a></li>
+                        <li><a href="./HTML/ITES_services.html"><span class="dd-icon dd-icon--orange"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M6.3 6.3a8 8 0 0 0 0 11.4M17.7 6.3a8 8 0 0 1 0 11.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="dd-label">ITES Services</span></a></li>
+                        <li><a href="./HTML/BPO.html"><span class="dd-icon dd-icon--green"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="dd-label">Oppty Learn</span></a></li>
+                    </ul>
+                </div>
+                <a href="./HTML/resources.html">Products</a>
+                <a href="./HTML/contact.html">Contact Us</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-academy">Academy</a>
+                <a href="#" class="btn btn-training">Training Partner</a>
+                <a href="tel:+919491209900" class="phone-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57-.11.34-.03.74-.24 1.01L6.6 10.8z"/></svg>
+                    +91 9491209900
+                </a>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="./HTML/about.html">About Us</a>
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown__toggle" onclick="toggleMobileDropdown(this)" aria-expanded="false">Our Services
+                    <svg class="mobile-dropdown__arrow" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <ul class="mobile-dropdown__menu">
+                    <li><a href="./HTML/IT_services.html">IT Services</a></li>
+                    <li><a href="./HTML/ITES_services.html">ITES Services</a></li>
+                    <li><a href="./HTML/Oppty_learn.html">Oppty Learn</a></li>
+                </ul>
+            </div>
+            <a href="./HTML/resources.html">Products</a>
+            <a href="./HTML/contact.html">Contact Us</a>
+            <div class="mobile-btns">
+                <a href="#" class="btn btn-academy">Academy</a>
+                <a href="#" class="btn btn-training">Training Partner</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ── HERO ── -->
+    <main class="hero-container">
+        <section class="hero" id="hero">
+
+            <!-- Background -->
+            <div class="hero-scene-bg">
+                <canvas class="hero-stars-canvas" id="heroStarsCanvas"></canvas>
+                <div class="hero-glow hero-glow--orange"></div>
+                <div class="hero-glow hero-glow--blue"></div>
+                <div class="hero-glow hero-glow--purple"></div>
+                <div class="hero-grid-overlay"></div>
+            </div>
+
+            <div class="outer">
+
+                <!-- LEFT: Brand Story -->
+                <div class="brand-story">
+                    <div class="label-container">
+                        <div class="label-dot"></div>
+                        <span class="badge-label">OPPTY SAAS ECOSYSTEM</span>
+                    </div>
+                    <h1>One Suite.<br><span class="highlight">Infinite<br>Possibilities.</span></h1>
+                    <p class="brand-subheading">A unified ecosystem of intelligent SaaS products — built to help organizations <em>manage work</em>, <em>connect teams</em> and <em>grow businesses</em>.</p>
+                    <div class="hero-stats">
+                        <div class="hero-stat"><span class="hero-stat__num">8+</span><span class="hero-stat__label">Products</span></div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat"><span class="hero-stat__num">500+</span><span class="hero-stat__label">Businesses</span></div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat"><span class="hero-stat__num">99.9%</span><span class="hero-stat__label">Uptime</span></div>
+                    </div>
+                    <div class="brand-blocks-list">
+                        <div class="essence-item" data-essence="work">
+                            <div class="essence-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+                            <div class="essence-body"><h4>Who We Are</h4><p>A technology-driven company building innovative SaaS solutions for the future.</p></div>
+                        </div>
+                        <div class="essence-item" data-essence="connect">
+                            <div class="essence-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                            <div class="essence-body"><h4>What We Do</h4><p>We build products that simplify work, connect teams and accelerate business growth.</p></div>
+                        </div>
+                        <div class="essence-item" data-essence="grow">
+                            <div class="essence-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+                            <div class="essence-body"><h4>Brand Promise</h4><p style="font-weight:700">Manage <span>Work.</span> Connect <span>Teams.</span> Grow <span>Businesses.</span></p></div>
+                        </div>
+                    </div>
+                    <div class="button-actions">
+                        <a href="#products" class="btn-secondary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                            Explore Platform
+                        </a>
+                        <button class="cta-button">
+                            Book Consultation
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </button>
+                    </div>
+                    <div class="trust-row">
+                        <span class="trust-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Enterprise Security</span>
+                        <span class="trust-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free Trial</span>
+                        <span class="trust-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.12 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>24/7 Support</span>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Product Cards -->
+                <div class="product-ecosystem">
+                    <div class="ecosystem-grid">
+                        <!-- Taskly -->
+                        <article class="premium-card" data-category="Taskly">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/taskly.png" alt="Taskly" /></div>
+                                <div class="product-meta"><span class="product-name">Taskly</span><span class="product-category">Task Management</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-1">
+                                    <img class="dashboard-screen slide-active" src="./ASSETS/images/task1.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/task2.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/task3.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/task4.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">Plan projects efficiently</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Track deadlines effortlessly</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                        <!-- Chatly -->
+                        <article class="premium-card" data-category="Chatly">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/chatly.png" alt="Chatly" /></div>
+                                <div class="product-meta"><span class="product-name">Chatly</span><span class="product-category">Team Chat</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-2">
+                                    <img class="dashboard-screen slide-active" src="./ASSETS/images/chat.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/chat2.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/chat3.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/chat4.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">Real-time communication</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Instant collaboration</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                        <!-- Peoplely -->
+                        <article class="premium-card" data-category="Peoplely">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/peoplely.png" alt="Peoplely" /></div>
+                                <div class="product-meta"><span class="product-name">Peoplely</span><span class="product-category">HRMS</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-3">
+                                    <img class="dashboard-screen slide-active" src="./ASSETS/images/hrms1.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/hirely2.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/hrms3.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/hrms4.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">HR management</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Attendance and payroll</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                        <!-- Cliently -->
+                        <article class="premium-card" data-category="Cliently">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/cliently.png" alt="Cliently" /></div>
+                                <div class="product-meta"><span class="product-name">Cliently</span><span class="product-category">CRM</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-4">
+                                    <img class="dashboard-screen slide-active" src="./ASSETS/images/client-1.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/client-2.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/client-3.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/client-4.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">Customer relationships</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Sales pipeline tracking</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                        <!-- Meetly -->
+                        <article class="premium-card" data-category="Meetly">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/meetly.png" alt="Meetly" /></div>
+                                <div class="product-meta"><span class="product-name">Meetly</span><span class="product-category">Video Meetings</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-5">
+                                    <img class="dashboard-screen" src="./ASSETS/images/" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1616587894289-86480e533129?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&w=350&q=80" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">HD video conferencing</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Remote collaboration</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                        <!-- Hirely -->
+                        <article class="premium-card" data-category="Hirely">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/hirely.png" alt="Hirely" /></div>
+                                <div class="product-meta"><span class="product-name">Hirely</span><span class="product-category">Recruitment ATS</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-6">
+                                    <img class="dashboard-screen slide-active" src="./ASSETS/images/hirely1.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/hirely2.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/hirely3.png" alt="" />
+                                    <img class="dashboard-screen" src="./ASSETS/images/hirely4.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">Recruitment automation</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Candidate tracking</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                        <!-- Learnly -->
+                        <article class="premium-card" data-category="Learnly">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/learnly.png" alt="Learnly" /></div>
+                                <div class="product-meta"><span class="product-name">Learnly</span><span class="product-category">LMS</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-7">
+                                    <img class="dashboard-screen slide-active" src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=350&q=80" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">Employee upskilling</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Learning management</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                        <!-- Supportly -->
+                        <article class="premium-card" data-category="Supportly">
+                            <div class="product-top">
+                                <div class="product-icon-wrapper"><img src="./ASSETS/images/supportly.png" alt="Supportly" /></div>
+                                <div class="product-meta"><span class="product-name">Supportly</span><span class="product-category">Helpdesk</span></div>
+                            </div>
+                            <div class="dashboard-mask">
+                                <div class="dashboard-track track-8">
+                                    <img class="dashboard-screen slide-active" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1549923746-c502d488f3aa?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1521791136368-1a46827d0515?auto=format&fit=crop&w=350&q=80" alt="" />
+                                    <img class="dashboard-screen" src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=350&q=80" alt="" />
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="benefit-item"><span class="benefit-text">Helpdesk ticketing</span></div>
+                                <div class="benefit-item"><span class="benefit-text">Reliable customer support</span></div>
+                                <a href="#" class="card-explore-btn">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <!-- ── Dashboard Card Slider JS ── -->
+  <script>
+  (function() {
+    document.querySelectorAll('.dashboard-track').forEach(function(track) {
+      var slides = Array.from(track.querySelectorAll('.dashboard-screen'));
+      if (slides.length < 2) return;
+      var current = 0;
+      // ensure first slide active
+      slides.forEach(function(s) { s.classList.remove('slide-active'); });
+      slides[0].classList.add('slide-active');
+      setInterval(function() {
+        slides[current].classList.remove('slide-active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('slide-active');
+      }, 3000);
+    });
+  })();
+  </script>
+
+  <!-- ── TICKER STRIP ── -->
+  <div class="ticker-wrap" data-reveal="fade-up">
+    <div class="ticker-track">
+      <span class="ticker-item">IT Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">ITES Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">BPO Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">Oppty Learn</span>
+      <span class="ticker-sep">★</span>
+
+      <span class="ticker-item">IT Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">ITES Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">BPO Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">Oppty Learn</span>
+      <span class="ticker-sep">★</span>
+
+      <span class="ticker-item">IT Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">ITES Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">BPO Services</span>
+      <span class="ticker-sep">★</span>
+      <span class="ticker-item">Oppty Learn</span>
+      <span class="ticker-sep">★</span>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────────────
+     ABOUT SECTION - OPPTY SAAS SUITE (PRO)
+───────────────────────────────────── -->
+  <section class="about-pro" id="about">
+
+    <!-- Animated Background Layer -->
+    <div class="ap-bg">
+      <div class="ap-bg__gradient"></div>
+      <div class="ap-bg__grid"></div>
+      <div class="ap-bg__noise"></div>
+      <!-- React: particle canvas + cursor spotlight -->
+      <div id="about-react-bg" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;">
+      </div>
+
+      <!-- Floating geometric shapes -->
+      <div class="ap-shape ap-shape--1"></div>
+      <div class="ap-shape ap-shape--2"></div>
+      <div class="ap-shape ap-shape--3"></div>
+      <div class="ap-shape ap-shape--4"></div>
+
+      <!-- Glowing orbs -->
+      <div class="ap-orb ap-orb--orange"></div>
+      <div class="ap-orb ap-orb--blue"></div>
+    </div>
+
+    <div class="ap-container">
+
+      <!-- Section Eyebrow -->
+      <div class="ap-eyebrow" data-ap-reveal="fade-down">
+        <span class="ap-eyebrow__line"></span>
+        <span class="ap-eyebrow__text">ABOUT OPPTY TECHNOLOGIES</span>
+        <span class="ap-eyebrow__line"></span>
+      </div>
+
+      <!-- Main Grid -->
+      <div class="ap-grid">
+
+        <!-- LEFT: Content Column -->
+        <div class="ap-content">
+
+          <!-- Logo with animation -->
+          <div class="ap-logo-wrap" data-ap-reveal="fade-right" data-ap-delay="100">
+            <div class="ap-logo-glow"></div>
+            <img src="./ASSETS/images/oppty.png" alt="Oppty" class="ap-logo">
+          </div>
+
+          <!-- Main heading with split text -->
+          <h2 class="ap-title" data-ap-reveal="fade-right" data-ap-delay="200">
+            <span class="ap-title__line">Who We Are</span>
+            <span class="ap-title__big" data-ap-split>FUTURE</span>
+            <span class="ap-title__accent" data-ap-split>READY.</span>
+          </h2>
+
+          <!-- Animated divider -->
+          <div class="ap-divider" data-ap-reveal="fade-right" data-ap-delay="400">
+            <span class="ap-divider__dot"></span>
+            <span class="ap-divider__line"></span>
+          </div>
+
+          <!-- Tagline -->
+          <p class="ap-tagline" data-ap-reveal="fade-right" data-ap-delay="500">
+            One Platform. <span class="ap-tagline__highlight">Limitless</span> Growth.
+          </p>
+
+          <!-- Description -->
+          <p class="ap-description" data-ap-reveal="fade-right" data-ap-delay="600">
+            Oppty is a next-generation technology company delivering intelligent SaaS solutions —
+            from HR and CRM to AI-powered communications — designed to help organizations
+            streamline operations, empower teams, and scale with confidence.
+          </p>
+
+          <!-- Values Grid with hover effects -->
+          <div class="ap-values">
+
+            <div class="ap-value-card" data-ap-reveal="fade-up" data-ap-delay="700">
+              <div class="ap-value-card__bg"></div>
+              <div class="ap-value-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26A7 7 0 0 0 12 2z" />
+                </svg>
+              </div>
+              <div class="ap-value-card__content">
+                <h4>INNOVATION</h4>
+                <p>Pushing boundaries with AI-driven tools built for tomorrow's challenges.</p>
+              </div>
+              <div class="ap-value-card__arrow">→</div>
+            </div>
+
+            <div class="ap-value-card" data-ap-reveal="fade-up" data-ap-delay="800">
+              <div class="ap-value-card__bg"></div>
+              <div class="ap-value-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="ap-value-card__content">
+                <h4>COLLABORATION</h4>
+                <p>Unifying teams, processes and data on a single connected platform.</p>
+              </div>
+              <div class="ap-value-card__arrow">→</div>
+            </div>
+
+            <div class="ap-value-card" data-ap-reveal="fade-up" data-ap-delay="900">
+              <div class="ap-value-card__bg"></div>
+              <div class="ap-value-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <div class="ap-value-card__content">
+                <h4>INTEGRITY</h4>
+                <p>Delivering on every promise with full transparency and accountability.</p>
+              </div>
+              <div class="ap-value-card__arrow">→</div>
+            </div>
+
+            <div class="ap-value-card" data-ap-reveal="fade-up" data-ap-delay="1000">
+              <div class="ap-value-card__bg"></div>
+              <div class="ap-value-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                  <path
+                    d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                </svg>
+              </div>
+              <div class="ap-value-card__content">
+                <h4>EMPOWERMENT</h4>
+                <p>Equipping businesses with the tools and knowledge to lead their industry.</p>
+              </div>
+              <div class="ap-value-card__arrow">→</div>
+            </div>
+
+          </div>
+
+          <!-- Stats counter -->
+          <div class="ap-stats" data-ap-reveal="fade-up" data-ap-delay="1100">
+            <div class="ap-stat">
+              <span class="ap-stat__num" data-count="500">0</span>
+              <span class="ap-stat__plus">+</span>
+              <span class="ap-stat__label">Clients Served</span>
+            </div>
+            <div class="ap-stat__divider"></div>
+            <div class="ap-stat">
+              <span class="ap-stat__num" data-count="98">0</span>
+              <span class="ap-stat__plus">%</span>
+              <span class="ap-stat__label">Satisfaction Rate</span>
+            </div>
+            <div class="ap-stat__divider"></div>
+            <div class="ap-stat">
+              <span class="ap-stat__num" data-count="10">0</span>
+              <span class="ap-stat__plus">+</span>
+              <span class="ap-stat__label">Years of Excellence</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="ap-cta" data-ap-reveal="fade-up" data-ap-delay="1200">
+            <a href="./HTML/about.html" class="ap-cta__btn ap-cta__btn--primary">
+              <span>Discover Our Story</span>
+              <svg viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="./HTML/contact.html" class="ap-cta__btn ap-cta__btn--secondary">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Globe Visual -->
+        <div class="ap-visual" data-ap-reveal="fade-left" data-ap-delay="300">
+
+          <!-- Decorative tech lines -->
+          <div class="ap-tech-lines">
+            <span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="ap-globe-wrap">
+
+            <!-- Orbital rings -->
+            <div class="ap-orbit ap-orbit--1">
+              <div class="ap-orbit__dot"></div>
+            </div>
+            <div class="ap-orbit ap-orbit--2">
+              <div class="ap-orbit__dot ap-orbit__dot--blue"></div>
+            </div>
+            <div class="ap-orbit ap-orbit--3"></div>
+
+            <!-- The Globe — Canvas 3D renderer -->
+            <div class="ap-globe" id="apGlobeWrap">
+              <canvas id="apGlobeCanvas"></canvas>
+            </div>
+
+            <!-- Floating badges -->
+            <div class="ap-badge ap-badge--1">
+              <div class="ap-badge__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                </svg>
+              </div>
+              <div>
+                <span class="ap-badge__title">SaaS Platform</span>
+                <span class="ap-badge__sub">Enterprise Ready</span>
+              </div>
+            </div>
+
+            <div class="ap-badge ap-badge--2">
+              <div class="ap-badge__icon ap-badge__icon--blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                </svg>
+              </div>
+              <div>
+                <span class="ap-badge__title">Cloud Native</span>
+                <span class="ap-badge__sub">99.9% Uptime</span>
+              </div>
+            </div>
+
+            <div class="ap-badge ap-badge--3">
+              <div class="ap-badge__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                </svg>
+              </div>
+              <div>
+                <span class="ap-badge__title">AI Powered</span>
+                <span class="ap-badge__sub">Smart Automation</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─────────────────────────────────────
+     VISION & MISSION SECTION
+───────────────────────────────────── -->
+  <section class="vm-section" id="vision-mission">
+
+    <!-- Animated Background -->
+    <div class="vm-bg">
+      <!-- Background video -->
+      <video class="vm-bg__video" autoplay muted loop playsinline>
+        <source src="./ASSETS/images/vissionbg.mp4" type="video/mp4" />
+      </video>
+      <div class="vm-bg__gradient"></div>
+      <div class="vm-bg__mesh"></div>
+      <div class="vm-bg__waves"></div>
+
+      <!-- Geometric shapes -->
+      <div class="vm-shape vm-shape--1"></div>
+      <div class="vm-shape vm-shape--2"></div>
+      <div class="vm-shape vm-shape--3"></div>
+      <div class="vm-shape vm-shape--4"></div>
+      <div class="vm-shape vm-shape--5"></div>
+
+      <!-- Gradient blobs -->
+      <div class="vm-orb vm-orb--purple"></div>
+      <div class="vm-orb vm-orb--teal"></div>
+      <div class="vm-orb vm-orb--pink"></div>
+    </div>
+
+    <div class="vm-container">
+
+      <!-- Section Header -->
+      <div class="vm-header" data-vm-reveal="fade-down">
+        <div class="vm-eyebrow">
+          <span class="vm-eyebrow__line"></span>
+          <span class="vm-eyebrow__text">WHO WE ARE</span>
+          <span class="vm-eyebrow__line"></span>
+        </div>
+        <h2 class="vm-heading">
+          Our <span class="vm-heading__accent">Purpose</span> & Direction
+        </h2>
+      </div>
+
+      <!-- Vision & Mission Cards -->
+      <div class="vm-grid">
+
+        <!-- VISION CARD -->
+        <div class="vm-card vm-card--vision" data-vm-reveal="fade-right" data-vm-delay="200">
+
+          <div class="vm-card__glow"></div>
+          <div class="vm-card__shine"></div>
+          <div class="vm-card__corner vm-card__corner--tl"></div>
+          <div class="vm-card__corner vm-card__corner--br"></div>
+
+          <div class="vm-card__label">
+            <span class="vm-card__label-line"></span>
+            <span class="vm-card__label-text">OUR VISION</span>
+          </div>
+
+          <div class="vm-card__icon-wrap">
+            <div class="vm-card__icon-bg"></div>
+            <div class="vm-card__icon-rings">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="vm-card__icon">
+              <img src="./ASSETS/images/vission.png" alt="Vision" class="vm-card__icon-img" />
+            </div>
+          </div>
+
+          <div class="vm-card__content">
+            <p class="vm-card__text">
+              Empowering organizations with intelligent, connected and human-centric solutions to manage work, engage
+              people and grow businesses.
+            </p>
+          </div>
+
+          <div class="vm-card__accent">
+            <span class="vm-card__dot"></span>
+            <span class="vm-card__line"></span>
+          </div>
+
+        </div>
+
+        <!-- Center Divider -->
+        <div class="vm-divider" data-vm-reveal="fade-up" data-vm-delay="400">
+          <div class="vm-divider__line"></div>
+          <div class="vm-divider__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="vm-divider__line"></div>
+        </div>
+
+        <!-- MISSION CARD -->
+        <div class="vm-card vm-card--mission" data-vm-reveal="fade-left" data-vm-delay="600">
+
+          <div class="vm-card__glow"></div>
+          <div class="vm-card__shine"></div>
+          <div class="vm-card__corner vm-card__corner--tl"></div>
+          <div class="vm-card__corner vm-card__corner--br"></div>
+
+          <div class="vm-card__label">
+            <span class="vm-card__label-line"></span>
+            <span class="vm-card__label-text">OUR MISSION</span>
+          </div>
+
+          <div class="vm-card__icon-wrap">
+            <div class="vm-card__icon-bg"></div>
+            <div class="vm-card__icon-rings">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="vm-card__icon">
+              <img src="./ASSETS/images/mission.png" alt="Mission" class="vm-card__icon-img" />
+            </div>
+          </div>
+
+          <div class="vm-card__content">
+            <p class="vm-card__text">
+              To simplify the way businesses operate through a unified suite of smart, scalable and secure SaaS
+              products.
+            </p>
+          </div>
+
+          <div class="vm-card__accent">
+            <span class="vm-card__dot"></span>
+            <span class="vm-card__line"></span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="vm-cta" data-vm-reveal="fade-up" data-vm-delay="800">
+        <p class="vm-cta__text">
+          Ready to be part of our journey?
+        </p>
+        <a href="#contact" class="vm-cta__btn">
+          <span>Get Started Today</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    (function () {
+      'use strict';
+
+      const initVM = () => {
+        const section = document.querySelector('.vm-section');
+        if (!section) return;
+
+        // Reveal animations
+        const elements = section.querySelectorAll('[data-vm-reveal]');
+
+        if (elements.length === 0) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const delay = parseInt(entry.target.dataset.vmDelay || 0);
+              setTimeout(() => {
+                entry.target.classList.add('vm-revealed');
+              }, delay);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        elements.forEach(el => observer.observe(el));
+
+        // Fallback - show elements after 3 seconds if not revealed
+        setTimeout(() => {
+          elements.forEach(el => {
+            if (!el.classList.contains('vm-revealed')) {
+              el.classList.add('vm-revealed');
+            }
+          });
+        }, 3000);
+
+        // 3D Tilt effect on cards — smooth lerp spring + shine
+        const cards = section.querySelectorAll('.vm-card');
+        cards.forEach(card => {
+          /* inject shine overlay */
+          if (!card.querySelector('.vm-card__shine')) {
+            const s = document.createElement('div');
+            s.className = 'vm-card__shine';
+            card.insertBefore(s, card.firstChild);
+          }
+
+          let raf = null;
+          let tx = 0, ty = 0, cx = 0, cy = 0, hovered = false;
+          const lerp = (a, b, t) => a + (b - a) * t;
+
+          const tick = () => {
+            cx = lerp(cx, hovered ? tx : 0, 0.14);
+            cy = lerp(cy, hovered ? ty : 0, 0.14);
+
+            const liftY = hovered ? -18 : 0;
+            const sc    = hovered ? 1.04 : 1;
+
+            if (!hovered && Math.abs(cx) < 0.04 && Math.abs(cy) < 0.04) {
+              card.style.transform = '';
+              raf = null;
+              return;
+            }
+
+            card.style.transform =
+              `perspective(800px) rotateY(${cx.toFixed(2)}deg) rotateX(${(-cy).toFixed(2)}deg) translateY(${liftY}px) scale(${sc})`;
+
+            raf = requestAnimationFrame(tick);
+          };
+
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            tx = ((e.clientX - rect.left) / rect.width  - 0.5) * 18;
+            ty = ((e.clientY - rect.top)  / rect.height - 0.5) * 18;
+            // drive the shine gradient position
+            card.style.setProperty('--mx', ((e.clientX - rect.left) / rect.width  * 100).toFixed(1) + '%');
+            card.style.setProperty('--my', ((e.clientY - rect.top)  / rect.height * 100).toFixed(1) + '%');
+            if (!hovered) hovered = true;
+            if (!raf) raf = requestAnimationFrame(tick);
+          });
+
+          card.addEventListener('mouseleave', () => {
+            hovered = false; tx = 0; ty = 0;
+            if (!raf) raf = requestAnimationFrame(tick);
+          });
+        });
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initVM);
+      } else {
+        initVM();
+      }
+    })();
+  </script>
+
+  <!-- ─────────────────────────────────────
+     WHY CHOOSE OPPTY SECTION
+───────────────────────────────────── -->
+  <section class="why-oppty" id="why-oppty">
+
+    <!-- Animated Background -->
+    <div class="wo-bg">
+      <div class="wo-bg__gradient"></div>
+      <div class="wo-bg__grid"></div>
+
+      <!-- Floating decorative shapes -->
+      <div class="wo-shape wo-shape--1"></div>
+      <div class="wo-shape wo-shape--2"></div>
+      <div class="wo-shape wo-shape--3"></div>
+
+      <!-- Glowing orbs -->
+      <div class="wo-orb wo-orb--orange"></div>
+      <div class="wo-orb wo-orb--blue"></div>
+    </div>
+
+    <div class="wo-container">
+
+      <div class="wo-grid">
+
+        <!-- LEFT: Visual side with badge/illustration -->
+        <div class="wo-visual" data-wo-reveal="fade-right">
+
+          <!-- Decorative graphic -->
+          <div class="wo-visual__wrap">
+
+            <!-- Animated rings -->
+            <div class="wo-rings">
+              <div class="wo-ring wo-ring--1"></div>
+              <div class="wo-ring wo-ring--2"></div>
+              <div class="wo-ring wo-ring--3"></div>
+            </div>
+
+            <!-- Center badge — Oppty logo -->
+            <div class="wo-badge">
+              <div class="wo-badge__inner">
+                <img src="./ASSETS/images/oppty.png" alt="Oppty" class="wo-badge__logo"/>
+              </div>
+              <div class="wo-badge__pulse"></div>
+            </div>
+
+            <!-- Floating mini badges — 4 corners -->
+            <div class="wo-mini wo-mini--1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#f26522" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="wo-mini wo-mini--2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#3b82f6" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="wo-mini wo-mini--3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div class="wo-mini wo-mini--4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#f26522" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+
+            <!-- Stats overlay -->
+            <div class="wo-stat-overlay">
+              <span class="wo-stat-overlay__num">10+</span>
+              <span class="wo-stat-overlay__label">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Content side with benefits list -->
+        <div class="wo-content">
+
+          <!-- Eyebrow -->
+          <div class="wo-eyebrow" data-wo-reveal="fade-left" data-wo-delay="100">
+            <span class="wo-eyebrow__line"></span>
+            <span class="wo-eyebrow__text">BENEFITS</span>
+          </div>
+
+          <!-- Heading -->
+          <h2 class="wo-heading" data-wo-reveal="fade-left" data-wo-delay="200">
+            Why Choose <span class="wo-heading__accent">Oppty?</span>
+          </h2>
+
+          <!-- Subtitle -->
+          <p class="wo-subtitle" data-wo-reveal="fade-left" data-wo-delay="300">
+            Empower your business with a platform built for growth, innovation, and lasting success.
+          </p>
+
+          <!-- Benefits list -->
+          <ul class="wo-list">
+
+            <li class="wo-item" data-wo-reveal="fade-left" data-wo-delay="400">
+              <div class="wo-item__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div class="wo-item__content">
+                <h4>One unified suite for all business needs</h4>
+              </div>
+              <div class="wo-item__arrow">→</div>
+            </li>
+
+            <li class="wo-item" data-wo-reveal="fade-left" data-wo-delay="500">
+              <div class="wo-item__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div class="wo-item__content">
+                <h4>Seamless integration and workflows</h4>
+              </div>
+              <div class="wo-item__arrow">→</div>
+            </li>
+
+            <li class="wo-item" data-wo-reveal="fade-left" data-wo-delay="600">
+              <div class="wo-item__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div class="wo-item__content">
+                <h4>Modern, intuitive and user-friendly</h4>
+              </div>
+              <div class="wo-item__arrow">→</div>
+            </li>
+
+            <li class="wo-item" data-wo-reveal="fade-left" data-wo-delay="700">
+              <div class="wo-item__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div class="wo-item__content">
+                <h4>Scalable for startups to enterprises</h4>
+              </div>
+              <div class="wo-item__arrow">→</div>
+            </li>
+
+            <li class="wo-item" data-wo-reveal="fade-left" data-wo-delay="800">
+              <div class="wo-item__check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div class="wo-item__content">
+                <h4>Built with security and reliability at core</h4>
+              </div>
+              <div class="wo-item__arrow">→</div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────
+     WHY OPPTY - JAVASCRIPT
+───────────────────────────────────── -->
+  <script>
+    (function () {
+      'use strict';
+
+      const initWO = () => {
+        const section = document.querySelector('.why-oppty');
+        if (!section) return;
+
+        const elements = section.querySelectorAll('[data-wo-reveal]');
+
+        if (elements.length === 0) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const delay = parseInt(entry.target.dataset.woDelay || 0);
+              setTimeout(() => {
+                entry.target.classList.add('wo-revealed');
+              }, delay);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        elements.forEach(el => observer.observe(el));
+
+        // Fallback
+        setTimeout(() => {
+          elements.forEach(el => {
+            if (!el.classList.contains('wo-revealed')) {
+              el.classList.add('wo-revealed');
+            }
+          });
+        }, 3000);
+
+        // Hover effect on items
+        const items = section.querySelectorAll('.wo-item');
+        items.forEach(item => {
+          item.addEventListener('mousemove', (e) => {
+            const rect = item.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            item.style.setProperty('--mouse-x', `${x}px`);
+            item.style.setProperty('--mouse-y', `${y}px`);
+          });
+        });
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initWO);
+      } else {
+        initWO();
+      }
+    })();
+  </script>
+
+
+  <!-- ─────────────────────────────────────
+     BRAND ESSENCE SECTION
+───────────────────────────────────── -->
+  <section class="brand-essence" id="brand-essence">
+
+    <!-- Animated Background -->
+    <div class="be-bg">
+      <div class="be-bg__gradient"></div>
+      <div class="be-bg__grid"></div>
+
+      <!-- Floating shapes -->
+      <div class="be-shape be-shape--1"></div>
+      <div class="be-shape be-shape--2"></div>
+      <div class="be-shape be-shape--3"></div>
+
+      <!-- Glowing orbs -->
+      <div class="be-orb be-orb--orange"></div>
+      <div class="be-orb be-orb--blue"></div>
+    </div>
+
+    <!-- ══ LEFT SVG DECORATION ══ -->
+    <div class="be-side be-side--left" aria-hidden="true">
+      <svg viewBox="0 0 120 700" fill="none" xmlns="http://www.w3.org/2000/svg" class="be-side__svg">
+        <!-- Vertical spine -->
+        <line x1="60" y1="0" x2="60" y2="700" stroke="url(#beLeftSpine)" stroke-width="1.2" />
+
+        <!-- Horizontal tick marks -->
+        <line x1="45" y1="80" x2="75" y2="80" stroke="rgba(242,101,34,0.4)" stroke-width="1" />
+        <line x1="50" y1="160" x2="70" y2="160" stroke="rgba(59,130,246,0.35)" stroke-width="1" />
+        <line x1="45" y1="260" x2="75" y2="260" stroke="rgba(242,101,34,0.4)" stroke-width="1" />
+        <line x1="50" y1="360" x2="70" y2="360" stroke="rgba(59,130,246,0.35)" stroke-width="1" />
+        <line x1="45" y1="460" x2="75" y2="460" stroke="rgba(242,101,34,0.4)" stroke-width="1" />
+        <line x1="50" y1="560" x2="70" y2="560" stroke="rgba(59,130,246,0.35)" stroke-width="1" />
+        <line x1="45" y1="630" x2="75" y2="630" stroke="rgba(242,101,34,0.4)" stroke-width="1" />
+
+        <!-- Circuit node — top -->
+        <circle cx="60" cy="80" r="5" fill="none" stroke="rgba(242,101,34,0.7)" stroke-width="1.5">
+          <animate attributeName="r" values="5;9;5" dur="3s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="60" cy="80" r="3" fill="rgba(242,101,34,0.8)" />
+
+        <!-- Branch left from node 1 -->
+        <path d="M60,80 L30,80 L30,130" stroke="rgba(242,101,34,0.3)" stroke-width="1" fill="none"
+          stroke-dasharray="4,3">
+          <animate attributeName="stroke-dashoffset" values="0;-28" dur="2s" repeatCount="indefinite" />
+        </path>
+        <circle cx="30" cy="130" r="3" fill="none" stroke="rgba(242,101,34,0.5)" stroke-width="1.2" />
+
+        <!-- Circuit node — mid top -->
+        <circle cx="60" cy="260" r="5" fill="none" stroke="rgba(59,130,246,0.7)" stroke-width="1.5">
+          <animate attributeName="r" values="5;9;5" dur="4s" begin="1s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.3;1" dur="4s" begin="1s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="60" cy="260" r="3" fill="rgba(59,130,246,0.8)" />
+
+        <!-- Branch right from node 2 -->
+        <path d="M60,260 L90,260 L90,310" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="none"
+          stroke-dasharray="4,3">
+          <animate attributeName="stroke-dashoffset" values="0;-28" dur="2.5s" repeatCount="indefinite" />
+        </path>
+        <circle cx="90" cy="310" r="3" fill="none" stroke="rgba(59,130,246,0.5)" stroke-width="1.2" />
+
+        <!-- Rotating hexagon at center -->
+        <g transform="translate(60,460)">
+          <polygon points="0,-20 17,-10 17,10 0,20 -17,10 -17,-10" fill="none" stroke="rgba(242,101,34,0.35)"
+            stroke-width="1.2">
+            <animateTransform attributeName="transform" type="rotate" values="0;360" dur="14s"
+              repeatCount="indefinite" />
+          </polygon>
+          <polygon points="0,-12 10,-6 10,6 0,12 -10,6 -10,-6" fill="none" stroke="rgba(242,101,34,0.2)"
+            stroke-width="1">
+            <animateTransform attributeName="transform" type="rotate" values="360;0" dur="9s"
+              repeatCount="indefinite" />
+          </polygon>
+          <circle cx="0" cy="0" r="3" fill="rgba(242,101,34,0.6)">
+            <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+          </circle>
+        </g>
+
+        <!-- Circuit node — bottom -->
+        <circle cx="60" cy="630" r="5" fill="none" stroke="rgba(242,101,34,0.6)" stroke-width="1.5">
+          <animate attributeName="r" values="5;9;5" dur="3.5s" begin="0.8s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.3;1" dur="3.5s" begin="0.8s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="60" cy="630" r="3" fill="rgba(242,101,34,0.8)" />
+
+        <!-- Scanning dot travelling spine -->
+        <circle cx="60" cy="0" r="3.5" fill="rgba(242,101,34,0.9)" filter="url(#beScanGlow)">
+          <animate attributeName="cy" values="0;700;0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+          <animate attributeName="opacity" values="0;1;1;1;0" dur="6s" repeatCount="indefinite" />
+        </circle>
+
+        <!-- Small orbit ring top-left -->
+        <g transform="translate(22,200)">
+          <circle cx="0" cy="0" r="14" fill="none" stroke="rgba(59,130,246,0.25)" stroke-width="1"
+            stroke-dasharray="3,4" />
+          <circle cx="0" cy="-14" r="3" fill="rgba(59,130,246,0.6)">
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" dur="5s"
+              repeatCount="indefinite" />
+          </circle>
+        </g>
+
+        <!-- Small diamond -->
+        <g transform="translate(95,540)">
+          <rect x="-8" y="-8" width="16" height="16" rx="2" fill="none" stroke="rgba(242,101,34,0.4)" stroke-width="1.2"
+            transform="rotate(45)">
+            <animateTransform attributeName="transform" type="rotate" values="45;405" dur="10s"
+              repeatCount="indefinite" />
+          </rect>
+        </g>
+
+        <defs>
+          <linearGradient id="beLeftSpine" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(59,130,246,0)" />
+            <stop offset="20%" stop-color="rgba(59,130,246,0.4)" />
+            <stop offset="50%" stop-color="rgba(242,101,34,0.5)" />
+            <stop offset="80%" stop-color="rgba(59,130,246,0.4)" />
+            <stop offset="100%" stop-color="rgba(59,130,246,0)" />
+          </linearGradient>
+          <filter id="beScanGlow">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- ══ RIGHT SVG DECORATION ══ -->
+    <div class="be-side be-side--right" aria-hidden="true">
+      <svg viewBox="0 0 120 700" fill="none" xmlns="http://www.w3.org/2000/svg" class="be-side__svg">
+        <!-- Vertical spine -->
+        <line x1="60" y1="0" x2="60" y2="700" stroke="url(#beRightSpine)" stroke-width="1.2" />
+
+        <!-- Tick marks -->
+        <line x1="45" y1="100" x2="75" y2="100" stroke="rgba(59,130,246,0.4)" stroke-width="1" />
+        <line x1="50" y1="200" x2="70" y2="200" stroke="rgba(242,101,34,0.35)" stroke-width="1" />
+        <line x1="45" y1="320" x2="75" y2="320" stroke="rgba(59,130,246,0.4)" stroke-width="1" />
+        <line x1="50" y1="430" x2="70" y2="430" stroke="rgba(242,101,34,0.35)" stroke-width="1" />
+        <line x1="45" y1="540" x2="75" y2="540" stroke="rgba(59,130,246,0.4)" stroke-width="1" />
+        <line x1="50" y1="640" x2="70" y2="640" stroke="rgba(242,101,34,0.35)" stroke-width="1" />
+
+        <!-- Pulse node top -->
+        <circle cx="60" cy="100" r="5" fill="none" stroke="rgba(59,130,246,0.7)" stroke-width="1.5">
+          <animate attributeName="r" values="5;10;5" dur="3.2s" begin="0.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.2;1" dur="3.2s" begin="0.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="60" cy="100" r="3" fill="rgba(59,130,246,0.85)" />
+
+        <!-- Branch right from node 1 -->
+        <path d="M60,100 L90,100 L90,148" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="none"
+          stroke-dasharray="4,3">
+          <animate attributeName="stroke-dashoffset" values="0;-28" dur="2.2s" repeatCount="indefinite" />
+        </path>
+        <circle cx="90" cy="148" r="3" fill="none" stroke="rgba(59,130,246,0.5)" stroke-width="1.2" />
+
+        <!-- Pulse node mid -->
+        <circle cx="60" cy="320" r="5" fill="none" stroke="rgba(242,101,34,0.7)" stroke-width="1.5">
+          <animate attributeName="r" values="5;10;5" dur="4.5s" begin="1.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.2;1" dur="4.5s" begin="1.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="60" cy="320" r="3" fill="rgba(242,101,34,0.85)" />
+
+        <!-- Branch left from node 2 -->
+        <path d="M60,320 L30,320 L30,370" stroke="rgba(242,101,34,0.3)" stroke-width="1" fill="none"
+          stroke-dasharray="4,3">
+          <animate attributeName="stroke-dashoffset" values="0;-28" dur="2.8s" repeatCount="indefinite" />
+        </path>
+        <circle cx="30" cy="370" r="3" fill="none" stroke="rgba(242,101,34,0.5)" stroke-width="1.2" />
+
+        <!-- Rotating square at mid-bottom -->
+        <g transform="translate(60,500)">
+          <rect x="-18" y="-18" width="36" height="36" rx="4" fill="none" stroke="rgba(59,130,246,0.3)"
+            stroke-width="1.2">
+            <animateTransform attributeName="transform" type="rotate" values="0;360" dur="12s"
+              repeatCount="indefinite" />
+          </rect>
+          <rect x="-10" y="-10" width="20" height="20" rx="3" fill="none" stroke="rgba(59,130,246,0.18)"
+            stroke-width="1">
+            <animateTransform attributeName="transform" type="rotate" values="360;0" dur="8s"
+              repeatCount="indefinite" />
+          </rect>
+          <circle cx="0" cy="0" r="3" fill="rgba(59,130,246,0.7)">
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite" />
+          </circle>
+        </g>
+
+        <!-- Pulse node bottom -->
+        <circle cx="60" cy="640" r="5" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="1.5">
+          <animate attributeName="r" values="5;10;5" dur="3.8s" begin="1s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.2;1" dur="3.8s" begin="1s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="60" cy="640" r="3" fill="rgba(59,130,246,0.85)" />
+
+        <!-- Scanning dot travelling spine (opposite direction) -->
+        <circle cx="60" cy="700" r="3.5" fill="rgba(59,130,246,0.9)" filter="url(#beScanGlow2)">
+          <animate attributeName="cy" values="700;0;700" dur="7s" repeatCount="indefinite" calcMode="linear" />
+          <animate attributeName="opacity" values="0;1;1;1;0" dur="7s" repeatCount="indefinite" />
+        </circle>
+
+        <!-- Orbit ring bottom-right -->
+        <g transform="translate(96,220)">
+          <circle cx="0" cy="0" r="16" fill="none" stroke="rgba(242,101,34,0.22)" stroke-width="1"
+            stroke-dasharray="3,4" />
+          <circle cx="0" cy="-16" r="3" fill="rgba(242,101,34,0.6)">
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;-360 0 0" dur="6s"
+              repeatCount="indefinite" />
+          </circle>
+        </g>
+
+        <!-- Small diamond left side -->
+        <g transform="translate(24,440)">
+          <rect x="-7" y="-7" width="14" height="14" rx="1" fill="none" stroke="rgba(59,130,246,0.4)" stroke-width="1.2"
+            transform="rotate(45)">
+            <animateTransform attributeName="transform" type="rotate" values="45;405" dur="11s"
+              repeatCount="indefinite" />
+          </rect>
+        </g>
+
+        <!-- Cross / plus marks -->
+        <line x1="95" y1="175" x2="95" y2="185" stroke="rgba(242,101,34,0.5)" stroke-width="1.5" />
+        <line x1="90" y1="180" x2="100" y2="180" stroke="rgba(242,101,34,0.5)" stroke-width="1.5" />
+        <line x1="25" y1="570" x2="25" y2="580" stroke="rgba(59,130,246,0.5)" stroke-width="1.5" />
+        <line x1="20" y1="575" x2="30" y2="575" stroke="rgba(59,130,246,0.5)" stroke-width="1.5" />
+
+        <defs>
+          <linearGradient id="beRightSpine" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(242,101,34,0)" />
+            <stop offset="20%" stop-color="rgba(242,101,34,0.4)" />
+            <stop offset="50%" stop-color="rgba(59,130,246,0.5)" />
+            <stop offset="80%" stop-color="rgba(242,101,34,0.4)" />
+            <stop offset="100%" stop-color="rgba(242,101,34,0)" />
+          </linearGradient>
+          <filter id="beScanGlow2">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="be-container">
+
+      <!-- ═══ BRAND ESSENCE BLOCK ═══ -->
+      <div class="be-block" data-be-reveal="fade-up">
+
+        <div class="be-header">
+          <span class="be-header__line"></span>
+          <h3 class="be-header__title">BRAND ESSENCE</h3>
+        </div>
+
+        <div class="be-cards">
+
+          <!-- Who We Are -->
+          <div class="be-card" data-be-reveal="fade-up" data-be-delay="100">
+            <div class="be-card__icon be-card__icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="be-card__content">
+              <h4>Who We Are</h4>
+              <p>A technology-driven company building innovative SaaS solutions for the future.</p>
+            </div>
+          </div>
+
+          <!-- What We Do -->
+          <div class="be-card" data-be-reveal="fade-up" data-be-delay="200">
+            <div class="be-card__icon be-card__icon--orange">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <div class="be-card__content">
+              <h4>What We Do</h4>
+              <p>We build products that simplify work, connect teams and accelerate growth.</p>
+            </div>
+          </div>
+
+          <!-- What We Believe -->
+          <div class="be-card" data-be-reveal="fade-up" data-be-delay="300">
+            <div class="be-card__icon be-card__icon--green">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <div class="be-card__content">
+              <h4>What We Believe</h4>
+              <p>Technology should empower people, create opportunities and drive positive change.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="be-divider" data-be-reveal="fade-up" data-be-delay="400"></div>
+
+      <!-- ═══ BRAND PROMISE BLOCK ═══ -->
+      <div class="be-block" data-be-reveal="fade-up" data-be-delay="500">
+
+        <div class="be-header">
+          <span class="be-header__line"></span>
+          <h3 class="be-header__title">BRAND PROMISE</h3>
+        </div>
+
+        <div class="be-promise">
+          <div class="be-promise__bg"></div>
+          <div class="be-promise__content">
+            <p class="be-promise__line">
+              <span class="be-promise__static">Manage</span>
+              <span class="be-promise__accent">Work.</span>
+            </p>
+            <p class="be-promise__line">
+              <span class="be-promise__static">Connect</span>
+              <span class="be-promise__accent">Teams.</span>
+            </p>
+            <p class="be-promise__line">
+              <span class="be-promise__static">Grow</span>
+              <span class="be-promise__accent">Businesses.</span>
+            </p>
+          </div>
+          <div class="be-promise__corner be-promise__corner--tl"></div>
+          <div class="be-promise__corner be-promise__corner--br"></div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="be-divider" data-be-reveal="fade-up" data-be-delay="600"></div>
+
+      <!-- ═══ BRAND PERSONALITY BLOCK ═══ -->
+      <div class="be-block" data-be-reveal="fade-up" data-be-delay="700">
+
+        <div class="be-header">
+          <span class="be-header__line"></span>
+          <h3 class="be-header__title">BRAND PERSONALITY</h3>
+        </div>
+
+        <div class="be-personality">
+          <div class="be-tag" data-be-reveal="zoom-in" data-be-delay="800">Innovative</div>
+          <div class="be-tag" data-be-reveal="zoom-in" data-be-delay="850">Reliable</div>
+          <div class="be-tag" data-be-reveal="zoom-in" data-be-delay="900">Collaborative</div>
+          <div class="be-tag" data-be-reveal="zoom-in" data-be-delay="950">Human-Centric</div>
+          <div class="be-tag" data-be-reveal="zoom-in" data-be-delay="1000">Dynamic</div>
+          <div class="be-tag" data-be-reveal="zoom-in" data-be-delay="1050">Trustworthy</div>
+        </div>
+
+        <p class="be-personality__caption" data-be-reveal="fade-up" data-be-delay="1100">
+          Professional yet approachable. Smart yet simple.
+        </p>
+      </div>
+
+      <!-- Divider -->
+      <div class="be-divider" data-be-reveal="fade-up" data-be-delay="1200"></div>
+
+      <!-- ═══ TOGETHER WE BUILD MORE BLOCK ═══ -->
+      <div class="be-block be-block--final" data-be-reveal="fade-up" data-be-delay="1300">
+
+        <div class="be-header">
+          <span class="be-header__line"></span>
+          <h3 class="be-header__title">TOGETHER, WE BUILD MORE.</h3>
+        </div>
+
+        <p class="be-final__text">
+          Oppty SaaS Suite is more than a set of products — it's a complete ecosystem built to transform the way
+          businesses work and grow.
+        </p>
+
+        <div class="be-final__tagline">
+          <span class="be-final__static">One Suite.</span>
+          <span class="be-final__accent">Infinite</span>
+          <span class="be-final__static">Possibilities.</span>
+          <span class="be-final__dot"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────
+     BRAND ESSENCE - JAVASCRIPT
+───────────────────────────────────── -->
+  <script>
+    (function () {
+      'use strict';
+
+      const initBE = () => {
+        const section = document.querySelector('.brand-essence');
+        if (!section) return;
+
+        /* ── Fade in side SVG panels when section is visible ── */
+        const sides = section.querySelectorAll('.be-side');
+        const sideObs = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              sides.forEach((s, i) => {
+                setTimeout(() => s.classList.add('is-visible'), i * 200);
+              });
+              sideObs.disconnect();
+            }
+          });
+        }, { threshold: 0.15 });
+        sideObs.observe(section);
+
+        const elements = section.querySelectorAll('[data-be-reveal]');
+        if (elements.length === 0) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const delay = parseInt(entry.target.dataset.beDelay || 0);
+              setTimeout(() => {
+                entry.target.classList.add('be-revealed');
+              }, delay);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        elements.forEach(el => observer.observe(el));
+
+        // Fallback
+        setTimeout(() => {
+          elements.forEach(el => {
+            if (!el.classList.contains('be-revealed')) {
+              el.classList.add('be-revealed');
+            }
+          });
+        }, 3500);
+
+        // Tag hover ripple effect
+        const tags = section.querySelectorAll('.be-tag');
+        tags.forEach(tag => {
+          tag.addEventListener('mousemove', (e) => {
+            const rect = tag.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            tag.style.setProperty('--x', `${x}px`);
+            tag.style.setProperty('--y', `${y}px`);
+          });
+        });
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initBE);
+      } else {
+        initBE();
+      }
+    })();
+  </script>
+
+
+
+  <!-- ── TESTIMONIALS SECTION ── -->
+  <section class="testimonials" id="testimonials">
+
+    <div class="testi-header" data-reveal="blur-in">
+      <p class="testi-eyebrow">Testimonials</p>
+      <h2 class="testi-heading">OUR CLIENTS <span>REVIEWS</span></h2>
+    </div>
+
+    <!-- Infinite scroll track -->
+    <div class="testi-marquee-wrap">
+      <div class="testi-marquee">
+
+        <!-- Set 1 -->
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Vikram Singh, <span>Operations Manager</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty's BPO services streamlined our operations, letting us focus on core growth
+            initiatives with confidence.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Anjali Sharma, <span>Marketing Lead</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty's platform increased our online sales by 45% in just three months. The results
+            speak for themselves!</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Rohan Patel, <span>Tech Entrepreneur</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Their AI-driven solutions optimized our workflows end-to-end, saving us significant time
+            and operational costs.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Priya Nair, <span>HR Director</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty Learn transformed how we upskill our teams. The curriculum, delivery, and support
+            are truly outstanding.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Aditya Kumar, <span>CTO</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Reliable IT infrastructure support and deep cloud expertise. We've had zero downtime
+            since we partnered with Oppty.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Meera Iyer, <span>CEO, FinTech Startup</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty's ITES team handled our back-office operations flawlessly. Highly professional,
+            responsive, and detail-oriented.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Sanjay Mehta, <span>Director of Sales</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">The customer support BPO team exceeded every KPI we set. Our CSAT scores jumped 30% in a
+            single quarter!</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Deepa Rao, <span>L&amp;D Manager</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty Learn's certification programs are world-class. Our team completed 200+ hours of
+            targeted training last quarter.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Kiran Reddy, <span>VP Engineering</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Seamless cloud migration with absolutely no service disruption. Oppty's engineers are
+            among the best I've ever worked with.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Suresh Babu, <span>COO, Logistics Firm</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Partnering with Oppty for IT services was the best decision this year. Our systems are
+            faster, safer, and more scalable than ever.</p>
+        </div>
+
+        <!-- Set 2 — duplicate for seamless loop -->
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Vikram Singh, <span>Operations Manager</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty's BPO services streamlined our operations, letting us focus on core growth
+            initiatives with confidence.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Anjali Sharma, <span>Marketing Lead</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty's platform increased our online sales by 45% in just three months. The results
+            speak for themselves!</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Rohan Patel, <span>Tech Entrepreneur</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Their AI-driven solutions optimized our workflows end-to-end, saving us significant time
+            and operational costs.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Priya Nair, <span>HR Director</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty Learn transformed how we upskill our teams. The curriculum, delivery, and support
+            are truly outstanding.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Aditya Kumar, <span>CTO</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Reliable IT infrastructure support and deep cloud expertise. We've had zero downtime
+            since we partnered with Oppty.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Meera Iyer, <span>CEO, FinTech Startup</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty's ITES team handled our back-office operations flawlessly. Highly professional,
+            responsive, and detail-oriented.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Sanjay Mehta, <span>Director of Sales</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">The customer support BPO team exceeded every KPI we set. Our CSAT scores jumped 30% in a
+            single quarter!</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Deepa Rao, <span>L&amp;D Manager</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Oppty Learn's certification programs are world-class. Our team completed 200+ hours of
+            targeted training last quarter.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Kiran Reddy, <span>VP Engineering</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Seamless cloud migration with absolutely no service disruption. Oppty's engineers are
+            among the best I've ever worked with.</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-name">Suresh Babu, <span>COO, Logistics Firm</span></p>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Partnering with Oppty for IT services was the best decision this year. Our systems are
+            faster, safer, and more scalable than ever.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── OUR CLIENTS SECTION ── -->
+  <section class="clients" id="clients">
+
+    <div class="clients-header" data-reveal="blur-in">
+      <p class="clients-eyebrow">Trusted By</p>
+      <h2 class="clients-heading">OUR CLIENTS</h2>
+      <div class="clients-heading-line"></div>
+      <p class="clients-sub">Necessitiatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+
+    <div class="clients-grid-wrap">
+      <div class="clients-grid">
+
+        <!-- Row 1 -->
+        <div class="client-cell" data-reveal="zoom-in" data-delay="100">
+          <img src="./ASSETS/images/client-1.png" alt="MYOB" onerror="this.src='https://logo.clearbit.com/myob.com'" />
+        </div>
+        <div class="client-cell" data-reveal="zoom-in" data-delay="200">
+          <img src="./ASSETS/images/client-2.png" alt="Belimo"
+            onerror="this.src='https://logo.clearbit.com/belimo.com'" />
+        </div>
+        <div class="client-cell" data-reveal="zoom-in" data-delay="300">
+          <img src="./ASSETS/images/client-3.png" alt="LifeGroups"
+            onerror="this.src='https://logo.clearbit.com/lifegroups.com'" />
+        </div>
+        <div class="client-cell" data-reveal="zoom-in" data-delay="400">
+          <img src="./ASSETS/images/client-4.png" alt="Grabyo"
+            onerror="this.src='https://logo.clearbit.com/grabyo.com'" />
+        </div>
+
+        <!-- Row 2 -->
+        <div class="client-cell" data-reveal="zoom-in" data-delay="200">
+          <img src="./ASSETS/images/client-5.png" alt="Citrus"
+            onerror="this.src='https://logo.clearbit.com/citrusad.com'" />
+        </div>
+        <div class="client-cell" data-reveal="zoom-in" data-delay="300">
+          <img src="./ASSETS/images/client-6.png" alt="Trustly"
+            onerror="this.src='https://logo.clearbit.com/trustly.com'" />
+        </div>
+        <div class="client-cell" data-reveal="zoom-in" data-delay="400">
+          <img src="./ASSETS/images/client-7.png" alt="Oldendorff"
+            onerror="this.src='https://logo.clearbit.com/oldendorff.com'" />
+        </div>
+        <div class="client-cell" data-reveal="zoom-in" data-delay="500">
+          <img src="./ASSETS/images/client-8.png" alt="Lilly"
+            onerror="this.src='https://logo.clearbit.com/lilly.com'" />
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+
+    <!-- Background SVG -->
+    <div class="footer-bg" aria-hidden="true">
+      <svg class="footer-bg-svg" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMid slice"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="fo1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f26522" stop-opacity="0.22" />
+            <stop offset="100%" stop-color="#f26522" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient id="fo2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.16" />
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient id="fo3" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#a855f7" stop-opacity="0.14" />
+            <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+          </radialGradient>
+          <pattern id="fdots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="1.4" cy="1.4" r="1.1" fill="rgba(255,255,255,0.05)" />
+          </pattern>
+        </defs>
+        <rect width="1440" height="560" fill="url(#fdots)" />
+        <ellipse class="fo fo--1" cx="100" cy="100" rx="340" ry="320" fill="url(#fo1)" />
+        <ellipse class="fo fo--2" cx="1360" cy="460" rx="360" ry="340" fill="url(#fo2)" />
+        <ellipse class="fo fo--3" cx="720" cy="280" rx="260" ry="240" fill="url(#fo3)" />
+        <circle class="fr fr--a" cx="180" cy="460" r="130" fill="none" stroke="rgba(242,101,34,0.12)" stroke-width="1"
+          stroke-dasharray="11 7" />
+        <circle class="fr fr--b" cx="1280" cy="80" r="95" fill="none" stroke="rgba(168,85,247,0.12)" stroke-width="1"
+          stroke-dasharray="9 6" />
+        <circle class="fr fr--c" cx="720" cy="280" r="68" fill="none" stroke="rgba(59,130,246,0.09)" stroke-width="1"
+          stroke-dasharray="7 5" />
+        <line x1="0" y1="560" x2="480" y2="0" stroke="rgba(242,101,34,0.05)" stroke-width="1" />
+        <line x1="480" y1="560" x2="960" y2="0" stroke="rgba(59,130,246,0.04)" stroke-width="1" />
+        <line x1="960" y1="560" x2="1440" y2="0" stroke="rgba(168,85,247,0.04)" stroke-width="1" />
+      </svg>
+    </div>
+
+    <!-- Top gradient line -->
+    <div class="footer-topline"></div>
+
+    <!-- Main grid -->
+    <div class="footer-main">
+
+      <!-- Brand -->
+      <div class="footer-brand" data-reveal="fade-up" data-delay="100">
+        <a href="#" class="footer-logo-wrap">
+          <div class="footer-logo-icon">
+            <img src="./ASSETS/images/oppty.png" alt="Oppty Logo" />
+          </div>
+        </a>
+        <p class="footer-tagline">Future-Ready Technology.<br />Powered by People.</p>
+        <div class="footer-contact-list">
+          <p class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                fill="currentColor" />
+            </svg>
+            Hyderabad, Telangana, India
+          </p>
+          <p class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57-.11.34-.03.74-.24 1.01L6.6 10.8z"
+                fill="currentColor" />
+            </svg>
+            <a href="tel:+919491209900">+91 9491209900</a>
+          </p>
+          <p class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                fill="currentColor" />
+            </svg>
+            <a href="mailto:info@oppty.in">info@oppty.in</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col" data-reveal="fade-up" data-delay="180">
+        <h4 class="footer-col-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="./HTML/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Services -->
+      <div class="footer-col" data-reveal="fade-up" data-delay="280">
+        <h4 class="footer-col-heading">Our Services</h4>
+        <ul class="footer-nav">
+          <li><a href="./HTML/it-services.html">IT Services</a></li>
+          <li><a href="./HTML/ites-services.html">ITES Services</a></li>
+          <li><a href="./HTML/bpo-services.html">BPO Services</a></li>
+          <li><a href="./HTML/oppty-learn.html">Oppty Learn</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col" data-reveal="fade-up" data-delay="360">
+        <h4 class="footer-col-heading">Company</h4>
+        <ul class="footer-nav">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Mid divider -->
+    <div class="footer-mid-divider"></div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/opptytech/" target="_blank" aria-label="LinkedIn" class="fsoc">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/opptytech" target="_blank" aria-label="Instagram" class="fsoc">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+        <a href="https://youtube.com/@mroppty" target="_blank" aria-label="YouTube" class="fsoc">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; Copyright 2025 <strong>Oppty TechHub</strong>. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Terms of Service</a>
+        <span class="fl-sep">&middot;</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <!-- Ghost watermark — sits below bottom bar -->
+    <div class="footer-watermark" aria-hidden="true">OPPTY</div>
+
+  </footer>
+
+  <script>
+    // ── Card image sliders (synchronized — all cards change together) ──
+    (function () {
+      var allSliders = document.querySelectorAll('.hc__slider');
+      var sliderStates = [];
+
+      // Build dots for each slider and init state
+      allSliders.forEach(function (slider) {
+        var slides = slider.querySelectorAll('.hc__slide');
+        var dotsWrap = slider.querySelector('.hc__slide-dots');
+        var state = { slides: slides, dotsWrap: dotsWrap, current: 0 };
+
+        slides.forEach(function (_, i) {
+          var dot = document.createElement('button');
+          dot.className = 'hc__dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+          dot.addEventListener('click', function () { goToSlide(sliderStates.indexOf(state), i); });
+          dotsWrap.appendChild(dot);
+        });
+
+        sliderStates.push(state);
+      });
+
+      function goToSlide(sliderIdx, idx) {
+        var s = sliderStates[sliderIdx];
+        var slides = s.slides;
+        var dotsWrap = s.dotsWrap;
+        var current = s.current;
+
+        slides[current].classList.remove('active');
+        slides[current].classList.add('leaving');
+        dotsWrap.querySelectorAll('.hc__dot')[current].classList.remove('active');
+
+        var prev = current;
+        s.current = (idx + slides.length) % slides.length;
+        slides[s.current].classList.add('active');
+        dotsWrap.querySelectorAll('.hc__dot')[s.current].classList.add('active');
+
+        setTimeout(function () {
+          slides[prev].classList.remove('leaving');
+        }, 750);
+      }
+
+      function advanceAll() {
+        sliderStates.forEach(function (s, i) {
+          goToSlide(i, s.current + 1);
+        });
+      }
+
+      // Synchronized auto-advance — same interval for all
+      var SHARED_INTERVAL = 3500;
+      var timer = setInterval(advanceAll, SHARED_INTERVAL);
+
+      // Pause on hover (pause all when any is hovered)
+      allSliders.forEach(function (slider) {
+        slider.addEventListener('mouseenter', function () { clearInterval(timer); });
+        slider.addEventListener('mouseleave', function () {
+          timer = setInterval(advanceAll, SHARED_INTERVAL);
+        });
+      });
+    })();
+
+    // ── Card text sliders (synchronized — all cards change together, separate from images) ──
+    (function () {
+      var allTextSliders = document.querySelectorAll('.hc__text-slider');
+      var textStates = [];
+
+      allTextSliders.forEach(function (textSlider) {
+        var slides = textSlider.querySelectorAll('.hc__text-slide');
+        var state = { slides: slides, current: 0 };
+        textStates.push(state);
+      });
+
+      function goToTextSlide(sliderIdx, idx) {
+        var s = textStates[sliderIdx];
+        var slides = s.slides;
+        var current = s.current;
+
+        slides[current].classList.remove('active');
+        slides[current].classList.add('leaving');
+
+        var prev = current;
+        s.current = (idx + slides.length) % slides.length;
+        slides[s.current].classList.add('active');
+
+        setTimeout(function () {
+          slides[prev].classList.remove('leaving');
+        }, 550);
+      }
+
+      function advanceAllText() {
+        textStates.forEach(function (s, i) {
+          goToTextSlide(i, s.current + 1);
+        });
+      }
+
+      var TEXT_INTERVAL = 5000;
+      var textTimer = setInterval(advanceAllText, TEXT_INTERVAL);
+
+      // Pause on card hover (pause all text sliders when any card is hovered)
+      allTextSliders.forEach(function (textSlider) {
+        var card = textSlider.closest('.hc');
+        if (card) {
+          card.addEventListener('mouseenter', function () { clearInterval(textTimer); });
+          card.addEventListener('mouseleave', function () {
+            textTimer = setInterval(advanceAllText, TEXT_INTERVAL);
+          });
+        }
+      });
+    })();
+
+    // ── 3D COVERFLOW CAROUSEL ──
+    (function () {
+      var cards = Array.from(document.querySelectorAll('#cfStage .cf-card'));
+      var dots = Array.from(document.querySelectorAll('#cfDots .cf-dot'));
+      var prevBtn = document.getElementById('cfPrev');
+      var nextBtn = document.getElementById('cfNext');
+      var stage = document.getElementById('cfStage');
+      if (!stage || !cards.length) return;
+
+      var total = cards.length;
+      var cur = 0;
+      var autoTimer = null;
+      var imgTimers = [];         // store image carousel timers for cleanup
+      var AUTO_MS = 8000;       // 8 sec per card slide
+
+      /* Per-card image intervals */
+      var IMG_INTERVALS = [2000, 2000, 2000, 2000]; // 2 sec per image
+
+      var POS = ['is-active', 'is-next', 'is-far', 'is-prev'];
+
+      function applyPositions(active) {
+        cards.forEach(function (c, i) {
+          c.classList.remove('is-active', 'is-prev', 'is-next', 'is-far');
+          var off = ((i - active) % total + total) % total;
+          c.classList.add(POS[off]);
+        });
+      }
+
+      function updateDots(active) {
+        /* Re-query every time in case DOM changed */
+        var freshDots = Array.from(document.querySelectorAll('#cfDots .cf-dot'));
+        freshDots.forEach(function (d, i) {
+          d.classList.toggle('cf-dot--active', i === active);
+        });
+      }
+
+      /* ── Core navigate — immediate transition, no blocking ── */
+      function goTo(idx) {
+        idx = ((idx % total) + total) % total;
+        if (idx === cur) return;
+        cur = idx;
+        applyPositions(cur);
+        updateDots(cur);
+      }
+
+      /* User interaction — temporarily pause then resume */
+      function userTo(idx) {
+        idx = ((idx % total) + total) % total;
+        goTo(idx);
+        restartAuto();
+      }
+
+      /* ── Arrows ── */
+      if (prevBtn) prevBtn.addEventListener('click', function () {
+        userTo(((cur - 1) + total) % total);
+      });
+      if (nextBtn) nextBtn.addEventListener('click', function () {
+        userTo((cur + 1) % total);
+      });
+
+      /* ── Dot clicks ── */
+      dots.forEach(function (d, i) {
+        d.addEventListener('click', function () { userTo(i); });
+      });
+
+      /* ── Side-card click ── */
+      cards.forEach(function (c, i) {
+        c.addEventListener('click', function (e) {
+          if (c.classList.contains('is-active')) return;
+          e.preventDefault();
+          userTo(i);
+        });
+      });
+
+      /* ── Touch/swipe ── */
+      var tx = 0, ty = 0;
+      stage.addEventListener('touchstart', function (e) {
+        tx = e.touches[0].clientX;
+        ty = e.touches[0].clientY;
+      }, { passive: true });
+      stage.addEventListener('touchend', function (e) {
+        var dx = tx - e.changedTouches[0].clientX;
+        var dy = Math.abs(ty - e.changedTouches[0].clientY);
+        if (Math.abs(dx) > 40 && dy < 60)
+          userTo(dx > 0 ? (cur + 1) % total : ((cur - 1) + total) % total);
+      }, { passive: true });
+
+      /* ── Keyboard ── */
+      document.addEventListener('keydown', function (e) {
+        var r = stage.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > window.innerHeight) return;
+        if (e.key === 'ArrowLeft') { e.preventDefault(); userTo(((cur - 1) + total) % total); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); userTo((cur + 1) % total); }
+      });
+
+      /* ── Continuous Auto-play — always runs, never blocked, no pause on hover ── */
+      function restartAuto() {
+        clearInterval(autoTimer);
+        autoTimer = setInterval(function () {
+          var next = (cur + 1) % total;
+          goTo(next);
+        }, AUTO_MS);
+      }
+
+      /* ── Inner image carousels with per-card intervals ── */
+      function initImgCarousels() {
+        // Clear any existing timers
+        imgTimers.forEach(function (timer) { clearInterval(timer); });
+        imgTimers = [];
+
+        cards.forEach(function (card, cardIdx) {
+          var imgs = Array.from(card.querySelectorAll('.cf-ss'));
+          var dotsW = card.querySelector('.cf-card__img-dots');
+          if (!imgs.length) return;
+
+          // Use an object to maintain state for this card
+          var cardState = { ci: 0 };
+
+          /* build dots */
+          if (dotsW) {
+            dotsW.innerHTML = ''; // Clear existing dots
+            imgs.forEach(function (_, k) {
+              var d = document.createElement('button');
+              d.className = 'cf-idot' + (k === 0 ? ' cf-idot--active' : '');
+              d.addEventListener('click', function (e) {
+                e.stopPropagation();
+                imgGoTo(imgs, dotsW, cardState.ci, k);
+                cardState.ci = k;
+              });
+              dotsW.appendChild(d);
+            });
+          }
+
+          /* auto-advance each card's images at its own interval */
+          var ms = IMG_INTERVALS[cardIdx] || 4000;
+          var timer = setInterval(function () {
+            var nxt = (cardState.ci + 1) % imgs.length;
+            if (dotsW) imgGoTo(imgs, dotsW, cardState.ci, nxt);
+            else {
+              imgs[cardState.ci].classList.remove('cf-ss--active');
+              imgs[nxt].classList.add('cf-ss--active');
+            }
+            cardState.ci = nxt;
+          }, ms);
+          imgTimers.push(timer);
+        });
+      }
+
+      function imgGoTo(imgs, dotsW, from, to) {
+        imgs[from].classList.remove('cf-ss--active');
+        imgs[to].classList.add('cf-ss--active');
+        var ds = dotsW ? dotsW.querySelectorAll('.cf-idot') : [];
+        if (ds[from]) ds[from].classList.remove('cf-idot--active');
+        if (ds[to]) ds[to].classList.add('cf-idot--active');
+      }
+
+      /* ── Init ── */
+      requestAnimationFrame(function () {
+        applyPositions(0);
+        updateDots(0);
+        initImgCarousels();
+        restartAuto();
+      });
+
+      /* Cleanup on page unload */
+      window.addEventListener('beforeunload', function () {
+        clearInterval(autoTimer);
+        imgTimers.forEach(function (timer) { clearInterval(timer); });
+      });
+
+    })();
+
+    // ── Mobile menu ──
+    function toggleMenu() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+
+    // ── Mobile dropdown ──
+    function toggleMobileDropdown(btn) {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      btn.closest('.mobile-dropdown').classList.toggle('open');
+    }
+
+    // ── Desktop nav dropdown ──
+    function toggleNavDropdown(toggle) {
+      const dropdown = toggle.closest('.nav-dropdown');
+      const isOpen = dropdown.classList.contains('open');
+      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+      if (!isOpen) dropdown.classList.add('open');
+    }
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+      }
+    });
+
+    // ── Navbar scroll ──
+    window.addEventListener('scroll', () => {
+      const heroH = document.getElementById('hero').offsetHeight;
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+      document.getElementById('navbar').classList.toggle('past-hero', window.scrollY > heroH - 60);
+    });
+
+    // ── Advanced Scroll-Reveal Engine ──
+    (function () {
+      'use strict';
+
+      // Spring easing — overshoot then settle
+      function springEase(t) {
+        return 1 - Math.pow(2, -10 * t) * Math.cos(t * Math.PI * 2.5);
+      }
+      // Smooth ease-out cubic
+      function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+      // Animation presets per data-reveal value
+      var PRESETS = {
+        'fade-up':    { y: 60,   x: 0,    scale: 1,    blur: 8,  rot: 0  },
+        'fade-down':  { y: -50,  x: 0,    scale: 1,    blur: 6,  rot: 0  },
+        'fade-left':  { y: 0,    x: 80,   scale: 1,    blur: 8,  rot: 0  },
+        'fade-right': { y: 0,    x: -80,  scale: 1,    blur: 8,  rot: 0  },
+        'zoom-in':    { y: 20,   x: 0,    scale: 0.78, blur: 10, rot: 0  },
+        'zoom-up':    { y: 40,   x: 0,    scale: 0.85, blur: 8,  rot: 0  },
+        'flip-up':    { y: 40,   x: 0,    scale: 0.9,  blur: 4,  rot: 10 },
+        'blur-in':    { y: 24,   x: 0,    scale: 0.96, blur: 16, rot: 0  },
+        'slide-left': { y: 0,    x: 120,  scale: 0.95, blur: 6,  rot: 0  },
+        'slide-right':{ y: 0,    x: -120, scale: 0.95, blur: 6,  rot: 0  }
+      };
+
+      // Apply initial hidden state
+      function applyHidden(el) {
+        var type = el.dataset.reveal || 'fade-up';
+        var p = PRESETS[type] || PRESETS['fade-up'];
+        el.style.opacity = '0';
+        el.style.transform = [
+          p.y !== 0 ? 'translateY(' + p.y + 'px)' : '',
+          p.x !== 0 ? 'translateX(' + p.x + 'px)' : '',
+          p.scale !== 1 ? 'scale(' + p.scale + ')' : '',
+          p.rot !== 0 ? 'rotateX(' + p.rot + 'deg)' : ''
+        ].filter(Boolean).join(' ') || 'none';
+        el.style.filter = p.blur > 0 ? 'blur(' + p.blur + 'px)' : '';
+        el.style.willChange = 'opacity, transform, filter';
+      }
+
+      // Animate element in using rAF spring loop
+      function animateIn(el) {
+        var delay = parseInt(el.dataset.delay || el.dataset.apDelay || el.dataset.beDelay || el.dataset.vmDelay || 0);
+        var type = el.dataset.reveal || 'fade-up';
+        var p = PRESETS[type] || PRESETS['fade-up'];
+        var duration = parseInt(el.dataset.duration || 850);
+        var useSpring = (type === 'zoom-in' || type === 'flip-up');
+
+        setTimeout(function () {
+          var start = null;
+
+          function tick(ts) {
+            if (!start) start = ts;
+            var elapsed = ts - start;
+            var t = Math.min(elapsed / duration, 1);
+            var e = useSpring ? springEase(t) : easeOut(t);
+
+            var curY     = p.y * (1 - e);
+            var curX     = p.x * (1 - e);
+            var curScale = p.scale + (1 - p.scale) * e;
+            var curBlur  = p.blur * (1 - e);
+            var curRot   = p.rot * (1 - e);
+
+            el.style.opacity = String(e);
+            el.style.transform = [
+              curY !== 0 ? 'translateY(' + curY.toFixed(2) + 'px)' : '',
+              curX !== 0 ? 'translateX(' + curX.toFixed(2) + 'px)' : '',
+              curScale !== 1 ? 'scale(' + curScale.toFixed(4) + ')' : '',
+              curRot !== 0 ? 'rotateX(' + curRot.toFixed(2) + 'deg)' : ''
+            ].filter(Boolean).join(' ') || 'none';
+            if (curBlur > 0.05) {
+              el.style.filter = 'blur(' + curBlur.toFixed(2) + 'px)';
+            } else {
+              el.style.filter = '';
+            }
+
+            if (t < 1) {
+              requestAnimationFrame(tick);
+            } else {
+              // settled — clean up inline styles, add class
+              el.style.opacity = '';
+              el.style.transform = '';
+              el.style.filter = '';
+              el.style.willChange = '';
+              el.classList.add('is-revealed');
+            }
+          }
+
+          requestAnimationFrame(tick);
+        }, delay);
+      }
+
+      // Fallback — just reveal instantly after 3s
+      function fallbackReveal(el) {
+        setTimeout(function () {
+          el.style.opacity = '';
+          el.style.transform = '';
+          el.style.filter = '';
+          el.classList.add('is-revealed');
+        }, 3000);
+      }
+
+      // Collect ALL reveal elements across every system
+      var selectors = [
+        '[data-reveal]',
+        '[data-ap-reveal]',
+        '[data-be-reveal]',
+        '[data-vm-reveal]',
+        '[data-wo-reveal]'
+      ];
+
+      var allEls = [];
+      selectors.forEach(function (sel) {
+        document.querySelectorAll(sel).forEach(function (el) {
+          // Normalise to data-reveal
+          var type = el.dataset.reveal
+                  || el.dataset.apReveal
+                  || el.dataset.beReveal
+                  || el.dataset.vmReveal
+                  || el.dataset.woReveal
+                  || 'fade-up';
+          el.dataset.reveal = type;
+
+          // Normalise delay
+          var delay = el.dataset.delay
+                   || el.dataset.apDelay
+                   || el.dataset.beDelay
+                   || el.dataset.vmDelay
+                   || el.dataset.woDelay
+                   || '0';
+          el.dataset.delay = delay;
+
+          allEls.push(el);
+        });
+      });
+
+      if (!('IntersectionObserver' in window)) {
+        allEls.forEach(function (el) { el.classList.add('is-revealed'); });
+        return;
+      }
+
+      // Apply hidden state to all
+      allEls.forEach(applyHidden);
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting && !entry.target.classList.contains('is-revealed')) {
+            animateIn(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+      allEls.forEach(function (el) { observer.observe(el); });
+
+      // Add section-level entrance for sections without tagged children
+      var sections = document.querySelectorAll(
+        '.why-oppty, .testimonials, .clients, footer, .ticker-wrap'
+      );
+      sections.forEach(function (sec) {
+        if (sec.classList.contains('is-revealed')) return;
+        sec.style.opacity = '0';
+        sec.style.transform = 'translateY(40px)';
+        sec.style.transition = 'opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1)';
+        var secObs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            sec.style.opacity = '';
+            sec.style.transform = '';
+            sec.classList.add('is-revealed');
+            secObs.disconnect();
+          }
+        }, { threshold: 0.06 });
+        secObs.observe(sec);
+      });
+
+    })();
+
+    // ── Counter count-up ──
+    (function () {
+      const counters = document.querySelectorAll('.counter-num');
+      if (!counters.length) return;
+      function easeOutQuart(t) { return 1 - Math.pow(1 - t, 4); }
+      function animateCounter(el) {
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1800;
+        const start = performance.now();
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const value = Math.round(easeOutQuart(progress) * target);
+          const display = target >= 1000 ? (value / 1000).toFixed(value % 1000 === 0 ? 0 : 1) + 'K' : value;
+          el.textContent = display + (progress < 1 ? '' : suffix);
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = (target >= 1000 ? (target / 1000) + 'K' : target) + suffix;
+        }
+        requestAnimationFrame(tick);
+      }
+      const counterSection = document.querySelector('.about-counters');
+      if (!counterSection) return;
+      let fired = false;
+      const counterObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !fired) {
+          fired = true;
+          counters.forEach(el => animateCounter(el));
+          counterObserver.disconnect();
+        }
+      }, { threshold: 0.4 });
+      counterObserver.observe(counterSection);
+    })();
+
+    // ── Portfolio filter ──
+    (function () {
+      const btns = document.querySelectorAll('.pf-btn');
+      const items = document.querySelectorAll('.pg-item');
+      btns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          btns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.dataset.filter;
+          items.forEach(item => {
+            item.classList.toggle('pf-hidden', filter !== 'all' && item.dataset.cat !== filter);
+          });
+        });
+      });
+    })();
+
+    // ── Testimonials slider ──
+    (function () {
+      const track = document.getElementById('testiTrack');
+      const dotsWrap = document.getElementById('testiDots');
+      if (!track) return;
+      const cards = track.querySelectorAll('.testi-card');
+      const total = cards.length;
+      function visibleCount() {
+        if (window.innerWidth <= 560) return 1;
+        if (window.innerWidth <= 900) return 2;
+        return 3;
+      }
+      let cur = 0, autoTimer;
+      function buildDots() {
+        dotsWrap.innerHTML = '';
+        const pages = Math.ceil(total / visibleCount());
+        for (let i = 0; i < pages; i++) {
+          const b = document.createElement('button');
+          b.className = 'testi-dot' + (i === 0 ? ' active' : '');
+          b.addEventListener('click', () => goToTesti(i));
+          dotsWrap.appendChild(b);
+        }
+      }
+      function goToTesti(idx) {
+        const vc = visibleCount();
+        const pages = Math.ceil(total / vc);
+        cur = (idx + pages) % pages;
+        const cardW = cards[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${cur * (cardW + 24) * vc}px)`;
+        dotsWrap.querySelectorAll('.testi-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
+      }
+      track.addEventListener('mouseenter', () => clearInterval(autoTimer));
+      track.addEventListener('mouseleave', () => { autoTimer = setInterval(() => goToTesti(cur + 1), 4000); });
+      let touchX = 0;
+      track.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', e => {
+        const diff = touchX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goToTesti(diff > 0 ? cur + 1 : cur - 1);
+      });
+      buildDots();
+      autoTimer = setInterval(() => goToTesti(cur + 1), 4000);
+      window.addEventListener('resize', () => { buildDots(); goToTesti(0); });
+    })();
+  </script>
+
+  <script>
+    /* ── Page Loader on Nav Clicks ── */
+    (function () {
+      var loader = document.getElementById('pageLoader');
+      if (!loader) return;
+
+      // Show loader, then navigate
+      function showLoaderAndGo(href) {
+        loader.classList.add('is-visible');
+        setTimeout(function () { window.location.href = href; }, 600);
+      }
+
+      // Intercept clicks on internal nav links
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest('a');
+        if (!link) return;
+        var href = link.getAttribute('href');
+        if (!href) return;
+
+        // Skip: external, anchor-only, tel:, mailto:, target=_blank, current page
+        if (href.startsWith('#') || href.startsWith('tel:') || href.startsWith('mailto:') ||
+          link.target === '_blank' || href.startsWith('http')) return;
+
+        // Skip if already on same page
+        if (link.pathname === window.location.pathname && !link.hash) return;
+
+        e.preventDefault();
+        showLoaderAndGo(href);
+      });
+
+      // Hide loader on page load (initial visit or back-button)
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          loader.classList.add('is-exiting');
+          loader.classList.remove('is-visible');
+          setTimeout(function () { loader.classList.remove('is-exiting'); }, 400);
+        }, 500);
+      });
+      // Also hide after a max timeout
+      setTimeout(function () {
+        loader.classList.remove('is-visible');
+      }, 1500);
+    })();
+
+
+    /* ─────────────────────────────────────
+       ABOUT PRO - now powered by React CDN
+       (see <script type="text/babel"> below)
+    ───────────────────────────────────── */
+
+
+  </script>
+
+  <script type="text/babel">
+    (function () {
+      'use strict';
+      const { useState, useEffect, useRef, useCallback } = React;
+
+      function springEase(t) {
+        return 1 - Math.pow(2, -10 * t) * Math.cos(t * Math.PI * 2.2);
+      }
+
+      function useSpringCounter(target, active, duration) {
+        duration = duration || 2400;
+        const [value, setValue] = useState(0);
+        const rafRef = useRef(null);
+        useEffect(() => {
+          if (!active) return;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min((now - start) / duration, 1);
+            setValue(Math.floor(springEase(Math.min(t, 1)) * target));
+            if (t < 1) rafRef.current = requestAnimationFrame(tick);
+            else setValue(target);
+          };
+          rafRef.current = requestAnimationFrame(tick);
+          return () => cancelAnimationFrame(rafRef.current);
+        }, [active, target, duration]);
+        return value;
+      }
+
+      function ParticleCanvas({ mousePos }) {
+        const canvasRef = useRef(null);
+        const particlesRef = useRef([]);
+        const rafRef = useRef(null);
+        const mousePosRef = useRef(mousePos);
+        useEffect(() => { mousePosRef.current = mousePos; }, [mousePos]);
+
+        useEffect(() => {
+          const canvas = canvasRef.current;
+          if (!canvas) return;
+          const ctx = canvas.getContext('2d');
+          const COUNT = 40;
+          function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+          resize();
+
+          function Particle() { this.reset(true); }
+          Particle.prototype.reset = function (init) {
+            this.x = Math.random() * canvas.width;
+            this.y = init ? Math.random() * canvas.height : (Math.random() < 0.5 ? -6 : canvas.height + 6);
+            this.vx = (Math.random() - 0.5) * 0.45;
+            this.vy = (Math.random() - 0.5) * 0.45;
+            this.r = Math.random() * 2.5 + 0.5;
+            this.isOrange = Math.random() > 0.42;
+            this.opacity = Math.random() * 0.65 + 0.28;
+            this.pulse = Math.random() * Math.PI * 2;
+            this.pulseSpeed = 0.018 + Math.random() * 0.025;
+          };
+          Particle.prototype.update = function () {
+            const mp = mousePosRef.current;
+            if (mp.x !== null) {
+              const dx = mp.x - this.x, dy = mp.y - this.y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 200) { this.vx += (dx / dist) * 0.022; this.vy += (dy / dist) * 0.022; }
+            }
+            const speed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+            if (speed > 1.4) { this.vx *= 0.9; this.vy *= 0.9; }
+            this.x += this.vx; this.y += this.vy;
+            this.pulse += this.pulseSpeed;
+            if (this.x < -12 || this.x > canvas.width + 12 || this.y < -12 || this.y > canvas.height + 12) this.reset(false);
+          };
+          Particle.prototype.draw = function () {
+            const a = this.opacity * (0.7 + 0.3 * Math.sin(this.pulse));
+            const col = this.isOrange ? `rgba(242,101,34,${a})` : `rgba(96,165,250,${a})`;
+            const colFaint = this.isOrange ? `rgba(242,101,34,${a * 0.12})` : `rgba(96,165,250,${a * 0.12})`;
+            ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+            ctx.fillStyle = col; ctx.fill();
+            ctx.beginPath(); ctx.arc(this.x, this.y, this.r * 2.5, 0, Math.PI * 2);
+            ctx.fillStyle = colFaint; ctx.fill();
+          };
+
+          particlesRef.current = Array.from({ length: COUNT }, () => new Particle());
+
+          function drawConnections() {
+            const pts = particlesRef.current;
+            for (let i = 0; i < pts.length; i++) {
+              for (let j = i + 1; j < pts.length; j++) {
+                const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+                const d = Math.sqrt(dx * dx + dy * dy);
+                if (d < 140) {
+                  ctx.beginPath();
+                  ctx.strokeStyle = `rgba(242,101,34,${0.22 * (1 - d / 140)})`;
+                  ctx.lineWidth = 0.7;
+                  ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
+                  ctx.stroke();
+                }
+              }
+            }
+          }
+
+          var pVisible = false;
+          var pObs = new IntersectionObserver(function(e) { pVisible = e[0].isIntersecting; }, { threshold: 0.05 });
+          pObs.observe(canvas);
+
+          function animate() {
+            if (pVisible) {
+              ctx.clearRect(0, 0, canvas.width, canvas.height);
+              particlesRef.current.forEach(p => { p.update(); p.draw(); });
+              drawConnections();
+            }
+            rafRef.current = requestAnimationFrame(animate);
+          }
+          const ro = new ResizeObserver(resize);
+          ro.observe(canvas);
+          animate();
+          return () => { cancelAnimationFrame(rafRef.current); ro.disconnect(); pObs.disconnect(); };
+        }, []);
+
+        return React.createElement('canvas', {
+          ref: canvasRef, style: {
+            position: 'absolute', inset: 0, width: '100%', height: '100%',
+            pointerEvents: 'none', display: 'block'
+          }
+        });
+      }
+
+      function Spotlight({ mousePos }) {
+        if (mousePos.x === null) return null;
+        return React.createElement('div', {
+          style: {
+            position: 'absolute', inset: 0, pointerEvents: 'none',
+            background: `radial-gradient(700px circle at ${mousePos.x}px ${mousePos.y}px, rgba(242,101,34,0.1) 0%, rgba(59,130,246,0.06) 35%, transparent 65%)`,
+            transition: 'background 0.06s linear', zIndex: 1
+          }
+        });
+      }
+
+      function AboutBackground() {
+        const sectionRef = useRef(null);
+        const [mousePos, setMousePos] = useState({ x: null, y: null });
+        const [statsVisible, setStatsVisible] = useState(false);
+
+        const handleMouseMove = useCallback(function (e) {
+          const rect = sectionRef.current && sectionRef.current.getBoundingClientRect();
+          if (!rect) return;
+          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+        }, []);
+        const handleMouseLeave = useCallback(function () {
+          setMousePos({ x: null, y: null });
+        }, []);
+
+        useEffect(() => {
+          const section = document.querySelector('.about-pro');
+          if (!section) return;
+          sectionRef.current = section;
+          section.addEventListener('mousemove', handleMouseMove, { passive: true });
+          section.addEventListener('mouseleave', handleMouseLeave, { passive: true });
+
+          const revealEls = section.querySelectorAll('[data-ap-reveal]');
+          const revealObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                const delay = parseInt(entry.target.dataset.apDelay || 0);
+                setTimeout(function () { entry.target.classList.add('ap-revealed'); }, delay);
+                revealObs.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+          revealEls.forEach(function (el) { revealObs.observe(el); });
+
+          const statsEl = section.querySelector('.ap-stats');
+          if (statsEl) {
+            const statsObs = new IntersectionObserver(function (entries) {
+              if (entries[0].isIntersecting) { setStatsVisible(true); statsObs.disconnect(); }
+            }, { threshold: 0.4 });
+            statsObs.observe(statsEl);
+          }
+
+          section.querySelectorAll('[data-ap-split]').forEach(function (el) {
+            const text = el.textContent;
+            el.innerHTML = '';
+            Array.from(text).forEach(function (char, i) {
+              const span = document.createElement('span');
+              span.className = 'ap-char';
+              span.textContent = char === ' ' ? '\u00A0' : char;
+              span.style.transitionDelay = (i * 48) + 'ms';
+              el.appendChild(span);
+            });
+          });
+
+          section.querySelectorAll('.ap-value-card').forEach(function (card) {
+            let raf = null, tx = 0, ty = 0, cx = 0, cy = 0, hovered = false;
+            function lerp(a, b, t) { return a + (b - a) * t; }
+            function tick() {
+              cx = lerp(cx, hovered ? tx : 0, 0.1); cy = lerp(cy, hovered ? ty : 0, 0.1);
+              const lift = hovered ? -9 * Math.min((Math.abs(cx) + Math.abs(cy)) / 14, 1) : 0;
+              card.style.transform = 'perspective(900px) rotateY(' + cx + 'deg) rotateX(' + (-cy) + 'deg) translateY(' + lift + 'px) scale(' + (hovered ? 1.03 : 1) + ')';
+              if (Math.abs(cx) > 0.04 || Math.abs(cy) > 0.04 || hovered) { raf = requestAnimationFrame(tick); }
+              else { card.style.transform = ''; raf = null; }
+            }
+            card.addEventListener('mousemove', function (e) {
+              const r = card.getBoundingClientRect();
+              tx = ((e.clientX - r.left) / r.width - 0.5) * 14;
+              ty = ((e.clientY - r.top) / r.height - 0.5) * 14;
+              hovered = true; if (!raf) raf = requestAnimationFrame(tick);
+            });
+            card.addEventListener('mouseleave', function () { hovered = false; tx = 0; ty = 0; if (!raf) raf = requestAnimationFrame(tick); });
+          });
+
+          const globe = section.querySelector('.ap-globe');
+          const badges = section.querySelectorAll('.ap-badge');
+          const visual = section.querySelector('.ap-visual');
+          if (globe && visual) {
+            let gx = 0, gy = 0, tgx = 0, tgy = 0, gRaf = null;
+            const bOff = Array.from(badges).map(function (_, i) { return { x: 0, y: 0, tx: 0, ty: 0, f: (i + 1) * 10 }; });
+            function lerpG(a, b, t) { return a + (b - a) * t; }
+            function tickG() {
+              gx = lerpG(gx, tgx, 0.07); gy = lerpG(gy, tgy, 0.07);
+              globe.style.transform = 'translate(' + gx + 'px,' + gy + 'px)';
+              bOff.forEach(function (b, i) {
+                b.x = lerpG(b.x, b.tx, 0.06); b.y = lerpG(b.y, b.ty, 0.06);
+                badges[i].style.transform = 'translate(' + b.x + 'px,' + b.y + 'px)';
+              });
+              gRaf = requestAnimationFrame(tickG);
+            }
+            gRaf = requestAnimationFrame(tickG);
+            visual.addEventListener('mousemove', function (e) {
+              const r = visual.getBoundingClientRect();
+              const nx = (e.clientX - r.left - r.width / 2) / r.width;
+              const ny = (e.clientY - r.top - r.height / 2) / r.height;
+              tgx = nx * 24; tgy = ny * 24;
+              bOff.forEach(function (b) { b.tx = -nx * b.f; b.ty = -ny * b.f; });
+            }, { passive: true });
+            visual.addEventListener('mouseleave', function () { tgx = 0; tgy = 0; bOff.forEach(function (b) { b.tx = 0; b.ty = 0; }); }, { passive: true });
+          }
+
+          return function () {
+            section.removeEventListener('mousemove', handleMouseMove);
+            section.removeEventListener('mouseleave', handleMouseLeave);
+            revealObs.disconnect();
+          };
+        }, []);
+
+        const s500 = useSpringCounter(500, statsVisible);
+        const s98 = useSpringCounter(98, statsVisible);
+        const s10 = useSpringCounter(10, statsVisible);
+        useEffect(() => {
+          const nums = document.querySelectorAll('.about-pro .ap-stat__num');
+          if (nums[0]) nums[0].textContent = s500;
+          if (nums[1]) nums[1].textContent = s98;
+          if (nums[2]) nums[2].textContent = s10;
+        }, [s500, s98, s10]);
+
+        return React.createElement(React.Fragment, null,
+          React.createElement(ParticleCanvas, { mousePos: mousePos }),
+          React.createElement(Spotlight, { mousePos: mousePos })
+        );
+      }
+
+      function mountReactAbout() {
+        const el = document.getElementById('about-react-bg');
+        if (!el) return;
+        ReactDOM.createRoot(el).render(React.createElement(AboutBackground));
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', mountReactAbout);
+      } else {
+        mountReactAbout();
+      }
+    })();
+  </script>
+
+  <!-- ═══════════════════════════════════════
+     REALISTIC 3D GLOBE — Canvas Renderer
+     Real continent dot-matrix, sphere math,
+     atmospheric glow, city pulses, grid lines
+════════════════════════════════════════ -->
+  <script>
+    (function () {
+      'use strict';
+
+      function initGlobe() {
+        var canvas = document.getElementById('apGlobeCanvas');
+        if (!canvas) return;
+        var ctx = canvas.getContext('2d');
+        var SIZE = 500;
+        canvas.width = SIZE;
+        canvas.height = SIZE;
+        var cx = SIZE / 2, cy = SIZE / 2, R = SIZE * 0.42;
+
+        /* ── Rotation state ── */
+        var rotY = 0, rotX = 0.25;   /* slight tilt */ 
+        var targetRotY = 0, velY = 0.003;
+        var isDragging = false, dragX = 0, lastDragX = 0, dragStartRotY = 0;
+        /* float bob */
+        var bobT = 0;
+
+        /* ── Real-world continent dots (lat/lng sampled grid) ── */
+        /* land polygon membership via simplified bitmask rows */
+        /* We encode land as lat/lng point clouds for major landmasses */
+        var LAND = [];
+
+        /* Helper: push a lat/lng band as dots */
+        function band(latDeg, lngMin, lngMax, step) {
+          var lat = latDeg * Math.PI / 180;
+          for (var lng = lngMin; lng <= lngMax; lng += step) {
+            LAND.push([lat, lng * Math.PI / 180]);
+          }
+        }
+
+        /* ── North America ── */
+        band(70, -140, -60, 3); band(68, -140, -65, 2.5); band(65, -140, -65, 2);
+        band(62, -138, -68, 2); band(58, -136, -70, 2); band(55, -130, -72, 2);
+        band(52, -128, -75, 2); band(50, -125, -75, 2); band(48, -124, -75, 2);
+        band(46, -124, -75, 2); band(44, -124, -76, 2); band(42, -124, -76, 2);
+        band(40, -122, -74, 2); band(38, -122, -76, 2); band(36, -120, -76, 2);
+        band(34, -120, -76, 2); band(32, -117, -80, 2); band(30, -112, -82, 2);
+        band(28, -110, -82, 2); band(26, -110, -80, 2); band(24, -108, -80, 2);
+        band(22, -106, -87, 2); band(20, -105, -87, 2); band(18, -104, -88, 2);
+        band(16, -92, -86, 2); band(14, -92, -83, 2); band(12, -86, -83, 2);
+        /* Greenland */
+        band(76, -64, -20, 3); band(72, -60, -20, 3); band(68, -56, -20, 3);
+        band(64, -50, -22, 3);
+
+        /* ── South America ── */
+        band(10, -75, -60, 2); band(8, -77, -60, 2); band(6, -78, -53, 2);
+        band(4, -78, -50, 2); band(2, -80, -50, 2); band(0, -80, -50, 2);
+        band(-2, -80, -50, 2); band(-4, -80, -48, 2); band(-6, -78, -48, 2);
+        band(-8, -76, -36, 2); band(-10, -76, -38, 2); band(-12, -76, -40, 2);
+        band(-14, -76, -40, 2); band(-16, -76, -40, 2); band(-18, -74, -40, 2);
+        band(-20, -72, -42, 2); band(-22, -70, -42, 2); band(-24, -70, -44, 2);
+        band(-26, -70, -48, 2); band(-28, -70, -50, 2); band(-30, -70, -52, 2);
+        band(-32, -70, -52, 2); band(-34, -70, -54, 2); band(-36, -72, -56, 2);
+        band(-38, -72, -58, 2); band(-40, -74, -62, 2); band(-42, -74, -64, 2);
+        band(-44, -74, -65, 2); band(-46, -75, -66, 2); band(-48, -75, -66, 2);
+        band(-50, -76, -68, 2); band(-52, -75, -68, 2); band(-54, -70, -66, 2);
+
+        /* ── Europe ── */
+        band(70, 18, 30, 2); band(68, 15, 30, 2); band(66, 14, 32, 2);
+        band(64, 12, 30, 2); band(62, 4, 30, 2); band(60, 4, 28, 2);
+        band(58, 4, 28, 2); band(56, 8, 26, 2); band(54, 8, 24, 2);
+        band(52, 4, 24, 2); band(50, 2, 22, 2); band(48, 0, 22, 2);
+        band(46, 0, 20, 2); band(44, 0, 20, 2); band(42, -2, 20, 2);
+        band(40, -8, 18, 2); band(38, -8, 16, 2); band(36, -8, 14, 2);
+        /* Scandinavia extra */
+        band(70, 24, 32, 2); band(68, 18, 32, 2);
+
+        /* ── Africa ── */
+        band(36, -6, 12, 2); band(34, -4, 12, 2); band(32, -4, 14, 2);
+        band(30, -4, 36, 2); band(28, -4, 36, 2); band(26, -4, 38, 2);
+        band(24, -2, 38, 2); band(22, -2, 40, 2); band(20, -2, 42, 2);
+        band(18, -4, 44, 2); band(16, -4, 46, 2); band(14, -4, 48, 2);
+        band(12, -4, 50, 2); band(10, -4, 44, 2); band(8, -4, 44, 2);
+        band(6, -4, 44, 2); band(4, -4, 44, 2); band(2, -4, 42, 2);
+        band(0, -4, 42, 2); band(-2, -4, 40, 2); band(-4, -4, 40, 2);
+        band(-6, -4, 40, 2); band(-8, -4, 40, 2); band(-10, -4, 40, 2);
+        band(-12, -4, 40, 2); band(-14, -4, 38, 2); band(-16, -4, 38, 2);
+        band(-18, -4, 38, 2); band(-20, -4, 36, 2); band(-22, -4, 36, 2);
+        band(-24, -4, 36, 2); band(-26, -4, 34, 2); band(-28, -2, 32, 2);
+        band(-30, 16, 32, 2); band(-32, 18, 30, 2); band(-34, 18, 28, 2);
+
+        /* ── Asia ── */
+        band(72, 60, 140, 3); band(70, 30, 140, 3); band(68, 28, 140, 3);
+        band(66, 26, 140, 2.5); band(64, 24, 140, 2.5); band(62, 22, 140, 2.5);
+        band(60, 20, 140, 2.5); band(58, 20, 140, 2.5); band(56, 20, 140, 2.5);
+        band(54, 22, 140, 2.5); band(52, 22, 140, 2.5); band(50, 24, 140, 2.5);
+        band(48, 26, 140, 2.5); band(46, 28, 138, 2.5); band(44, 28, 136, 2.5);
+        band(42, 28, 134, 2.5); band(40, 28, 132, 2.5); band(38, 26, 130, 2.5);
+        band(36, 26, 128, 2.5); band(34, 26, 128, 2.5); band(32, 30, 128, 2.5);
+        band(30, 32, 128, 2.5); band(28, 34, 128, 2.5); band(26, 36, 126, 2.5);
+        band(24, 38, 124, 2.5); band(22, 40, 124, 2.5); band(20, 42, 122, 2.5);
+        band(18, 42, 104, 2.5); band(16, 44, 106, 2.5); band(14, 44, 108, 2.5);
+        band(12, 44, 104, 2.5); band(10, 46, 100, 2.5); band(8, 78, 100, 2.5);
+        band(6, 80, 104, 2.5); band(4, 100, 106, 2.5); band(2, 102, 108, 2.5);
+        band(0, 104, 118, 2.5); band(-2, 106, 118, 2.5); band(-4, 106, 116, 2.5);
+        band(-6, 106, 116, 2.5); band(-8, 114, 120, 2.5);
+
+        /* Japan / Korea */
+        band(44, 140, 146, 2); band(42, 140, 146, 2); band(40, 138, 142, 2);
+        band(38, 124, 132, 2); band(36, 126, 132, 2); band(34, 128, 132, 2);
+        band(34, 130, 142, 2); band(32, 130, 132, 2); band(32, 130, 142, 2);
+
+        /* ── Australia ── */
+        band(-14, 130, 136, 2); band(-16, 128, 138, 2); band(-18, 124, 148, 2);
+        band(-20, 116, 150, 2); band(-22, 114, 150, 2); band(-24, 114, 152, 2);
+        band(-26, 114, 152, 2); band(-28, 114, 154, 2); band(-30, 116, 154, 2);
+        band(-32, 116, 152, 2); band(-34, 118, 152, 2); band(-36, 136, 150, 2);
+        band(-38, 140, 150, 2); band(-40, 144, 148, 2);
+        /* New Zealand */
+        band(-36, 174, 178, 2); band(-38, 174, 178, 2); band(-40, 172, 176, 2);
+        band(-42, 170, 174, 2); band(-44, 168, 172, 2); band(-46, 168, 170, 2);
+
+        /* ── Antarctica ── */
+        band(-70, -180, 180, 4); band(-72, -180, 180, 4); band(-74, -180, 180, 4);
+
+        /* ── Project lat/lng → 3D xyz ── */
+        function latLngTo3D(lat, lng, rotationY) {
+          var clng = lng + rotationY;
+          var x = Math.cos(lat) * Math.sin(clng);
+          var y = Math.sin(lat);
+          var z = Math.cos(lat) * Math.cos(clng);
+          /* apply slight X tilt */
+          var cosX = Math.cos(-rotX), sinX = Math.sin(-rotX);
+          var y2 = y * cosX - z * sinX;
+          var z2 = y * sinX + z * cosX;
+          return { x: x, y: y2, z: z2 };
+        }
+
+        /* ── Cities ── */
+        var CITIES = [
+          { name: 'New York', lat: 40.7, lng: -74.0 },
+          { name: 'London', lat: 51.5, lng: -0.1 },
+          { name: 'Dubai', lat: 25.2, lng: 55.3 },
+          { name: 'Mumbai', lat: 19.1, lng: 72.9 },
+          { name: 'Singapore', lat: 1.35, lng: 103.8 },
+          { name: 'Tokyo', lat: 35.7, lng: 139.7 },
+          { name: 'Sydney', lat: -33.9, lng: 151.2 },
+          { name: 'São Paulo', lat: -23.5, lng: -46.6 },
+          { name: 'Lagos', lat: 6.5, lng: 3.4 },
+          { name: 'Beijing', lat: 39.9, lng: 116.4 },
+          { name: 'Los Angeles', lat: 34.1, lng: -118.2 },
+          { name: 'Hyderabad', lat: 17.4, lng: 78.5 },
+        ];
+        CITIES.forEach(function (c) {
+          c.latR = c.lat * Math.PI / 180;
+          c.lngR = c.lng * Math.PI / 180;
+          c.phase = Math.random() * Math.PI * 2;
+        });
+
+        /* ── Arc pairs between cities ── */
+        var ARCS = [
+          [0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [0, 7], [1, 8], [2, 11], [4, 9], [0, 10], [5, 9]
+        ];
+        var arcProgress = ARCS.map(function () { return Math.random(); });
+
+        /* ── Mouse drag to rotate ── */
+        var wrap = document.getElementById('apGlobeWrap') || canvas.parentElement;
+        wrap.addEventListener('mousedown', function (e) {
+          isDragging = true; dragX = e.clientX; lastDragX = e.clientX;
+          dragStartRotY = rotY; velY = 0;
+        });
+        window.addEventListener('mousemove', function (e) {
+          if (!isDragging) return;
+          var dx = e.clientX - dragX;
+          rotY = dragStartRotY + dx * 0.008;
+          velY = (e.clientX - lastDragX) * 0.008;
+          lastDragX = e.clientX;
+        });
+        window.addEventListener('mouseup', function () { isDragging = false; });
+        /* Touch */
+        wrap.addEventListener('touchstart', function (e) {
+          isDragging = true; dragX = e.touches[0].clientX; lastDragX = dragX;
+          dragStartRotY = rotY; velY = 0;
+        }, { passive: true });
+        window.addEventListener('touchmove', function (e) {
+          if (!isDragging) return;
+          var dx = e.touches[0].clientX - dragX;
+          rotY = dragStartRotY + dx * 0.008;
+          velY = (e.touches[0].clientX - lastDragX) * 0.008;
+          lastDragX = e.touches[0].clientX;
+        }, { passive: true });
+        window.addEventListener('touchend', function () { isDragging = false; });
+
+        /* ── Draw arc on sphere surface ── */
+        function drawArc(ctx, c1, c2, progress) {
+          var steps = 40;
+          var pts = [];
+          for (var i = 0; i <= steps; i++) {
+            var t = i / steps;
+            var lat = c1.latR + (c2.latR - c1.latR) * t;
+            var lng = c1.lngR + (c2.lngR - c1.lngR) * t;
+            /* slight arc elevation */
+            var arcH = Math.sin(t * Math.PI) * 0.18;
+            var p = latLngTo3D(lat, lng, rotY);
+            if (p.z > -0.1) {
+              pts.push({ sx: cx + p.x * R, sy: cy - p.y * R, z: p.z, arcH: arcH });
+            }
+          }
+          if (pts.length < 2) return;
+          /* only draw the "travelled" portion */
+          var end = Math.floor(pts.length * progress);
+          if (end < 2) return;
+          ctx.beginPath();
+          ctx.moveTo(pts[0].sx, pts[0].sy);
+          for (var j = 1; j < end; j++) {
+            ctx.lineTo(pts[j].sx, pts[j].sy);
+          }
+          var fade = pts[0].z;
+          ctx.strokeStyle = 'rgba(242,101,34,' + (0.55 * fade) + ')';
+          ctx.lineWidth = 1.2;
+          ctx.stroke();
+          /* moving head dot */
+          var tip = pts[end - 1];
+          ctx.beginPath();
+          ctx.arc(tip.sx, tip.sy, 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(251,191,36,' + fade + ')';
+          ctx.fill();
+        }
+
+        /* ── Main render loop ── */
+        var globeVisible = false;
+        (function() {
+          var gCanvas = document.getElementById('apGlobeCanvas');
+          if (gCanvas) {
+            var gObs = new IntersectionObserver(function(e) { globeVisible = e[0].isIntersecting; }, { threshold: 0.05 });
+            gObs.observe(gCanvas);
+          }
+        })();
+
+        function render(ts) {
+          if (!globeVisible) { requestAnimationFrame(render); return; }
+          ts = ts || 0;
+          ctx.clearRect(0, 0, SIZE, SIZE);
+
+          /* auto-rotate */
+          if (!isDragging) {
+            rotY += velY;
+            velY *= 0.98;
+            if (Math.abs(velY) < 0.0005) velY = 0.003;
+          }
+          bobT += 0.012;
+          var bobY = Math.sin(bobT) * 8;
+
+          ctx.save();
+          ctx.translate(0, bobY);
+
+          /* ── Outer atmosphere glow ── */
+          var atmosGrad = ctx.createRadialGradient(cx, cy, R * 0.85, cx, cy, R * 1.18);
+          atmosGrad.addColorStop(0, 'rgba(59,130,246,0)');
+          atmosGrad.addColorStop(0.5, 'rgba(59,130,246,0.18)');
+          atmosGrad.addColorStop(0.8, 'rgba(242,101,34,0.12)');
+          atmosGrad.addColorStop(1, 'rgba(242,101,34,0)');
+          ctx.beginPath(); ctx.arc(cx, cy, R * 1.18, 0, Math.PI * 2);
+          ctx.fillStyle = atmosGrad; ctx.fill();
+
+          /* ── Ocean sphere ── */
+          var oceanGrad = ctx.createRadialGradient(cx - R * 0.28, cy - R * 0.28, R * 0.05, cx, cy, R);
+          oceanGrad.addColorStop(0, '#1e4d8c');
+          oceanGrad.addColorStop(0.4, '#0f2d6e');
+          oceanGrad.addColorStop(0.75, '#071a4a');
+          oceanGrad.addColorStop(1, '#030d2e');
+          ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2);
+          ctx.fillStyle = oceanGrad; ctx.fill();
+
+          /* ── Lat/lng grid lines ── */
+          ctx.save();
+          ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2);
+          ctx.clip();
+          ctx.strokeStyle = 'rgba(255,255,255,0.07)';
+          ctx.lineWidth = 0.5;
+          /* latitude rings */
+          for (var lat = -75; lat <= 75; lat += 15) {
+            var latR2 = lat * Math.PI / 180;
+            var cosL = Math.cos(latR2 + rotX);
+            var yRing = cy - Math.sin(latR2) * R * Math.cos(rotX);
+            var rx2 = R * Math.abs(cosL);
+            var ry2 = R * 0.12;
+            if (rx2 > 1) {
+              ctx.beginPath();
+              ctx.ellipse(cx, yRing, rx2, ry2, 0, 0, Math.PI * 2);
+              ctx.stroke();
+            }
+          }
+          /* longitude lines */
+          for (var lng2 = 0; lng2 < 180; lng2 += 30) {
+            var a = (lng2 * Math.PI / 180) + rotY;
+            var x1 = cx + Math.sin(a) * R;
+            var y1 = cy - R;
+            var x2 = cx + Math.sin(a) * R;
+            var y2c = cy + R;
+            ctx.beginPath();
+            /* draw as ellipse rotated */
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.rotate(a);
+            ctx.scale(0.12, 1);
+            ctx.beginPath(); ctx.arc(0, 0, R, 0, Math.PI * 2);
+            ctx.strokeStyle = 'rgba(255,255,255,0.07)';
+            ctx.stroke();
+            ctx.restore();
+          }
+          ctx.restore();
+
+          /* ── Land dots ── */
+          for (var i = 0; i < LAND.length; i++) {
+            var p = latLngTo3D(LAND[i][0], LAND[i][1], rotY);
+            if (p.z < 0.05) continue;          /* back-face cull */
+            var sx = cx + p.x * R;
+            var sy = cy - p.y * R;
+            /* depth shading */
+            var brightness = 0.3 + p.z * 0.7;
+            var r2 = 1.3 + p.z * 0.7;
+            ctx.beginPath();
+            ctx.arc(sx, sy, r2, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(34,197,94,' + (0.7 * brightness) + ')';
+            ctx.fill();
+            /* slight orange tint on sunlit side */
+            if (p.z > 0.6) {
+              ctx.beginPath(); ctx.arc(sx, sy, r2 * 0.5, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(251,191,36,' + (0.25 * (p.z - 0.6) / 0.4) + ')';
+              ctx.fill();
+            }
+          }
+
+          /* ── Arcs ── */
+          for (var a2 = 0; a2 < ARCS.length; a2++) {
+            arcProgress[a2] += 0.0015;
+            if (arcProgress[a2] > 1.3) arcProgress[a2] = 0;
+            var ci1 = CITIES[ARCS[a2][0]], ci2 = CITIES[ARCS[a2][1]];
+            drawArc(ctx, ci1, ci2, Math.min(arcProgress[a2], 1));
+          }
+
+          /* ── City pulse dots ── */
+          var now2 = ts * 0.001;
+          for (var ci = 0; ci < CITIES.length; ci++) {
+            var city = CITIES[ci];
+            var pc = latLngTo3D(city.latR, city.lngR, rotY);
+            if (pc.z < 0.1) continue;
+            var scx = cx + pc.x * R, scy = cy - pc.y * R;
+            var pulse = (Math.sin(now2 * 2 + city.phase) + 1) / 2;
+            /* outer ring */
+            ctx.beginPath();
+            ctx.arc(scx, scy, 3 + pulse * 6, 0, Math.PI * 2);
+            ctx.strokeStyle = 'rgba(251,191,36,' + (0.5 * pc.z * (1 - pulse)) + ')';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            /* inner dot */
+            ctx.beginPath();
+            ctx.arc(scx, scy, 2.5, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(251,191,36,' + pc.z + ')';
+            ctx.fill();
+          }
+
+          /* ── Specular shine (top-left highlight) ── */
+          var shineGrad = ctx.createRadialGradient(
+            cx - R * 0.38, cy - R * 0.36, 0,
+            cx - R * 0.1, cy - R * 0.1, R * 0.75
+          );
+          shineGrad.addColorStop(0, 'rgba(255,255,255,0.22)');
+          shineGrad.addColorStop(0.4, 'rgba(255,255,255,0.06)');
+          shineGrad.addColorStop(1, 'rgba(255,255,255,0)');
+          ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2);
+          ctx.fillStyle = shineGrad; ctx.fill();
+
+          /* ── Edge rim light (orange) ── */
+          var rimGrad = ctx.createRadialGradient(cx, cy, R * 0.78, cx, cy, R);
+          rimGrad.addColorStop(0, 'rgba(242,101,34,0)');
+          rimGrad.addColorStop(0.6, 'rgba(242,101,34,0.08)');
+          rimGrad.addColorStop(1, 'rgba(242,101,34,0.28)');
+          ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2);
+          ctx.fillStyle = rimGrad; ctx.fill();
+
+          /* ── Drop shadow below ── */
+          var shadowGrad = ctx.createRadialGradient(cx, cy + R * 1.08, 0, cx, cy + R * 1.08, R * 0.7);
+          shadowGrad.addColorStop(0, 'rgba(0,0,0,0.35)');
+          shadowGrad.addColorStop(1, 'rgba(0,0,0,0)');
+          ctx.beginPath();
+          ctx.ellipse(cx, cy + R * 1.06, R * 0.65, R * 0.1, 0, 0, Math.PI * 2);
+          ctx.fillStyle = shadowGrad; ctx.fill();
+
+          ctx.restore();
+          requestAnimationFrame(render);
+        }
+
+        requestAnimationFrame(render);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initGlobe);
+      } else {
+        initGlobe();
+      }
+    })();
+
+    /* ─────────────────────────────────────
+       NEURAL NETWORK CANVAS ANIMATION
+    ───────────────────────────────────── */
+    (function () {
+      const canvas = document.getElementById('neuralCanvas');
+      if (!canvas) return;
+
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      let animationId;
+      let mouse = { x: null, y: null, radius: 150 };
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.4;
+          this.vy = (Math.random() - 0.5) * 0.4;
+          this.radius = Math.random() * 1.5 + 0.5;
+          this.baseRadius = this.radius;
+          this.color = this.getRandomColor();
+          this.pulsePhase = Math.random() * Math.PI * 2;
+        }
+
+        getRandomColor() {
+          const colors = [
+            { r: 242, g: 101, b: 34 },
+            { r: 59, g: 130, b: 246 },
+            { r: 139, g: 92, b: 246 },
+            { r: 6, g: 182, b: 212 },
+            { r: 255, g: 255, b: 255 }
+          ];
+          return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+          // Mouse interaction
+          if (mouse.x !== null && mouse.y !== null) {
+            const dx = mouse.x - this.x;
+            const dy = mouse.y - this.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < mouse.radius) {
+              const force = (mouse.radius - distance) / mouse.radius;
+              this.x -= dx * force * 0.03;
+              this.y -= dy * force * 0.03;
+              this.radius = this.baseRadius + force * 2;
+            } else {
+              this.radius = this.baseRadius;
+            }
+          }
+
+          // Pulse effect
+          this.pulsePhase += 0.05;
+          this.radius = this.baseRadius + Math.sin(this.pulsePhase) * 0.3;
+        }
+
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, Math.max(0.5, this.radius), 0, Math.PI * 2);
+          const alpha = 0.6 + Math.sin(this.pulsePhase) * 0.2;
+          ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${alpha})`;
+          ctx.fill();
+
+          // Glow effect
+          ctx.shadowBlur = 20;
+          ctx.shadowColor = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0.5)`;
+        }
+      }
+
+      function initParticles() {
+        particles = [];
+        const particleCount = Math.min(35, Math.floor((canvas.width * canvas.height) / 24000));
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new Particle());
+        }
+      }
+
+      function connectParticles() {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 120) {
+              const opacity = (1 - distance / 120) * 0.2;
+              const gradient = ctx.createLinearGradient(
+                particles[i].x, particles[i].y,
+                particles[j].x, particles[j].y
+              );
+              gradient.addColorStop(0, `rgba(${particles[i].color.r}, ${particles[i].color.g}, ${particles[i].color.b}, ${opacity})`);
+              gradient.addColorStop(1, `rgba(${particles[j].color.r}, ${particles[j].color.g}, ${particles[j].color.b}, ${opacity})`);
+
+              ctx.beginPath();
+              ctx.strokeStyle = gradient;
+              ctx.lineWidth = 0.8;
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animate() {
+        if (!isVisible) { animationId = requestAnimationFrame(animate); return; }
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.shadowBlur = 0;
+
+        particles.forEach(particle => {
+          particle.update();
+          particle.draw();
+        });
+
+        connectParticles();
+
+        animationId = requestAnimationFrame(animate);
+      }
+
+      function initNeuralNetwork() {
+        resizeCanvas();
+        initParticles();
+        animate();
+      }
+
+      // Pause when off-screen
+      var isVisible = false;
+      var visObs = new IntersectionObserver(function(entries) {
+        isVisible = entries[0].isIntersecting;
+      }, { threshold: 0.05 });
+      visObs.observe(canvas.closest('section') || canvas);
+
+      // Mouse tracking
+      canvas.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+      });
+
+      canvas.addEventListener('mouseleave', () => {
+        mouse.x = null;
+        mouse.y = null;
+      });
+
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        initParticles();
+      });
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initNeuralNetwork);
+      } else {
+        initNeuralNetwork();
+      }
+    })();
+  </script>
+
+
+</body>
+
+</html>
