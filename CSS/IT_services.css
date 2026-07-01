@@ -2040,7 +2040,7 @@ iframe {
   font-weight: 900;
   letter-spacing: 0.12em;
   color: transparent;
-  -webkit-text-stroke: 2px rgba(255,255,255,0.10);
+  -webkit-text-stroke: 3px rgba(255,255,255,0.18);
   white-space: nowrap;
   pointer-events: none;
   user-select: none;

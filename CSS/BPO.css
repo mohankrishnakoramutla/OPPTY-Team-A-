@@ -1231,7 +1231,7 @@ section .btn-outline:hover {
     position:relative; display:block; text-align:center; padding:20px 0 0;
     font-family:'Space Grotesk',sans-serif; font-size:clamp(100px,22vw,280px);
     font-weight:900; letter-spacing:0.12em; color:transparent;
-    -webkit-text-stroke:2px rgba(255,255,255,0.10);
+    -webkit-text-stroke:3px rgba(255,255,255,0.18);
     white-space:nowrap; pointer-events:none; user-select:none;
     z-index:0; line-height:0.85; overflow:hidden;
 }
@@ -1338,7 +1338,10 @@ header.past-hero .phone-link:hover { color:#d4530e; }
 .mobile-nav.open { display:flex; }
 .mobile-nav a { text-decoration:none; color:rgba(255,255,255,0.65); font-size:12px; font-weight:600; letter-spacing:0.8px; text-transform:uppercase; padding:13px 0; border-bottom:1px solid rgba(255,255,255,0.06); transition:color 0.2s; }
 .mobile-nav a:hover { color:#fff; }
-.mobile-btns { display:flex; gap:10px; padding-top:18px; }
+.mobile-btns { display:flex; flex-direction:column; gap:10px; padding-top:18px; }
+.mobile-btns .btn { width:100%; justify-content:center; padding:14px 20px; font-size:11px; letter-spacing:1.2px; border-radius:100px; }
+.mobile-btns .btn-academy { background:var(--primary); color:#fff; border:none; box-shadow:0 4px 18px rgba(242,101,34,0.45); }
+.mobile-btns .btn-training { background:transparent; color:var(--primary); border:1.5px solid rgba(242,101,34,0.7); }
 @media (max-width:1024px){nav{gap:22px;margin-right:22px;}.phone-link{display:none;}}
 @media (max-width:860px){nav,.nav-actions{display:none;}.hamburger{display:flex;}}
 @media (max-width:520px){.nav-inner{padding:0 20px;}}
