@@ -1197,3 +1197,58 @@ body { background: #080a0e; color: #fff; }
   background: linear-gradient(90deg,#f26522 0%,#ff8c42 40%,#12172b 100%);
   z-index: 2;
 }
+
+
+
+
+
+
+/* ══════════════════════════════════
+   DARK THEME OVERRIDE — resources.html
+══════════════════════════════════ */
+
+/* Featured section → dark (replaces the cream theme from before) */
+.rs-featured { background: #0a1428 !important; color: #fff; }
+.rs-featured::before,
+.rs-featured::after { display: none !important; } /* remove cream-era glow layers if present */
+
+.rs-featured__title { color: #fff !important; }
+.rs-featured__body  { color: rgba(255,255,255,0.55) !important; }
+.rs-featured__bullets li { color: rgba(255,255,255,0.75) !important; }
+
+/* Resource library section */
+.rs-library { background: linear-gradient(170deg, #0a1428 0%, #0d1a35 100%) !important; }
+.rs-library__title { color: #fff !important; }
+.rs-library__sub   { color: rgba(255,255,255,0.5) !important; }
+
+.rs-tabs {
+  background: rgba(255,255,255,0.05) !important;
+  box-shadow: none !important;
+}
+.rs-tab { color: rgba(255,255,255,0.55) !important; }
+.rs-tab.active, .rs-tab:hover { background: var(--orange) !important; color: #fff !important; }
+
+.rs-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.30) !important;
+}
+.rs-card__body h3 { color: #fff !important; }
+.rs-card__body p  { color: rgba(255,255,255,0.5) !important; }
+
+/* Products library (light theme block) → dark */
+.rs-library--products {
+  background: #060c18 !important;
+  border-top: 1px solid rgba(255,255,255,0.06) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+}
+.rs-products__title { color: #fff !important; }
+.rs-library--products .rs-product__name    { color: #fff !important; }
+.rs-library--products .rs-product__by      { color: rgba(255,255,255,0.45) !important; }
+.rs-library--products .rs-product__category{ color: rgba(255,255,255,0.85) !important; }
+.rs-library--products .rs-product__desc    { color: rgba(255,255,255,0.48) !important; }
+.rs-library--products .rs-products__separator { background: rgba(255,255,255,0.08) !important; }
+.rs-library--products .rs-product__divider     { background: rgba(255,255,255,0.08) !important; }
+.rs-library--products .rs-product:hover { background: rgba(255,255,255,0.04) !important; }
+
+/* Featured video caption bg stays as-is (already dark) */

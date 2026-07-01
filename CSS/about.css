@@ -1427,3 +1427,98 @@ body { background: #fdf8f3; }
   background: rgba(253,248,243,0.95) !important;
   border: 1.5px solid rgba(242,101,34,0.16) !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ══════════════════════════════════
+   DARK THEME OVERRIDE — about.html
+══════════════════════════════════ */
+
+body { background: #060c18 !important; color: #fff; }
+
+/* Section backgrounds */
+.ab-stats    { background: #0a1428 !important; }
+.ab-story    { background: #060c18 !important; }
+.ab-mvv      { background: linear-gradient(160deg, #0a1428 0%, #0d1a35 100%) !important; }
+.ab-services { background: #060c18 !important; }
+.ab-why      { background: #0a1428 !important; }
+.ab-offer    { background: linear-gradient(170deg, #0a1428 0%, #0d1a35 50%, #060c18 100%) !important; }
+.ab-team     { background: #060c18 !important; }
+
+/* Hero info card */
+.ab-hero__card {
+  background: rgba(10,20,40,0.92) !important;
+  border: 1.5px solid rgba(242,101,34,0.20) !important;
+}
+.ab-hero__card-heading { color: #fff !important; }
+.ab-hero__card-body    { color: rgba(255,255,255,0.55) !important; }
+
+/* Stat numbers/labels */
+.ab-stat__label { color: rgba(255,255,255,0.5) !important; }
+
+/* Story text */
+.ab-story .ab-section-heading { color: #fff !important; }
+.ab-story__body   { color: rgba(255,255,255,0.55) !important; }
+.ab-story__checks li { color: rgba(255,255,255,0.75) !important; }
+
+/* Cards → dark glass */
+.ab-mvv__card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1.5px solid rgba(255,255,255,0.08) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.30) !important;
+  backdrop-filter: blur(16px);
+}
+.ab-mvv__card:hover {
+  border-color: rgba(242,101,34,0.4) !important;
+  box-shadow: 0 16px 48px rgba(242,101,34,0.14) !important;
+}
+.ab-mvv__card h3 { color: #fff !important; }
+.ab-mvv__card p  { color: rgba(255,255,255,0.5) !important; }
+
+.ab-svc-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1.5px solid rgba(255,255,255,0.08) !important;
+}
+.ab-svc-card:hover {
+  border-color: rgba(242,101,34,0.35) !important;
+  background: rgba(255,255,255,0.06) !important;
+}
+.ab-svc-card h4 { color: #fff !important; }
+.ab-svc-card p  { color: rgba(255,255,255,0.5) !important; }
+
+.ab-offer__card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1.5px solid rgba(255,255,255,0.08) !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.30) !important;
+  backdrop-filter: blur(16px);
+}
+.ab-offer__card:hover {
+  border-color: rgba(242,101,34,0.4) !important;
+  box-shadow: 0 16px 48px rgba(242,101,34,0.16) !important;
+}
+.ab-offer__icon { background: rgba(242,101,34,0.10) !important; }
+.ab-offer__card:hover .ab-offer__icon { background: rgba(242,101,34,0.18) !important; }
+.ab-offer__card h4 { color: #fff !important; }
+.ab-offer__card p  { color: rgba(255,255,255,0.5) !important; }
+
+/* Team card name/role already light-friendly via .ab-team__info, force white */
+.ab-team__name { color: #fff !important; }
+
+/* Why-choose section text */
+.ab-why .ab-section-heading { color: #fff !important; }
+.ab-why__item h4 { color: #fff !important; }
+.ab-why__item p  { color: rgba(255,255,255,0.5) !important; }
+
+/* Section heading/sub helpers used across white sections */
+.ab-section-heading { color: #fff !important; }
+.ab-section-sub     { color: rgba(255,255,255,0.5) !important; }
+
+/* Story image badge stays orange — no change needed */

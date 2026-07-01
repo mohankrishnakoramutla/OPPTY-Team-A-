@@ -418,3 +418,48 @@ p, label, li        { color: rgba(255,255,255,0.7); }
 .ct-office-card {
   border-color: rgba(242,101,34,0.10) !important;
 }
+
+
+
+
+
+
+
+
+
+
+/* ══════════════════════════════════
+   DARK THEME OVERRIDE — contact.html
+══════════════════════════════════ */
+
+/* Main form+map section (previously cream/light-blue) → dark */
+.ct-main {
+  background: linear-gradient(160deg, #0a1428 0%, #0d1a35 100%) !important;
+}
+
+.ct-form-title { color: #fff !important; }
+.ct-form-sub   { color: rgba(255,255,255,0.5) !important; }
+
+/* Office cards (currently light #f8f9fc) → dark glass */
+.ct-office-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+}
+.ct-office-card:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.35) !important;
+  border-color: rgba(242,101,34,0.30) !important;
+}
+.ct-office-card__city  { color: #fff !important; }
+.ct-office-card__addr  { color: rgba(255,255,255,0.5) !important; }
+.ct-office-card__phone { color: #fff !important; }
+.ct-office-card__phone:hover { color: var(--orange) !important; }
+
+/* Quick-connect block text */
+.ct-quick__title { color: #fff !important; }
+.ct-qi-label { color: rgba(255,255,255,0.4) !important; }
+.ct-qi-value { color: #fff !important; }
+.ct-quick-item { border-bottom-color: rgba(255,255,255,0.08) !important; }
+.ct-quick-socials { border-top-color: rgba(255,255,255,0.08) !important; }
+
+/* Map container border to match dark surroundings */
+.ct-map { border: 1px solid rgba(255,255,255,0.08) !important; }
