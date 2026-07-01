@@ -160,6 +160,8 @@ button {
     letter-spacing: -0.03em;
     color: #0a1845;
     margin-bottom: 20px;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .section-subtitle {
@@ -906,16 +908,42 @@ section .btn-ghost:hover {
    =========================================================== */
 .partners {
     padding: 44px 0;
-    background: linear-gradient(135deg, #fff8f3, #ffffff, #f0f6ff);
-    border-bottom: 1px solid rgba(242, 101, 34, 0.1);
+    background: linear-gradient(135deg,
+            rgba(6, 12, 24, 0.92) 0%,
+            rgba(30, 15, 5, 0.88) 25%,
+            rgba(60, 25, 5, 0.82) 50%,
+            rgba(30, 15, 5, 0.88) 75%,
+            rgba(6, 12, 24, 0.92) 100%);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-top: 1px solid rgba(242, 101, 34, 0.2);
+    border-bottom: 1px solid rgba(242, 101, 34, 0.12);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 160, 80, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+        0 4px 24px rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    position: relative;
+}
+
+.partners::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 600px 200px at 50% 0%, rgba(242, 101, 34, 0.12), transparent),
+        radial-gradient(ellipse 400px 200px at 20% 100%, rgba(255, 140, 50, 0.08), transparent),
+        radial-gradient(ellipse 400px 200px at 80% 100%, rgba(255, 140, 50, 0.08), transparent),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, transparent 40%, rgba(0, 0, 0, 0.15) 100%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .partners-label {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 500;
-    color: #4b6080;
+    color: rgba(255, 220, 190, 0.9);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 28px;
@@ -924,6 +952,7 @@ section .btn-ghost:hover {
 .partners-marquee {
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .marquee-track {
@@ -937,7 +966,7 @@ section .btn-ghost:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #94a3b8;
+    color: rgba(255, 220, 190, 0.75);
     font-weight: 600;
     font-size: 0.9375rem;
     white-space: nowrap;
@@ -950,7 +979,7 @@ section .btn-ghost:hover {
 }
 
 .partner-logo:hover {
-    color: var(--primary);
+    color: #ffffff;
 }
 
 @keyframes marquee {
@@ -1082,6 +1111,15 @@ section .btn-ghost:hover {
 
 .bento-small h4 {
     color: #ffffff !important;
+}
+
+.bento-features {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .bento-features li {
@@ -1278,7 +1316,26 @@ section .btn-ghost:hover {
    =========================================================== */
 .excellence {
     padding: 120px 0;
-    background: linear-gradient(160deg, #ffffff 0%, #f0f6ff 50%, #fff8f3 100%) !important;
+    background: linear-gradient(160deg, #060c18 0%, #0a1845 30%, #0d2260 60%, #1a1a4e 80%, #060c18 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.excellence::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 700px 500px at 10% 50%, rgba(99, 102, 241, 0.18), transparent),
+        radial-gradient(ellipse 600px 400px at 90% 30%, rgba(242, 101, 34, 0.14), transparent),
+        radial-gradient(ellipse 500px 400px at 50% 90%, rgba(6, 182, 212, 0.1), transparent);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.excellence .container {
+    position: relative;
+    z-index: 1;
 }
 
 .excellence-grid {
@@ -1290,12 +1347,18 @@ section .btn-ghost:hover {
 
 .excellence-content .section-title {
     text-align: left;
-    color: #0a1845 !important;
+    color: #ffffff !important;
 }
 
 .excellence-content .section-subtitle {
     margin-bottom: 40px;
-    color: #4b6080 !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.excellence-content .pill-tag {
+    background: rgba(242, 101, 34, 0.15) !important;
+    color: var(--primary-light) !important;
+    border: 1px solid rgba(242, 101, 34, 0.3) !important;
 }
 
 .excellence-pillars {
@@ -1327,13 +1390,13 @@ section .btn-ghost:hover {
 .pillar-body h4 {
     font-size: 1.0625rem;
     font-weight: 700;
-    color: #0a1845 !important;
+    color: #ffffff !important;
     margin-bottom: 6px;
 }
 
 .pillar-body>p {
     font-size: 0.9375rem;
-    color: #4b6080 !important;
+    color: rgba(148, 197, 255, 0.8) !important;
     line-height: 1.65;
     margin-bottom: 12px;
 }
@@ -1364,7 +1427,7 @@ section .btn-ghost:hover {
     display: block;
     margin-top: 6px;
     font-size: 0.75rem;
-    color: #4b6080;
+    color: rgba(148, 197, 255, 0.75);
     font-weight: 500;
 }
 
@@ -1377,10 +1440,10 @@ section .btn-ghost:hover {
 .micro-tag {
     font-size: 0.75rem;
     padding: 4px 10px;
-    background: rgba(242, 101, 34, 0.06);
-    border: 1px solid rgba(242, 101, 34, 0.15);
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.25);
     border-radius: var(--r-full);
-    color: #0a1845;
+    color: rgba(200, 210, 255, 0.9);
     font-weight: 500;
 }
 
@@ -1552,7 +1615,7 @@ section .btn-ghost:hover {
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg,
-            #0a1845 0%, #1a2a6c 25%, #f26522 60%, #1a2a6c 80%, #0a1845 100%);
+            #060c18 0%, #0a1845 30%, #0d2260 55%, #1a2a6c 70%, #0a1845 100%);
 }
 
 .process::before {
@@ -1560,10 +1623,10 @@ section .btn-ghost:hover {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 700px 500px at 15% 50%, rgba(242, 101, 34, 0.25), transparent),
-        radial-gradient(ellipse 600px 400px at 85% 50%, rgba(255, 179, 71, 0.18), transparent),
-        radial-gradient(ellipse 500px 350px at 50% 80%, rgba(26, 107, 204, 0.15), transparent),
-        radial-gradient(ellipse 400px 300px at 50% 10%, rgba(255, 255, 255, 0.06), transparent);
+        radial-gradient(ellipse 700px 500px at 15% 50%, rgba(242, 101, 34, 0.18), transparent),
+        radial-gradient(ellipse 600px 400px at 85% 50%, rgba(255, 179, 71, 0.12), transparent),
+        radial-gradient(ellipse 500px 350px at 50% 80%, rgba(26, 107, 204, 0.12), transparent),
+        radial-gradient(ellipse 400px 300px at 50% 10%, rgba(255, 255, 255, 0.04), transparent);
     pointer-events: none;
     z-index: 0;
 }
@@ -2122,7 +2185,26 @@ section .btn-ghost:hover {
    =========================================================== */
 .tech-stack {
     padding: 120px 0;
-    background: linear-gradient(160deg, #fff8f3 0%, #ffffff 50%, #f0f6ff 100%);
+    background: linear-gradient(160deg, #060c18 0%, #0a1845 30%, #0d2260 55%, #1a1a4e 75%, #060c18 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-stack::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 700px 500px at 80% 20%, rgba(6, 182, 212, 0.15), transparent),
+        radial-gradient(ellipse 600px 400px at 20% 70%, rgba(242, 101, 34, 0.12), transparent),
+        radial-gradient(ellipse 500px 400px at 50% 50%, rgba(99, 102, 241, 0.1), transparent);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.tech-stack .container {
+    position: relative;
+    z-index: 1;
 }
 
 .tech-layout {
@@ -2134,12 +2216,26 @@ section .btn-ghost:hover {
 
 .tech-content .section-title {
     text-align: left;
-    color: #0a1845 !important;
+    color: #ffffff !important;
 }
 
 .tech-content .section-subtitle {
     margin-bottom: 40px;
-    color: #4b6080 !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.tech-stack .pill-tag {
+    background: rgba(6, 182, 212, 0.15) !important;
+    color: #67e8f9 !important;
+    border: 1px solid rgba(6, 182, 212, 0.3) !important;
+}
+
+.tech-stack .section-title {
+    color: #ffffff !important;
+}
+
+.tech-stack .section-subtitle {
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .tech-features {
@@ -2170,13 +2266,13 @@ section .btn-ghost:hover {
 .tech-feat h4 {
     font-size: 1.0625rem;
     font-weight: 700;
-    color: #0a1845 !important;
+    color: #ffffff !important;
     margin-bottom: 4px;
 }
 
 .tech-feat p {
     font-size: 0.9rem;
-    color: #4b6080 !important;
+    color: rgba(148, 197, 255, 0.8) !important;
     line-height: 1.6;
 }
 
@@ -2238,9 +2334,9 @@ section .btn-ghost:hover {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(6, 18, 55, 0.95), rgba(10, 28, 80, 0.90));
-    border: 1.5px solid rgba(96, 165, 250, 0.45);
-    box-shadow: 0 0 0 6px rgba(242, 101, 34, 0.12), 0 0 0 12px rgba(96, 165, 250, 0.06), 0 0 0 18px rgba(255, 255, 255, 0.03), 0 0 40px rgba(242, 101, 34, 0.30), 0 0 80px rgba(59, 130, 246, 0.18), 0 8px 32px rgba(6, 18, 55, 0.6);
+    background: #ffffff;
+    border: 1.5px solid rgba(242, 101, 34, 0.35);
+    box-shadow: 0 0 0 6px rgba(242, 101, 34, 0.10), 0 0 0 12px rgba(242, 101, 34, 0.05), 0 0 40px rgba(242, 101, 34, 0.30), 0 0 80px rgba(59, 130, 246, 0.18), 0 8px 32px rgba(6, 18, 55, 0.6);
 }
 
 .orbit-logo-img {
@@ -3102,8 +3198,31 @@ header.past-hero .phone-link:hover {
 
 .mobile-btns {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     padding-top: 18px;
+}
+
+.mobile-btns .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    border-radius: 100px;
+}
+
+.mobile-btns .btn-academy {
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 18px rgba(242, 101, 34, 0.45);
+}
+
+.mobile-btns .btn-training {
+    background: transparent;
+    color: var(--orange);
+    border: 1.5px solid rgba(242, 101, 34, 0.7);
 }
 
 .nav-dropdown {
@@ -3790,6 +3909,24 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
         justify-content: center;
     }
 
+    /* Fix: centre excellence visual when grid stacks to 1 col */
+    .excellence-visual {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    /* Fix: hide floating cards at tablet to prevent horizontal overflow */
+    .float-1,
+    .float-2,
+    .float-3 {
+        display: none;
+    }
+
+    /* Fix: hero-visual overflow from floating cards */
+    .hero-visual {
+        overflow: hidden;
+    }
+
     /* Process */
     .process {
         padding: 80px 0;
@@ -3911,11 +4048,11 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
     header {
         top: 8px;
         width: calc(100% - 32px);
-        border-radius: 16px;
+        border-radius: 50px;
     }
 
     .nav-inner {
-        padding: 0 16px;
+        padding: 0 20px;
         height: 48px;
     }
 
@@ -3934,8 +4071,8 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
     }
 
     .mobile-nav {
-        border-radius: 0 0 16px 16px;
-        padding: 8px 16px 16px;
+        border-radius: 0 0 28px 28px;
+        padding: 8px 20px 20px;
     }
 
     .mobile-btns {
@@ -3948,6 +4085,11 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
         padding: 10px 16px;
         font-size: 10px;
     }
+
+    /* Fix: hide social bar at 860px to prevent overlap with hero visual */
+    .social-bar {
+        display: none;
+    }
 }
 
 /* ── 768px ── */
@@ -3956,39 +4098,57 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
         padding: 0 16px;
     }
 
-    /* Social bar */
-    .social-bar {
-        display: none;
-    }
-
     /* Hero */
     .hero {
         padding: 90px 0 50px;
+        overflow-x: hidden;
+    }
+
+    .hero-inner {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        overflow: hidden;
     }
 
     .hero-title {
         font-size: 2.4rem;
         letter-spacing: -0.025em;
+        width: 100%;
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
 
     .hero-description {
         font-size: 1rem;
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        padding-right: 4px;
     }
 
     .hero-cta-row {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         gap: 12px;
         margin-bottom: 32px;
+        width: 100%;
     }
 
     .hero .btn,
     section .btn-glow,
     section .btn-ghost {
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
         justify-content: center;
         padding: 14px 24px;
+        box-sizing: border-box;
     }
 
     .hero-trust-row {
@@ -4335,6 +4495,12 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
         font-size: 0.72rem;
     }
 
+    /* Fix: reduce cert-trust-strip padding on mobile */
+    .cert-trust-strip {
+        padding: 20px 16px;
+        margin-top: 40px;
+    }
+
     /* Footer */
     .footer-main {
         grid-template-columns: 1fr;
@@ -4395,7 +4561,7 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
 
     .hero-title {
         font-size: 1.9rem;
-        line-height: 1.15;
+        line-height: 1.2;
     }
 
     .hero-description {
@@ -4503,6 +4669,7 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
     .tech-orbit-wrapper {
         max-width: 260px;
         border-radius: 20px;
+        overflow: hidden;
     }
 
     .orbit-ring-1 {
@@ -4513,10 +4680,10 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
     }
 
     .orbit-ring-2 {
-        width: 230px;
-        height: 230px;
-        margin-top: -115px;
-        margin-left: -115px;
+        width: 210px;
+        height: 210px;
+        margin-top: -105px;
+        margin-left: -105px;
     }
 
     .orbit-logo {
@@ -4643,6 +4810,18 @@ header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
 
     .metric-number {
         font-size: 1.75rem;
+    }
+
+    /* Fix: smaller buttons so text doesn't overflow at 360px */
+    section .btn-glow,
+    section .btn-ghost {
+        font-size: 0.875rem;
+        padding: 12px 18px;
+    }
+
+    /* Fix: reduce footer watermark to prevent horizontal scroll */
+    .footer-watermark {
+        font-size: clamp(50px, 15vw, 100px);
     }
 
     .footer-main {
