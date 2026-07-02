@@ -9,15 +9,17 @@
 
 html, body {
     width: 100%;
-    min-height: 100vh;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+}
+
 html {
     overflow-x: hidden;
-    overflow-y: scroll; /* forces only ONE scrollbar — the outer one */
 }
 
 :root {
@@ -565,6 +567,7 @@ body {
 
 body {
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 /* FLOATING SOCIAL BAR */
