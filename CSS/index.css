@@ -15,6 +15,11 @@ html, body {
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+    overflow-y: scroll; /* forces only ONE scrollbar — the outer one */
+}
+
 :root {
     --orange: #f26522;
     --orange-dim: rgba(242, 101, 34, 0.15);
@@ -6534,14 +6539,14 @@ header.past-hero .nav-dropdown__toggle.active {
 /* HERO  4 PRODUCT CARDS */
 .hero {
     position: relative !important;
-    width: 100vw !important;
+    width: 100% !important;
     min-height: 100vh !important;
     height: auto !important;
     margin: 0 !important;
-    left: 50% !important;
-    right: 50% !important;
-    margin-left: -50vw !important;
-    margin-right: -50vw !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -7819,9 +7824,9 @@ header.past-hero .nav-dropdown__toggle.active {
     align-items: center;
     gap: 0;
     padding: 0 70px;
-    /* breathing room for side cards + arrows */
     box-sizing: border-box;
     user-select: none;
+    overflow: hidden;
 }
 
 /* 3-D Stage */
@@ -7831,7 +7836,7 @@ header.past-hero .nav-dropdown__toggle.active {
     height: 620px;
     perspective: 1400px;
     perspective-origin: 50% 40%;
-    overflow: visible;
+    overflow: hidden;
 }
 
 /* CARD BASE */
