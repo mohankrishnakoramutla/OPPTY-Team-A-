@@ -990,7 +990,12 @@ header.past-hero .phone-link:hover {
     gap: 150px !important;
     width: 100% !important;
     box-sizing: border-box !important;
-    padding-left: 50px;
+}
+
+@media (min-width: 992px) {
+    .outer {
+        padding-left: 50px;
+    }
 }
 
 /* LEFT: BRAND STORY (26%) */
@@ -1662,16 +1667,35 @@ header.past-hero .phone-link:hover {
     .outer {
         flex-direction: column !important;
         flex-wrap: wrap !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        align-items: center !important;
+        text-align: center;
     }
     .hero {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .brand-story,
     .product-ecosystem {
         flex: 0 0 100% !important;
         width: 100% !important;
         max-width: 100% !important;
+        align-items: center !important;
+    }
+    .brand-story {
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .brand-story h1,
+    .brand-subheading,
+    .button-actions,
+    .trust-row,
+    .label-container {
+        text-align: center !important;
+        justify-content: center !important;
     }
     .ecosystem-grid {
         grid-template-columns: repeat(2, 1fr) !important;
@@ -1682,6 +1706,14 @@ header.past-hero .phone-link:hover {
 }
 
 @media (max-width: 576px) {
+    .outer {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .hero {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
     .ecosystem-grid {
         grid-template-columns: 1fr !important;
         grid-template-rows: auto !important;
