@@ -1,0 +1,1067 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products â€“ Oppty TechHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <link rel="stylesheet" href="../CSS/products.css" />
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader is-visible" id="pageLoader">
+    <div class="page-loader__logo">
+      <div class="page-loader__ring"></div>
+      <div class="page-loader__ring"></div>
+      <div class="page-loader__ring"></div>
+      <img class="page-loader__img" src="../ASSETS/images/oppty.png" alt="Loading" />
+    </div>
+  </div>
+
+  <!-- FLOATING SOCIAL BAR -->
+  <div class="social-bar">
+    <a href="https://www.instagram.com/opptytech?igsh=YTExdTBsc3Y4ejU2" target="_blank" rel="noopener" aria-label="Instagram" class="social-bar__link">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://youtube.com/@mroppty?si=NbpyNIM-vkHyeLYM" target="_blank" rel="noopener" aria-label="YouTube" class="social-bar__link">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/company/opptytech/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-bar__link">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <img class="logo-img" src="../ASSETS/images/oppty.png" alt="Oppty Logo" />
+      </a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown__toggle" onclick="toggleNavDropdown(this); return false;">Our Services
+            <svg class="nav-dropdown__arrow" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <ul class="nav-dropdown__menu">
+            <li><a href="IT_services.html"><span class="dd-icon dd-icon--blue"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="dd-label">IT Services</span></a></li>
+            <li><a href="ITES_services.html"><span class="dd-icon dd-icon--orange"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M6.3 6.3a8 8 0 0 0 0 11.4M17.7 6.3a8 8 0 0 1 0 11.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="dd-label">ITES Services</span></a></li>
+          </ul>
+        </div>
+        <a href="contact.html">Contact Us</a>
+        <a href="products.html" class="pd-nav-active">Products</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="./Oppty_learn.html" class="btn btn-academy">Learnly</a>
+        <a href="#" class="btn btn-training">Training Partner</a>
+        <a href="tel:+919491209900" class="phone-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57-.11.34-.03.74-.24 1.01L6.6 10.8z"/></svg>
+          +91 9491209900
+        </a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown__toggle" onclick="toggleMobileDropdown(this)" aria-expanded="false">Our Services
+          <svg class="mobile-dropdown__arrow" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <ul class="mobile-dropdown__menu">
+          <li><a href="IT_services.html">IT Services</a></li>
+          <li><a href="ITES_services.html">ITES Services</a></li>
+        </ul>
+      </div>
+      <a href="contact.html">Contact Us</a>
+      <a href="products.html">Products</a>
+      <div class="mobile-btns">
+        <a href="./Oppty_learn.html" class="btn btn-academy">Learnly</a>
+        <a href="#" class="btn btn-training">Training Partner</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       HERO â€” split layout
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section class="pd-hero">
+    <div class="pd-hero__overlay" aria-hidden="true"></div>
+    <div class="pd-hero__mesh" aria-hidden="true">
+      <svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="pdh-g1" cx="10%" cy="55%" r="55%"><stop offset="0%" stop-color="#f26522" stop-opacity="0.28"/><stop offset="100%" stop-color="#f26522" stop-opacity="0"/></radialGradient>
+          <radialGradient id="pdh-g2" cx="90%" cy="45%" r="55%"><stop offset="0%" stop-color="#2563eb" stop-opacity="0.20"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+          <pattern id="pdh-dot" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.1" fill="rgba(255,255,255,0.06)"/></pattern>
+          <pattern id="pdh-gr"  x="0" y="0" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M72 0L0 0 0 72" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern>
+        </defs>
+        <rect width="1440" height="700" fill="url(#pdh-gr)"/>
+        <rect width="1440" height="700" fill="url(#pdh-dot)"/>
+        <ellipse class="pdh-orb pdh-orb--1" cx="200"  cy="350" rx="600" ry="500" fill="url(#pdh-g1)"/>
+        <ellipse class="pdh-orb pdh-orb--2" cx="1240" cy="350" rx="580" ry="480" fill="url(#pdh-g2)"/>
+        <circle  class="pdh-ring"            cx="1380" cy="80"  r="120" fill="none" stroke="rgba(242,101,34,0.12)" stroke-width="1.2" stroke-dasharray="11 8"/>
+        <circle  class="pdh-ring pdh-ring--rev" cx="60" cy="600" r="90"  fill="none" stroke="rgba(59,130,246,0.10)" stroke-width="1"   stroke-dasharray="8 6"/>
+      </svg>
+    </div>
+
+    <div class="pd-hero__split">
+      <!-- LEFT: text -->
+      <div class="pd-hero__left">
+        <span class="pd-hero__eyebrow-pill">
+          <span class="pd-hero__eyebrow-dot"></span>OPPTY PRODUCT ECOSYSTEM
+        </span>
+        <h1 class="pd-hero__title">Eight Products.<br/><span class="pd-hero__accent">One Connected<br/>Platform.</span></h1>
+        <p class="pd-hero__sub">A complete suite of intelligent products built to manage work, connect teams and accelerate business growth.</p>
+        <div class="pd-hero__actions">
+          <a href="#pd-showcase" class="pd-btn pd-btn--primary">Explore Products
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="contact.html" class="pd-btn pd-btn--ghost">Book Consultation</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: stacked hover cards -->
+      <div class="pd-hero__right">
+        <div class="pd-stack" id="pdStack">
+          <div class="pd-stack__card" data-idx="0">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--blue"><img src="../ASSETS/images/task0.png" alt="Taskly"/></div>
+              <span class="pd-stack__name">Taskly</span>
+            </div>
+          </div>
+          <div class="pd-stack__card" data-idx="1">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--purple"><img src="../ASSETS/images/chat0.png" alt="Chatly"/></div>
+              <span class="pd-stack__name">Chatly</span>
+            </div>
+          </div>
+          <div class="pd-stack__card" data-idx="2">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--green"><img src="../ASSETS/images/people0.png" alt="Peoplely"/></div>
+              <span class="pd-stack__name">Peoplely</span>
+            </div>
+          </div>
+          <div class="pd-stack__card" data-idx="3">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--orange"><img src="../ASSETS/images/client0.png" alt="Cliently"/></div>
+              <span class="pd-stack__name">Cliently</span>
+            </div>
+          </div>
+          <div class="pd-stack__card" data-idx="4">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--blue"><img src="../ASSETS/images/meet0.png" alt="Meetly"/></div>
+              <span class="pd-stack__name">Meetly</span>
+            </div>
+          </div>
+          <div class="pd-stack__card" data-idx="5">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--teal"><img src="../ASSETS/images/hire0.png" alt="Hirely"/></div>
+              <span class="pd-stack__name">Hirely</span>
+            </div>
+          </div>
+          <div class="pd-stack__card" data-idx="6">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--indigo"><img src="../ASSETS/images/learn0.png" alt="Learnly"/></div>
+              <span class="pd-stack__name">Learnly</span>
+            </div>
+          </div>
+          <div class="pd-stack__card" data-idx="7">
+            <div class="pd-stack__card-inner">
+              <div class="pd-stack__icon pd-stack__icon--rose"><img src="../ASSETS/images/support0.png" alt="Supportly"/></div>
+              <span class="pd-stack__name">Supportly</span>
+            </div>
+          </div>
+        </div>
+        <p class="pd-stack__hint">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          HOVER TO EXPLORE THE SUITE
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       PRODUCT GRID â€” Explore The Ecosystem
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section class="pd-grid-section" id="pd-suite">
+    <div class="pd-grid-section__inner">
+      <div class="pd-grid-section__head">
+        <span class="pd-grid-section__eyebrow">
+          <span class="pd-grid-section__eyebrow-dot"></span>PRODUCT SUITE
+        </span>
+        <h2 class="pd-grid-section__title">Explore The <span>Oppty Ecosystem</span></h2>
+        <p class="pd-grid-section__sub">Eight products designed to power every part of your business.</p>
+      </div>
+
+      <div class="pd-eco-grid">
+
+        <!-- Taskly -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--blue">
+            <img src="../ASSETS/images/task0.png" alt="Taskly" />
+          </div>
+          <h3 class="pd-eco-card__name">Taskly</h3>
+          <p class="pd-eco-card__desc">Plan, assign and track projects from a single workspace.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--blue"></span>Kanban &amp; timeline views</li>
+            <li><span class="pd-eco-dot pd-eco-dot--blue"></span>Automated reminders</li>
+          </ul>
+          <a href="https://task.theoppty.com/" target="_blank" class="pd-eco-card__link pd-eco-card__link--blue">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Chatly -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--purple">
+            <img src="../ASSETS/images/chat0.png" alt="Chatly" />
+          </div>
+          <h3 class="pd-eco-card__name">Chatly</h3>
+          <p class="pd-eco-card__desc">Secure real-time messaging and channels for your team.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--purple"></span>Organized channels</li>
+            <li><span class="pd-eco-dot pd-eco-dot--purple"></span>End-to-end encryption</li>
+          </ul>
+          <a href="https://chat.theoppty.com/chats" target="_blank" class="pd-eco-card__link pd-eco-card__link--purple">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Peoplely -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--green">
+            <img src="../ASSETS/images/people0.png" alt="Peoplely" />
+          </div>
+          <h3 class="pd-eco-card__name">Peoplely</h3>
+          <p class="pd-eco-card__desc">Manage employees, attendance, payroll and workforce ops.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--green"></span>Automated payroll</li>
+            <li><span class="pd-eco-dot pd-eco-dot--green"></span>Real-time attendance</li>
+          </ul>
+          <a href="https://theoppty.com/" target="_blank" class="pd-eco-card__link pd-eco-card__link--green">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Cliently -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--orange">
+            <img src="../ASSETS/images/client0.png" alt="Cliently" />
+          </div>
+          <h3 class="pd-eco-card__name">Cliently</h3>
+          <p class="pd-eco-card__desc">Track leads, deals and customer relationships at scale.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--orange"></span>Visual pipeline</li>
+            <li><span class="pd-eco-dot pd-eco-dot--orange"></span>AI lead scoring</li>
+          </ul>
+          <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--orange">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Meetly -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--blue">
+            <img src="../ASSETS/images/meet0.png" alt="Meetly" />
+          </div>
+          <h3 class="pd-eco-card__name">Meetly</h3>
+          <p class="pd-eco-card__desc">HD video meetings with screen sharing and live captions.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--blue"></span>250 participants</li>
+            <li><span class="pd-eco-dot pd-eco-dot--blue"></span>Recording &amp; notes</li>
+          </ul>
+          <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--blue">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Hirely -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--teal">
+            <img src="../ASSETS/images/hire0.png" alt="Hirely" />
+          </div>
+          <h3 class="pd-eco-card__name">Hirely</h3>
+          <p class="pd-eco-card__desc">Streamline hiring with smart screening and pipeline tools.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--teal"></span>Auto screening</li>
+            <li><span class="pd-eco-dot pd-eco-dot--teal"></span>Interview scheduling</li>
+          </ul>
+          <a href="https://hiring.theoppty.com/" target="_blank" class="pd-eco-card__link pd-eco-card__link--teal">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Learnly -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--indigo">
+            <img src="../ASSETS/images/learn0.png" alt="Learnly" />
+          </div>
+          <h3 class="pd-eco-card__name">Learnly</h3>
+          <p class="pd-eco-card__desc">Deliver training, track progress and grow employee skills.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--indigo"></span>Course certifications</li>
+            <li><span class="pd-eco-dot pd-eco-dot--indigo"></span>Progress analytics</li>
+          </ul>
+          <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--indigo">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Supportly -->
+        <div class="pd-eco-card">
+          <div class="pd-eco-card__icon pd-eco-card__icon--rose">
+            <img src="../ASSETS/images/support0.png" alt="Supportly" />
+          </div>
+          <h3 class="pd-eco-card__name">Supportly</h3>
+          <p class="pd-eco-card__desc">Manage support tickets, SLAs and customer satisfaction.</p>
+          <ul class="pd-eco-card__features">
+            <li><span class="pd-eco-dot pd-eco-dot--rose"></span>Smart ticket routing</li>
+            <li><span class="pd-eco-dot pd-eco-dot--rose"></span>SLA enforcement</li>
+          </ul>
+          <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--rose">View Product
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       PRODUCT EXPERIENCE â€” scroll sections
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section class="pd-experience" id="pd-showcase">
+    <div class="pd-experience__head">
+      <span class="pd-grid-section__eyebrow">
+        <span class="pd-grid-section__eyebrow-dot"></span>PRODUCT EXPERIENCE CENTER
+      </span>
+      <h2 class="pd-experience__title">Built For Every <span>Workflow</span></h2>
+    </div>
+
+    <!-- 8 product rows â€” alternating mock left/right -->
+
+    <!-- 1. Taskly -->
+    <div class="pd-exp-row" data-reveal>
+      <div class="pd-exp-row__mock pd-exp-row__mock--blue">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Taskly Board</span></div>
+          <div class="pd-mock__cols">
+            <div class="pd-mock__col"><div class="pd-mock__col-head pd-mock__col-head--todo">TO DO</div><div class="pd-mock__card">Design audit</div><div class="pd-mock__card">User interviews</div></div>
+            <div class="pd-mock__col"><div class="pd-mock__col-head pd-mock__col-head--prog">IN PROGRESS</div><div class="pd-mock__card pd-mock__card--active">Sprint planning</div></div>
+            <div class="pd-mock__col"><div class="pd-mock__col-head pd-mock__col-head--done">DONE</div><div class="pd-mock__card">Brief approved</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">TASK MANAGEMENT PLATFORM</span>
+        <h3 class="pd-exp-row__name">Taskly</h3>
+        <p class="pd-exp-row__desc">Plan projects, assign tasks, monitor progress and improve productivity through a centralized workspace.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">3.4Ã—</span><span class="pd-exp-row__mlbl">FASTER DELIVERY</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">91%</span><span class="pd-exp-row__mlbl">ON-TIME RATE</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">68%</span><span class="pd-exp-row__mlbl">LESS ADMIN</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>Kanban, List and Timeline views</li><li>Automated deadline reminders</li><li>Real-time team progress tracking</li></ul>
+        <div class="pd-exp-row__tags"><span>Project Planning</span><span>Workflow Tracking</span><span>Deadline Management</span></div>
+        <a href="https://task.theoppty.com/" target="_blank" class="pd-eco-card__link pd-eco-card__link--blue">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- 2. Chatly -->
+    <div class="pd-exp-row pd-exp-row--flip" data-reveal>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">TEAM COMMUNICATION</span>
+        <h3 class="pd-exp-row__name">Chatly</h3>
+        <p class="pd-exp-row__desc">Enable real-time collaboration with secure messaging, channels and team communication tools built for fast-moving teams.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">58%</span><span class="pd-exp-row__mlbl">FEWER EMAILS</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">2.1Ã—</span><span class="pd-exp-row__mlbl">FASTER REPLIES</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">99.9%</span><span class="pd-exp-row__mlbl">UPTIME</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>Channels</li><li>Secure Messaging</li><li>Live Activity</li></ul>
+        <div class="pd-exp-row__tags"><span>Channels</span><span>Secure Messaging</span><span>Live Activity</span></div>
+        <a href="https://chat.theoppty.com/chats" target="_blank" class="pd-eco-card__link pd-eco-card__link--purple">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="pd-exp-row__mock pd-exp-row__mock--purple">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Chatly</span></div>
+          <div class="pd-mock__chat">
+            <div class="pd-mock__msg pd-mock__msg--in"><span class="pd-mock__avatar">A</span><div class="pd-mock__bubble">Hey team, is the deployment ready?</div></div>
+            <div class="pd-mock__msg pd-mock__msg--out"><div class="pd-mock__bubble pd-mock__bubble--accent">Yes! Pushing it now ðŸš€</div><span class="pd-mock__avatar" style="background:rgba(37,99,235,0.30)">B</span></div>
+            <div class="pd-mock__msg pd-mock__msg--in"><span class="pd-mock__avatar" style="background:rgba(124,58,237,0.30)">C</span><div class="pd-mock__bubble">Perfect â€” I'll notify the client.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Peoplely -->
+    <div class="pd-exp-row" data-reveal>
+      <div class="pd-exp-row__mock pd-exp-row__mock--green">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Peoplely HRMS</span></div>
+          <div class="pd-mock__people">
+            <div class="pd-mock__person"><span class="pd-mock__avatar pd-mock__avatar--green">AK</span><div><div class="pd-mock__pname">Aisha</div><div class="pd-mock__pstatus pd-mock__pstatus--green">Present</div></div></div>
+            <div class="pd-mock__person"><span class="pd-mock__avatar pd-mock__avatar--blue">RS</span><div><div class="pd-mock__pname">Rohan</div><div class="pd-mock__pstatus pd-mock__pstatus--green">Present</div></div></div>
+            <div class="pd-mock__person"><span class="pd-mock__avatar pd-mock__avatar--orange">MK</span><div><div class="pd-mock__pname">Meera</div><div class="pd-mock__pstatus pd-mock__pstatus--orange">On Leave</div></div></div>
+            <div class="pd-mock__person"><span class="pd-mock__avatar pd-mock__avatar--purple">DV</span><div><div class="pd-mock__pname">Dev</div><div class="pd-mock__pstatus pd-mock__pstatus--green">Present</div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">HRMS PLATFORM</span>
+        <h3 class="pd-exp-row__name">Peoplely</h3>
+        <p class="pd-exp-row__desc">Manage employees, attendance, payroll and workforce operations from a single unified HR dashboard.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">72%</span><span class="pd-exp-row__mlbl">HR TIME SAVED</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">100%</span><span class="pd-exp-row__mlbl">COMPLIANCE</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">4.9â˜…</span><span class="pd-exp-row__mlbl">EMPLOYEE SCORE</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>Attendance</li><li>Payroll</li><li>Workforce Insights</li></ul>
+        <div class="pd-exp-row__tags"><span>Attendance</span><span>Payroll</span><span>Workforce Insights</span></div>
+        <a href="https://theoppty.com/" target="_blank" class="pd-eco-card__link pd-eco-card__link--green">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- 4. Cliently -->
+    <div class="pd-exp-row pd-exp-row--flip" data-reveal>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">CRM PLATFORM</span>
+        <h3 class="pd-exp-row__name">Cliently</h3>
+        <p class="pd-exp-row__desc">Track leads, manage customer relationships and optimize your entire sales pipeline for consistent revenue growth.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">2.8Ã—</span><span class="pd-exp-row__mlbl">WIN RATE</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">41%</span><span class="pd-exp-row__mlbl">SHORTER CYCLE</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">248</span><span class="pd-exp-row__mlbl">LEADS TRACKED</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>Pipeline Tracking</li><li>Lead Scoring</li><li>Deal Insights</li></ul>
+        <div class="pd-exp-row__tags"><span>Pipeline Tracking</span><span>Lead Scoring</span><span>Deal Insights</span></div>
+        <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--orange">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="pd-exp-row__mock pd-exp-row__mock--orange">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Cliently CRM</span></div>
+          <div class="pd-mock__pipeline">
+            <div class="pd-mock__stage"><div class="pd-mock__stage-label">Lead</div><div class="pd-mock__stage-val">248</div></div>
+            <div class="pd-mock__stage"><div class="pd-mock__stage-label">Qualified</div><div class="pd-mock__stage-val">132</div></div>
+            <div class="pd-mock__stage"><div class="pd-mock__stage-label">Proposal</div><div class="pd-mock__stage-val">54</div></div>
+            <div class="pd-mock__stage pd-mock__stage--won"><div class="pd-mock__stage-label">Won</div><div class="pd-mock__stage-val">21</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Meetly -->
+    <div class="pd-exp-row" data-reveal>
+      <div class="pd-exp-row__mock pd-exp-row__mock--blue">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Meetly</span></div>
+          <div class="pd-mock__meet">
+            <div class="pd-mock__meet-grid">
+              <div class="pd-mock__meet-tile pd-mock__meet-tile--main"><span>JD</span></div>
+              <div class="pd-mock__meet-tile"><span>RS</span></div>
+              <div class="pd-mock__meet-tile"><span>MK</span></div>
+              <div class="pd-mock__meet-tile"><span>+5</span></div>
+            </div>
+            <div class="pd-mock__meet-bar"><span class="pd-mock__meet-icon">ðŸŽ¤</span><span class="pd-mock__meet-icon">ðŸ“·</span><span class="pd-mock__meet-icon">ðŸ’¬</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">VIDEO MEETINGS</span>
+        <h3 class="pd-exp-row__name">Meetly</h3>
+        <p class="pd-exp-row__desc">Host secure, high-quality video meetings and collaborate in real time from anywhere in the world.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">HD</span><span class="pd-exp-row__mlbl">VIDEO QUALITY</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">250</span><span class="pd-exp-row__mlbl">MAX PARTICIPANTS</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">&lt;80ms</span><span class="pd-exp-row__mlbl">LATENCY</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>HD Video</li><li>Screen Share</li><li>Live Captions</li></ul>
+        <div class="pd-exp-row__tags"><span>HD Video</span><span>Screen Share</span><span>Live Captions</span></div>
+        <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--blue">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- 6. Hirely -->
+    <div class="pd-exp-row pd-exp-row--flip" data-reveal>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">RECRUITMENT ATS</span>
+        <h3 class="pd-exp-row__name">Hirely</h3>
+        <p class="pd-exp-row__desc">Streamline your entire hiring workflow and identify top talent faster with intelligent candidate tracking.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">54%</span><span class="pd-exp-row__mlbl">FASTER HIRE</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">3.2Ã—</span><span class="pd-exp-row__mlbl">MORE QUALIFIED</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">320</span><span class="pd-exp-row__mlbl">APPLICANTS</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>Candidate Pipeline</li><li>Smart Screening</li><li>Hiring Funnel</li></ul>
+        <div class="pd-exp-row__tags"><span>Candidate Pipeline</span><span>Smart Screening</span><span>Hiring Funnel</span></div>
+        <a href="https://hiring.theoppty.com/" target="_blank" class="pd-eco-card__link pd-eco-card__link--teal">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="pd-exp-row__mock pd-exp-row__mock--teal">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Hirely ATS</span></div>
+          <div class="pd-mock__funnel">
+            <div class="pd-mock__fstage" style="width:100%"><span>Applied</span><strong>320</strong></div>
+            <div class="pd-mock__fstage" style="width:80%"><span>Screened</span><strong>218</strong></div>
+            <div class="pd-mock__fstage" style="width:55%"><span>Interview</span><strong>109</strong></div>
+            <div class="pd-mock__fstage pd-mock__fstage--won" style="width:32%"><span>Hired</span><strong>38</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Learnly -->
+    <div class="pd-exp-row" data-reveal>
+      <div class="pd-exp-row__mock pd-exp-row__mock--indigo">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Learnly LMS</span></div>
+          <div class="pd-mock__lms">
+            <div class="pd-mock__lms-ring"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="7"/><circle cx="40" cy="40" r="32" fill="none" stroke="#4ade80" stroke-width="7" stroke-dasharray="126 201" stroke-linecap="round" transform="rotate(-90 40 40)"/><text x="40" y="46" text-anchor="middle" fill="#fff" font-size="16" font-weight="800" font-family="Montserrat,sans-serif">76%</text></svg></div>
+            <div class="pd-mock__lms-courses">
+              <div class="pd-mock__lms-course"><span class="pd-mock__lms-dot pd-mock__lms-dot--done"></span>Onboarding Basics</div>
+              <div class="pd-mock__lms-course"><span class="pd-mock__lms-dot pd-mock__lms-dot--prog"></span>Product Certification</div>
+              <div class="pd-mock__lms-course"><span class="pd-mock__lms-dot pd-mock__lms-dot--todo"></span>Leadership Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">LEARNING MANAGEMENT</span>
+        <h3 class="pd-exp-row__name">Learnly</h3>
+        <p class="pd-exp-row__desc">Deliver impactful training, track individual progress and build a culture of continuous employee growth.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">76%</span><span class="pd-exp-row__mlbl">COMPLETION RATE</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">4.8â˜…</span><span class="pd-exp-row__mlbl">LEARNER RATING</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">2.3Ã—</span><span class="pd-exp-row__mlbl">SKILL GROWTH</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>Course Tracking</li><li>Certifications</li><li>Skill Growth</li></ul>
+        <div class="pd-exp-row__tags"><span>Course Tracking</span><span>Certifications</span><span>Skill Growth</span></div>
+        <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--indigo">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- 8. Supportly -->
+    <div class="pd-exp-row pd-exp-row--flip" data-reveal>
+      <div class="pd-exp-row__info">
+        <span class="pd-exp-row__cat">HELPDESK PLATFORM</span>
+        <h3 class="pd-exp-row__name">Supportly</h3>
+        <p class="pd-exp-row__desc">Resolve customer tickets faster, manage SLAs and deliver exceptional support that builds lasting loyalty.</p>
+        <div class="pd-exp-row__metrics">
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">38%</span><span class="pd-exp-row__mlbl">FASTER RESOLVE</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">99%</span><span class="pd-exp-row__mlbl">SLA MET</span></div>
+          <div class="pd-exp-row__metric"><span class="pd-exp-row__mval">4.9â˜…</span><span class="pd-exp-row__mlbl">CSAT SCORE</span></div>
+        </div>
+        <ul class="pd-exp-row__features"><li>Smart Ticketing</li><li>SLA Tracking</li><li>Support Queue</li></ul>
+        <div class="pd-exp-row__tags"><span>Smart Ticketing</span><span>SLA Tracking</span><span>Support Queue</span></div>
+        <a href="contact.html" class="pd-eco-card__link pd-eco-card__link--rose">View Product <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="pd-exp-row__mock pd-exp-row__mock--rose">
+        <div class="pd-mock">
+          <div class="pd-mock__header"><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__title">Supportly</span></div>
+          <div class="pd-mock__tickets">
+            <div class="pd-mock__ticket"><span class="pd-mock__tid">#1042</span><span class="pd-mock__tname">Login issue</span><span class="pd-mock__tstatus pd-mock__tstatus--open">Open</span></div>
+            <div class="pd-mock__ticket"><span class="pd-mock__tid">#1041</span><span class="pd-mock__tname">Billing query</span><span class="pd-mock__tstatus pd-mock__tstatus--pend">Pending</span></div>
+            <div class="pd-mock__ticket"><span class="pd-mock__tid">#1039</span><span class="pd-mock__tname">Export bug</span><span class="pd-mock__tstatus pd-mock__tstatus--done">Resolved</span></div>
+            <div class="pd-mock__tcount"><strong>0</strong> tickets in queue</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       COMPARISON TABLE
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <!-- TEAM SOLUTIONS -->
+  <section class="pd-teams">
+    <div class="pd-teams__inner">
+      <div class="pd-teams__head">
+        <span class="pd-grid-section__eyebrow"><span class="pd-grid-section__eyebrow-dot"></span>TEAM SOLUTIONS</span>
+        <h2 class="pd-teams__title">Built For <span>Every Team</span></h2>
+      </div>
+
+      <div class="pd-teams__grid">
+
+        <!-- Operations -->
+        <div class="pd-team-card" data-reveal>
+          <div class="pd-team-card__icon pd-team-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="pd-team-card__name">Operations</h3>
+          <p class="pd-team-card__prob">Scattered workflows slow down delivery and create bottlenecks across departments.</p>
+          <ul class="pd-team-card__features">
+            <li>Centralise all tasks and workflows</li>
+            <li>Automate cross-team handoffs</li>
+          </ul>
+          <div class="pd-team-card__products"><span>Taskly</span><span>Chatly</span><span>Meetly</span></div>
+          <div class="pd-team-card__result pd-team-card__result--blue">→ 40% faster project delivery</div>
+        </div>
+
+        <!-- HR -->
+        <div class="pd-team-card" data-reveal>
+          <div class="pd-team-card__icon pd-team-card__icon--purple">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="pd-team-card__name">HR</h3>
+          <p class="pd-team-card__prob">Manual payroll, attendance tracking and hiring processes drain HR bandwidth.</p>
+          <ul class="pd-team-card__features">
+            <li>Automate payroll and attendance</li>
+            <li>Streamline recruitment pipeline</li>
+          </ul>
+          <div class="pd-team-card__products"><span>Peoplely</span><span>Hirely</span><span>Learnly</span></div>
+          <div class="pd-team-card__result pd-team-card__result--purple">→ 72% reduction in HR admin time</div>
+        </div>
+
+        <!-- Sales -->
+        <div class="pd-team-card" data-reveal>
+          <div class="pd-team-card__icon pd-team-card__icon--orange">
+            <svg viewBox="0 0 24 24" fill="none"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="16 7 22 7 22 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="pd-team-card__name">Sales</h3>
+          <p class="pd-team-card__prob">Leads falling through the cracks and no clear view of the full sales pipeline.</p>
+          <ul class="pd-team-card__features">
+            <li>Visual deal pipeline tracking</li>
+            <li>Automated lead follow-ups</li>
+          </ul>
+          <div class="pd-team-card__products"><span>Cliently</span><span>Hirely</span><span>Meetly</span></div>
+          <div class="pd-team-card__result pd-team-card__result--orange">→ 2.8× improvement in win rate</div>
+        </div>
+
+        <!-- Support -->
+        <div class="pd-team-card" data-reveal>
+          <div class="pd-team-card__icon pd-team-card__icon--rose">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="pd-team-card__name">Support</h3>
+          <p class="pd-team-card__prob">High ticket volumes and slow resolution times damaging customer satisfaction.</p>
+          <ul class="pd-team-card__features">
+            <li>Smart ticket routing and SLA tracking</li>
+            <li>Customer satisfaction monitoring</li>
+          </ul>
+          <div class="pd-team-card__products"><span>Supportly</span><span>Chatly</span></div>
+          <div class="pd-team-card__result pd-team-card__result--rose">→ 99% SLA compliance achieved</div>
+        </div>
+
+        <!-- Learning -->
+        <div class="pd-team-card" data-reveal>
+          <div class="pd-team-card__icon pd-team-card__icon--indigo">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 14l9-5-9-5-9 5 9 5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14l6.16-3.422a12.083 12.083 0 0 1 .665 6.479A11.952 11.952 0 0 0 12 20.055a11.952 11.952 0 0 0-6.824-2.998 12.078 12.078 0 0 1 .665-6.479L12 14z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="pd-team-card__name">Learning</h3>
+          <p class="pd-team-card__prob">Inconsistent training delivery and no way to track employee skill development.</p>
+          <ul class="pd-team-card__features">
+            <li>Structured learning paths</li>
+            <li>Automated certification tracking</li>
+          </ul>
+          <div class="pd-team-card__products"><span>Learnly</span><span>Peoplely</span></div>
+          <div class="pd-team-card__result pd-team-card__result--indigo">→ 76% average course completion</div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="pd-team-card" data-reveal>
+          <div class="pd-team-card__icon pd-team-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 9l-5 5-4-4-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="pd-team-card__name">Leadership</h3>
+          <p class="pd-team-card__prob">No single view of business performance across teams and products.</p>
+          <ul class="pd-team-card__features">
+            <li>Unified cross-product dashboard</li>
+            <li>Real-time business intelligence</li>
+          </ul>
+          <div class="pd-team-card__products"><span>All 8 Products</span></div>
+          <div class="pd-team-card__result pd-team-card__result--green">→ Full business visibility in one view</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE DASHBOARDS -->
+  <section class="pd-live">
+    <div class="pd-live__inner">
+      <div class="pd-teams__head">
+        <span class="pd-grid-section__eyebrow"><span class="pd-grid-section__eyebrow-dot"></span>LIVE DASHBOARDS</span>
+        <h2 class="pd-teams__title">See Oppty <span>In Action</span></h2>
+      </div>
+
+      <div class="pd-live__layout">
+
+        <!-- Left mini cards -->
+        <div class="pd-live__side pd-live__side--left">
+          <div class="pd-live__mini" data-reveal>
+            <div class="pd-live__mini-header">
+              <span class="pd-live__mini-name">Taskly</span>
+              <span class="pd-live__mini-badge pd-live__mini-badge--blue">↑ 6 tasks done</span>
+            </div>
+            <div class="pd-live__mini-val">24</div>
+            <div class="pd-live__mini-bars">
+              <div class="pd-live__bar" style="height:28px;background:#2563eb;opacity:.9"></div>
+              <div class="pd-live__bar" style="height:40px;background:#2563eb"></div>
+              <div class="pd-live__bar" style="height:22px;background:#2563eb;opacity:.7"></div>
+              <div class="pd-live__bar" style="height:52px;background:#2563eb"></div>
+              <div class="pd-live__bar" style="height:35px;background:#2563eb;opacity:.8"></div>
+            </div>
+          </div>
+          <div class="pd-live__mini" data-reveal style="margin-top:16px">
+            <div class="pd-live__mini-header">
+              <span class="pd-live__mini-name">Peoplely</span>
+              <span class="pd-live__mini-badge pd-live__mini-badge--green">Attendance</span>
+            </div>
+            <div class="pd-live__mini-val">92%</div>
+            <div class="pd-live__mini-bars">
+              <div class="pd-live__bar" style="height:30px;background:#059669;opacity:.7"></div>
+              <div class="pd-live__bar" style="height:48px;background:#059669"></div>
+              <div class="pd-live__bar" style="height:38px;background:#059669;opacity:.8"></div>
+              <div class="pd-live__bar" style="height:55px;background:#059669"></div>
+              <div class="pd-live__bar" style="height:42px;background:#059669;opacity:.9"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Centre command panel -->
+        <div class="pd-live__center" data-reveal>
+          <div class="pd-live__cmd">
+            <div class="pd-live__cmd-header">
+              <span class="pd-mock__dot"></span><span class="pd-mock__dot"></span><span class="pd-mock__dot"></span>
+              <span class="pd-live__cmd-title">Oppty Command Center</span>
+              <span class="pd-live__cmd-live">Live</span>
+            </div>
+            <div class="pd-live__cmd-stats">
+              <div class="pd-live__cmd-stat"><span class="pd-live__cmd-val">1,284</span><span class="pd-live__cmd-lbl">Tasks Active</span></div>
+              <div class="pd-live__cmd-stat"><span class="pd-live__cmd-val">98%</span><span class="pd-live__cmd-lbl">Uptime</span></div>
+              <div class="pd-live__cmd-stat"><span class="pd-live__cmd-val">8</span><span class="pd-live__cmd-lbl">Products Live</span></div>
+            </div>
+            <div class="pd-live__cmd-icons">
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--blue">T</span>
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--purple">C</span>
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--green">P</span>
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--orange">Cl</span>
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--blue">M</span>
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--teal">H</span>
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--indigo">L</span>
+              <span class="pd-live__cmd-icon pd-live__cmd-icon--rose">S</span>
+            </div>
+            <div class="pd-live__cmd-metrics">
+              <div class="pd-live__cmd-metric"><span class="pd-live__cmd-mval">21</span><span class="pd-live__cmd-mlbl">Deals Won</span></div>
+              <div class="pd-live__cmd-metric"><span class="pd-live__cmd-mval">47</span><span class="pd-live__cmd-mlbl">Tickets</span></div>
+              <div class="pd-live__cmd-metric"><span class="pd-live__cmd-mval">6</span><span class="pd-live__cmd-mlbl">Meetings</span></div>
+              <div class="pd-live__cmd-metric"><span class="pd-live__cmd-mval">38</span><span class="pd-live__cmd-mlbl">Hired</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right mini cards -->
+        <div class="pd-live__side pd-live__side--right">
+          <div class="pd-live__mini" data-reveal>
+            <div class="pd-live__mini-header">
+              <span class="pd-live__mini-name">Cliently</span>
+              <span class="pd-live__mini-badge pd-live__mini-badge--orange">↑ Pipeline</span>
+            </div>
+            <div class="pd-live__mini-val">$2.4M</div>
+            <div class="pd-live__mini-bars">
+              <div class="pd-live__bar" style="height:20px;background:#f26522;opacity:.6"></div>
+              <div class="pd-live__bar" style="height:44px;background:#f26522"></div>
+              <div class="pd-live__bar" style="height:32px;background:#f26522;opacity:.8"></div>
+              <div class="pd-live__bar" style="height:56px;background:#f26522"></div>
+              <div class="pd-live__bar" style="height:38px;background:#f26522;opacity:.9"></div>
+            </div>
+          </div>
+          <div class="pd-live__mini" data-reveal style="margin-top:16px">
+            <div class="pd-live__mini-header">
+              <span class="pd-live__mini-name">Supportly</span>
+              <span class="pd-live__mini-badge pd-live__mini-badge--rose">SLA Met</span>
+            </div>
+            <div class="pd-live__mini-val">99%</div>
+            <div class="pd-live__mini-bars">
+              <div class="pd-live__bar" style="height:50px;background:#e11d48"></div>
+              <div class="pd-live__bar" style="height:38px;background:#e11d48;opacity:.8"></div>
+              <div class="pd-live__bar" style="height:54px;background:#e11d48"></div>
+              <div class="pd-live__bar" style="height:30px;background:#e11d48;opacity:.7"></div>
+              <div class="pd-live__bar" style="height:46px;background:#e11d48;opacity:.9"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECTED ECOSYSTEM -->
+  <section class="pd-ecosystem">
+    <div class="pd-ecosystem__inner">
+      <div class="pd-teams__head">
+        <span class="pd-grid-section__eyebrow"><span class="pd-grid-section__eyebrow-dot"></span>CONNECTED ECOSYSTEM</span>
+        <h2 class="pd-teams__title">Why Products Work <span>Better Together</span></h2>
+      </div>
+
+      <!-- Orbital diagram -->
+      <div class="pd-orbit" aria-hidden="true">
+        <div class="pd-orbit__ring pd-orbit__ring--outer"></div>
+        <div class="pd-orbit__ring pd-orbit__ring--inner"></div>
+        <div class="pd-orbit__center">
+          <img src="../ASSETS/images/oppty.png" alt="Oppty" />
+          <span>OPPTY</span>
+        </div>
+        <!-- 8 product nodes around the orbit -->
+        <div class="pd-orbit__node" style="--angle:0deg">
+          <img src="../ASSETS/images/task0.png" alt="Taskly"/><span>Taskly</span>
+        </div>
+        <div class="pd-orbit__node" style="--angle:45deg">
+          <img src="../ASSETS/images/chat0.png" alt="Chatly"/><span>Chatly</span>
+        </div>
+        <div class="pd-orbit__node" style="--angle:90deg">
+          <img src="../ASSETS/images/people0.png" alt="Peoplely"/><span>Peoplely</span>
+        </div>
+        <div class="pd-orbit__node" style="--angle:135deg">
+          <img src="../ASSETS/images/client0.png" alt="Cliently"/><span>Cliently</span>
+        </div>
+        <div class="pd-orbit__node" style="--angle:180deg">
+          <img src="../ASSETS/images/meet0.png" alt="Meetly"/><span>Meetly</span>
+        </div>
+        <div class="pd-orbit__node" style="--angle:225deg">
+          <img src="../ASSETS/images/hire0.png" alt="Hirely"/><span>Hirely</span>
+        </div>
+        <div class="pd-orbit__node" style="--angle:270deg">
+          <img src="../ASSETS/images/learn0.png" alt="Learnly"/><span>Learnly</span>
+        </div>
+        <div class="pd-orbit__node" style="--angle:315deg">
+          <img src="../ASSETS/images/support0.png" alt="Supportly"/><span>Supportly</span>
+        </div>
+      </div>
+
+      <!-- Benefit pills row -->
+      <div class="pd-ecosystem__pills">
+        <div class="pd-eco-pill"><svg viewBox="0 0 20 20" fill="none"><path d="M4 4h5v5H4zM11 4h5v5h-5zM4 11h5v5H4zM11 11h5v5h-5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>Unified Data</div>
+        <div class="pd-eco-pill"><svg viewBox="0 0 20 20" fill="none"><path d="M6 10h8M10 6v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Shared Workflows</div>
+        <div class="pd-eco-pill"><svg viewBox="0 0 20 20" fill="none"><circle cx="6" cy="6" r="2.5" stroke="currentColor" stroke-width="1.4"/><circle cx="14" cy="14" r="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M8.5 6h2a3 3 0 0 1 3 3v2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Cross-Team Collaboration</div>
+        <div class="pd-eco-pill"><svg viewBox="0 0 20 20" fill="none"><path d="M13 2L4 11h6l-1 7 9-10h-6z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>Automation</div>
+        <div class="pd-eco-pill"><svg viewBox="0 0 20 20" fill="none"><path d="M4 4h5v5H4zM11 4h5v5h-5zM4 11h5v5H4zM11 11h5v5h-5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>Scalability</div>
+        <div class="pd-eco-pill"><svg viewBox="0 0 20 20" fill="none"><rect x="3" y="9" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M7 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Enterprise Security</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pd-compare">
+    <div class="pd-compare__inner">
+      <div class="pd-section-head pd-section-head--light">
+        <span class="pd-eyebrow pd-eyebrow--dark">Compare The Difference</span>
+        <h2 class="pd-section-title pd-section-title--dark">Standalone Tools vs Oppty Ecosystem</h2>
+      </div>
+      <div class="pd-compare__table-wrap">
+        <table class="pd-compare__table">
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th class="pd-compare__th--bad">Multiple Standalone Tools</th>
+              <th class="pd-compare__th--good">Oppty Ecosystem</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Integration</td><td class="pd-compare__td--bad"><span class="pd-compare__x">âœ•</span>Manual syncing</td><td class="pd-compare__td--good"><span class="pd-compare__check">âœ“</span>Native integration</td></tr>
+            <tr><td>Cost Efficiency</td><td class="pd-compare__td--bad"><span class="pd-compare__x">âœ•</span>Multiple bills</td><td class="pd-compare__td--good"><span class="pd-compare__check">âœ“</span>One simple plan</td></tr>
+            <tr><td>User Experience</td><td class="pd-compare__td--bad"><span class="pd-compare__x">âœ•</span>Inconsistent UIs</td><td class="pd-compare__td--good"><span class="pd-compare__check">âœ“</span>One design language</td></tr>
+            <tr><td>Automation</td><td class="pd-compare__td--bad"><span class="pd-compare__x">âœ•</span>Limited triggers</td><td class="pd-compare__td--good"><span class="pd-compare__check">âœ“</span>Cross-product automation</td></tr>
+            <tr><td>Collaboration</td><td class="pd-compare__td--bad"><span class="pd-compare__x">âœ•</span>Siloed teams</td><td class="pd-compare__td--good"><span class="pd-compare__check">âœ“</span>Unified team workspace</td></tr>
+            <tr><td>Security</td><td class="pd-compare__td--bad"><span class="pd-compare__x">âœ•</span>Varies by vendor</td><td class="pd-compare__td--good"><span class="pd-compare__check">âœ“</span>Enterprise-grade, suite-wide</td></tr>
+            <tr><td>Support</td><td class="pd-compare__td--bad"><span class="pd-compare__x">âœ•</span>Multiple help desks</td><td class="pd-compare__td--good"><span class="pd-compare__check">âœ“</span>One point of contact</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       ROADMAP
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section class="pd-roadmap">
+    <div class="pd-roadmap__inner">
+      <div class="pd-section-head">
+        <span class="pd-eyebrow">Looking Ahead</span>
+        <h2 class="pd-section-title">The Future Is Connected</h2>
+        <p class="pd-section-sub">We're building a complete ecosystem that empowers organizations to work smarter, collaborate better and scale faster â€” one connected product at a time.</p>
+      </div>
+      <div class="pd-roadmap__steps">
+        <div class="pd-roadmap__step pd-roadmap__step--active">
+          <div class="pd-roadmap__step-dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="pd-roadmap__step-line"></div>
+          <div class="pd-roadmap__step-content">
+            <span class="pd-roadmap__step-tag">Today</span>
+            <h4>Current Products</h4>
+            <p>Eight integrated SaaS products, live and connected across the Oppty ecosystem.</p>
+          </div>
+        </div>
+        <div class="pd-roadmap__step pd-roadmap__step--upcoming">
+          <div class="pd-roadmap__step-dot"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg></div>
+          <div class="pd-roadmap__step-line"></div>
+          <div class="pd-roadmap__step-content">
+            <span class="pd-roadmap__step-tag pd-roadmap__step-tag--blue">Tomorrow</span>
+            <h4>AI Integrations</h4>
+            <p>Intelligent automation woven into every product, anticipating work before it happens.</p>
+          </div>
+        </div>
+        <div class="pd-roadmap__step pd-roadmap__step--future">
+          <div class="pd-roadmap__step-dot"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/></svg></div>
+          <div class="pd-roadmap__step-content">
+            <span class="pd-roadmap__step-tag pd-roadmap__step-tag--purple">Future</span>
+            <h4>Unified Business Intelligence</h4>
+            <p>One intelligence layer across the suite, turning every interaction into insight.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       CTA
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section class="pd-cta">
+    <div class="pd-cta__bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="pd-cg1" cx="20%" cy="50%" r="60%"><stop offset="0%" stop-color="#f26522" stop-opacity="0.28"/><stop offset="100%" stop-color="#f26522" stop-opacity="0"/></radialGradient>
+          <radialGradient id="pd-cg2" cx="80%" cy="50%" r="60%"><stop offset="0%" stop-color="#a855f7" stop-opacity="0.20"/><stop offset="100%" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+          <pattern id="pd-cdot" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.1" fill="rgba(255,255,255,0.06)"/></pattern>
+        </defs>
+        <rect width="1440" height="320" fill="url(#pd-cdot)"/>
+        <ellipse cx="220" cy="160" rx="520" ry="380" fill="url(#pd-cg1)"/>
+        <ellipse cx="1220" cy="160" rx="520" ry="380" fill="url(#pd-cg2)"/>
+      </svg>
+    </div>
+    <div class="pd-cta__inner">
+      <span class="pd-eyebrow">Ready To Get Started</span>
+      <h2 class="pd-cta__title">Ready To Experience<br/>The Oppty Ecosystem?</h2>
+      <p class="pd-cta__sub">Eight products. One connected platform. See how Oppty can simplify the way your business works.</p>
+      <div class="pd-cta__btns">
+        <a href="contact.html" class="pd-btn pd-btn--primary">Book Consultation <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="contact.html" class="pd-btn pd-btn--ghost">Request Product Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-bg" aria-hidden="true">
+      <svg class="footer-bg-svg" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="fo1-pd" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#f26522" stop-opacity="0.22"/><stop offset="100%" stop-color="#f26522" stop-opacity="0"/></radialGradient>
+          <radialGradient id="fo2-pd" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.16"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+          <radialGradient id="fo3-pd" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#a855f7" stop-opacity="0.14"/><stop offset="100%" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+          <pattern id="fdots-pd" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.1" fill="rgba(255,255,255,0.05)"/></pattern>
+        </defs>
+        <rect width="1440" height="560" fill="url(#fdots-pd)"/>
+        <ellipse cx="100" cy="100" rx="340" ry="320" fill="url(#fo1-pd)"/>
+        <ellipse cx="1360" cy="460" rx="360" ry="340" fill="url(#fo2-pd)"/>
+        <ellipse cx="720" cy="280" rx="260" ry="240" fill="url(#fo3-pd)"/>
+      </svg>
+    </div>
+    <div class="footer-topline"></div>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo-wrap">
+          <div class="footer-logo-icon"><img src="../ASSETS/images/oppty.png" alt="Oppty"/></div>
+        </a>
+        <p class="footer-tagline">One Suite. Infinite Possibilities.</p>
+        <div class="footer-contact-list">
+          <p class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>Hyderabad, Telangana, India</p>
+          <p class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57-.11.34-.03.74-.24 1.01L6.6 10.8z" fill="currentColor"/></svg><a href="tel:+919491209900">+91 9491209900</a></p>
+          <p class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg><a href="mailto:info@oppty.in">info@oppty.in</a></p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Company</h4>
+        <ul class="footer-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Products</h4>
+        <ul class="footer-nav">
+          <li><a href="https://task.theoppty.com/" target="_blank">Taskly</a></li>
+          <li><a href="https://chat.theoppty.com/chats" target="_blank">Chatly</a></li>
+          <li><a href="https://theoppty.com/" target="_blank">Peoplely</a></li>
+          <li><a href="https://hiring.theoppty.com/" target="_blank">Hirely</a></li>
+          <li><a href="contact.html">Cliently</a></li>
+          <li><a href="contact.html">Learnly</a></li>
+          <li><a href="contact.html">Meetly</a></li>
+          <li><a href="contact.html">Supportly</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-heading">Get in Touch</h4>
+        <ul class="footer-nav">
+          <li><a href="https://www.oppty.in" target="_blank">www.oppty.in</a></li>
+          <li><a href="mailto:info@oppty.in">info@oppty.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-mid-divider"></div>
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/opptytech/" target="_blank" aria-label="LinkedIn" class="fsoc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://www.instagram.com/opptytech" target="_blank" aria-label="Instagram" class="fsoc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="https://youtube.com/@mroppty" target="_blank" aria-label="YouTube" class="fsoc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Oppty TechHub Private Limited. All rights reserved.</p>
+      <div class="footer-legal"><a href="#">Terms of Service</a><span class="fl-sep">&middot;</span><a href="#">Privacy Policy</a></div>
+    </div>
+    <div class="footer-watermark" aria-hidden="true">OPPTY</div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    window.addEventListener('load', function () {
+      var loader = document.getElementById('pageLoader');
+      if (loader) { loader.classList.add('is-exiting'); setTimeout(function(){ loader.classList.remove('is-visible'); }, 420); }
+    });
+    var navbar = document.getElementById('navbar');
+    var hero = document.querySelector('.pd-hero');
+    window.addEventListener('scroll', function () {
+      var heroH = hero ? hero.offsetHeight : 0;
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+      navbar.classList.toggle('past-hero', window.scrollY > heroH - 60);
+    });
+    function toggleMenu() { document.getElementById('mobileNav').classList.toggle('open'); }
+    function toggleNavDropdown(el) {
+      var dd = el.closest('.nav-dropdown');
+      document.querySelectorAll('.nav-dropdown').forEach(function(d){ if(d!==dd) d.classList.remove('open'); });
+      dd.classList.toggle('open');
+    }
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.nav-dropdown')) document.querySelectorAll('.nav-dropdown').forEach(function(d){ d.classList.remove('open'); });
+    });
+    function toggleMobileDropdown(btn) {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      btn.closest('.mobile-dropdown').classList.toggle('open');
+    }
+    // Scroll reveal — rows + table + roadmap
+    var allReveals = document.querySelectorAll('[data-reveal], .pd-compare__table tbody tr, .pd-roadmap__step');
+    var revealObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('pd-revealed'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    allReveals.forEach(function(el, i) {
+      el.style.transitionDelay = (i % 3 * 80) + 'ms';
+      revealObs.observe(el);
+    });
+  </script>
+</body>
+</html>
