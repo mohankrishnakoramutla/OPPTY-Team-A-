@@ -1,0 +1,20 @@
+﻿Invoke-Expression : Cannot bind argument to parameter 'Command' because it is 
+an empty string.
+At line:1 char:77
++ ... \GitHub\Opptytechhub\find_dupes.ps1" | Invoke-Expression 2>&1 | Out-F ...
++                                            ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:PSObject) [Invoke-Expression], Pa 
+   rameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl 
+   lowed,Microsoft.PowerShell.Commands.InvokeExpressionCommand
+ 
+Invoke-Expression : Cannot bind argument to parameter 'Command' because it is 
+an empty string.
+At line:1 char:77
++ ... \GitHub\Opptytechhub\find_dupes.ps1" | Invoke-Expression 2>&1 | Out-F ...
++                                            ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:PSObject) [Invoke-Expression], Pa 
+   rameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAl 
+   lowed,Microsoft.PowerShell.Commands.InvokeExpressionCommand
+ 
