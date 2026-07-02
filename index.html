@@ -2257,6 +2257,17 @@
       }
     });
 
+    // Mark "Our Services" toggle as active when on a services page
+    (function () {
+      var path = window.location.pathname.toLowerCase();
+      var servicePages = ['it_services', 'ites_services', 'bpo', 'oppty_learn'];
+      var isServicePage = servicePages.some(function(p) { return path.indexOf(p) !== -1; });
+      if (isServicePage) {
+        var toggle = document.querySelector('.nav-dropdown__toggle');
+        if (toggle) toggle.classList.add('nav-active');
+      }
+    })();
+
     // ── Navbar scroll ──
     window.addEventListener('scroll', () => {
       const heroH = document.getElementById('hero').offsetHeight;

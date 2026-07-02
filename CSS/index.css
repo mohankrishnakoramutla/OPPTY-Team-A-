@@ -785,23 +785,24 @@ nav a.rs-nav-active:hover {
 .nav-dropdown__toggle.nav-active::after {
     width: calc(100% - 18px);
 }
+}
 
-/* Nav text turns orange after hero */
+/* Nav text stays white after hero */
 header.past-hero nav a {
-    color: var(--orange);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 header.past-hero nav a:hover {
-    color: #d4530e;
+    color: #fff;
 }
 
-/* Phone number turns orange after hero */
+/* Phone number stays white after hero */
 header.past-hero .phone-link {
-    color: var(--orange);
+    color: rgba(255, 255, 255, 0.55);
 }
 
 header.past-hero .phone-link:hover {
-    color: #d4530e;
+    color: #fff;
 }
 
 .nav-actions {
@@ -6327,18 +6328,20 @@ header.past-hero .phone-link:hover {
 }
 
 .nav-dropdown.open .nav-dropdown__toggle::after,
-.nav-dropdown__toggle.active::after {
+.nav-dropdown__toggle.active::after,
+.nav-dropdown__toggle.nav-active::after {
     width: calc(100% - 18px);
+    background: var(--orange);
 }
 
-/* past-hero: keep text orange, underline stays */
+/* past-hero: keep text white, underline stays */
 header.past-hero .nav-dropdown__toggle {
-    color: var(--orange);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 header.past-hero .nav-dropdown.open .nav-dropdown__toggle,
 header.past-hero .nav-dropdown__toggle.active {
-    color: var(--orange);
+    color: #fff;
 }
 
 /* Arrow icon */
