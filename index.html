@@ -2277,16 +2277,16 @@
 
       // Animation presets per data-reveal value
       var PRESETS = {
-        'fade-up':    { y: 60,   x: 0,    scale: 1,    blur: 8,  rot: 0  },
-        'fade-down':  { y: -50,  x: 0,    scale: 1,    blur: 6,  rot: 0  },
-        'fade-left':  { y: 0,    x: 80,   scale: 1,    blur: 8,  rot: 0  },
-        'fade-right': { y: 0,    x: -80,  scale: 1,    blur: 8,  rot: 0  },
-        'zoom-in':    { y: 20,   x: 0,    scale: 0.78, blur: 10, rot: 0  },
-        'zoom-up':    { y: 40,   x: 0,    scale: 0.85, blur: 8,  rot: 0  },
-        'flip-up':    { y: 40,   x: 0,    scale: 0.9,  blur: 4,  rot: 10 },
-        'blur-in':    { y: 24,   x: 0,    scale: 0.96, blur: 16, rot: 0  },
-        'slide-left': { y: 0,    x: 120,  scale: 0.95, blur: 6,  rot: 0  },
-        'slide-right':{ y: 0,    x: -120, scale: 0.95, blur: 6,  rot: 0  }
+        'fade-up':    { y: 24,   x: 0,    scale: 1,    blur: 3,  rot: 0  },
+        'fade-down':  { y: -18,  x: 0,    scale: 1,    blur: 2,  rot: 0  },
+        'fade-left':  { y: 0,    x: 32,   scale: 1,    blur: 3,  rot: 0  },
+        'fade-right': { y: 0,    x: -32,  scale: 1,    blur: 3,  rot: 0  },
+        'zoom-in':    { y: 10,   x: 0,    scale: 0.90, blur: 4,  rot: 0  },
+        'zoom-up':    { y: 18,   x: 0,    scale: 0.92, blur: 3,  rot: 0  },
+        'flip-up':    { y: 18,   x: 0,    scale: 0.95, blur: 2,  rot: 5  },
+        'blur-in':    { y: 12,   x: 0,    scale: 0.98, blur: 8,  rot: 0  },
+        'slide-left': { y: 0,    x: 48,   scale: 0.97, blur: 3,  rot: 0  },
+        'slide-right':{ y: 0,    x: -48,  scale: 0.97, blur: 3,  rot: 0  }
       };
 
       // Apply initial hidden state
@@ -2307,9 +2307,10 @@
       // Animate element in using rAF spring loop
       function animateIn(el) {
         var delay = parseInt(el.dataset.delay || el.dataset.apDelay || el.dataset.beDelay || el.dataset.vmDelay || 0);
+        delay = Math.min(delay, 200); // cap max stagger to 200ms
         var type = el.dataset.reveal || 'fade-up';
         var p = PRESETS[type] || PRESETS['fade-up'];
-        var duration = parseInt(el.dataset.duration || 850);
+        var duration = parseInt(el.dataset.duration || 380);
         var useSpring = (type === 'zoom-in' || type === 'flip-up');
 
         setTimeout(function () {
@@ -2415,7 +2416,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      }, { threshold: 0.08, rootMargin: '0px 0px 60px 0px' });
 
       allEls.forEach(function (el) { observer.observe(el); });
 
@@ -2426,8 +2427,8 @@
       sections.forEach(function (sec) {
         if (sec.classList.contains('is-revealed')) return;
         sec.style.opacity = '0';
-        sec.style.transform = 'translateY(40px)';
-        sec.style.transition = 'opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1)';
+        sec.style.transform = 'translateY(20px)';
+        sec.style.transition = 'opacity 0.4s cubic-bezier(0.16,1,0.3,1), transform 0.4s cubic-bezier(0.16,1,0.3,1)';
         var secObs = new IntersectionObserver(function (entries) {
           if (entries[0].isIntersecting) {
             sec.style.opacity = '';
