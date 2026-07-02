@@ -1076,7 +1076,7 @@ header.past-hero .phone-link:hover {
 
 /* ── HEADING ── */
 .brand-story h1 {
-    font-family: 'Noto Sans', var(--font-display) !important;
+    font-family: 'Satoshi', var(--font-display) !important;
     font-size: clamp(32px, 3.8vw, 52px) !important;
     line-height: 1.08 !important;
     font-weight: 800 !important;
@@ -1132,21 +1132,21 @@ header.past-hero .phone-link:hover {
 }
 
 .hero-stat__num {
-    font-family: 'Syne', var(--font-display) !important;
-    font-size: 20px;
+    font-family: 'Space Grotesk', 'Satoshi', var(--font-display) !important;
+    font-size: 22px;
     font-weight: 800;
     color: var(--accent-primary);
     line-height: 1;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.8px;
 }
 
 .hero-stat__label {
-    font-family: 'Satoshi', var(--font-display) !important;
-    font-size: 9px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.45);
+    font-family: 'Poppins', 'Satoshi', var(--font-display) !important;
+    font-size: 9.5px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.50);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.8px;
 }
 
 .hero-stat-divider {
@@ -1415,6 +1415,80 @@ header.past-hero .phone-link:hover {
     border-color: rgba(242, 101, 34, 0.60) !important;
     background: rgba(255, 255, 255, 0.12) !important;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.40), 0 0 0 1px rgba(242,101,34,0.25), inset 0 1px 0 rgba(255,255,255,0.22) !important;
+}
+
+/* V-shape glow on hover — per product brand color */
+/* The ::before is already used for shine, so we use a dedicated pseudo via CSS custom property trick */
+[data-category="Taskly"]:hover {
+    border-color: rgba(37, 99, 235, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(37,99,235,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(37, 99, 235, 0.08) !important;
+}
+[data-category="Taskly"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(37,99,235,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(37,99,235,0.45) 360deg) !important;
+}
+
+[data-category="Chatly"]:hover {
+    border-color: rgba(124, 58, 237, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(124,58,237,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(124, 58, 237, 0.08) !important;
+}
+[data-category="Chatly"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(124,58,237,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(124,58,237,0.45) 360deg) !important;
+}
+
+[data-category="Peoplely"]:hover {
+    border-color: rgba(22, 163, 74, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(22,163,74,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(22, 163, 74, 0.08) !important;
+}
+[data-category="Peoplely"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(22,163,74,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(22,163,74,0.45) 360deg) !important;
+}
+
+[data-category="Cliently"]:hover {
+    border-color: rgba(8, 145, 178, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(8,145,178,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(8, 145, 178, 0.08) !important;
+}
+[data-category="Cliently"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(8,145,178,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(8,145,178,0.45) 360deg) !important;
+}
+
+[data-category="Meetly"]:hover {
+    border-color: rgba(79, 70, 229, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(79,70,229,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(79, 70, 229, 0.08) !important;
+}
+[data-category="Meetly"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(79,70,229,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(79,70,229,0.45) 360deg) !important;
+}
+
+[data-category="Hirely"]:hover {
+    border-color: rgba(234, 88, 12, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(234,88,12,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(234, 88, 12, 0.08) !important;
+}
+[data-category="Hirely"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(234,88,12,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(234,88,12,0.45) 360deg) !important;
+}
+
+[data-category="Learnly"]:hover {
+    border-color: rgba(30, 64, 175, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(30,64,175,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(30, 64, 175, 0.08) !important;
+}
+[data-category="Learnly"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(30,64,175,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(30,64,175,0.45) 360deg) !important;
+}
+
+[data-category="Supportly"]:hover {
+    border-color: rgba(5, 150, 105, 0.70) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.40), 0 0 0 1px rgba(5,150,105,0.30), inset 0 1px 0 rgba(255,255,255,0.20) !important;
+    background: rgba(5, 150, 105, 0.08) !important;
+}
+[data-category="Supportly"]:hover::before {
+    background: conic-gradient(from 270deg at 50% -10%, rgba(5,150,105,0.45) 0deg, transparent 60deg, transparent 300deg, rgba(5,150,105,0.45) 360deg) !important;
 }
 
 
@@ -14547,21 +14621,83 @@ header.past-hero .nav-dropdown__toggle.active {
 /* ─────────────────────────────────────
    ABOUT SECTION — TIGHTENED SPACING
 ───────────────────────────────────── */
-.about-pro          { padding: 72px 0 !important; }
-.ap-eyebrow         { margin-bottom: 28px !important; }
-.ap-grid            { gap: 56px !important; }
-.ap-content         { gap: 16px !important; }
-.ap-logo-wrap       { margin-bottom: 0 !important; }
+.about-pro          { padding: 56px 0 !important; }
+.ap-eyebrow         { margin-bottom: 20px !important; }
+.ap-grid            { gap: 48px !important; }
+.ap-content         { gap: 12px !important; }
+.ap-logo-wrap       { display: none !important; }
 .ap-divider         { margin: 4px 0 !important; }
-.ap-values          { margin-top: 4px !important; gap: 12px !important; }
-.ap-stats           { margin-top: 8px !important; padding: 20px 24px !important; }
-.ap-cta             { margin-top: 4px !important; gap: 12px !important; }
-.ap-visual          { min-height: 460px !important; }
+.ap-values          { margin-top: 4px !important; gap: 10px !important; }
+.ap-stats           { margin-top: 6px !important; padding: 16px 20px !important; }
+.ap-cta             { margin-top: 4px !important; gap: 10px !important; }
+.ap-visual          { min-height: 420px !important; }
+
+/* ── Right-side glow box animation ── */
+.ap-visual-glow-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ap-visual-glow-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(242, 101, 34, 0.55);
+  box-shadow:
+    0 0 24px rgba(242, 101, 34, 0.35),
+    0 0 60px rgba(242, 101, 34, 0.18),
+    inset 0 0 20px rgba(242, 101, 34, 0.08);
+  animation: ap-visual-glow-pulse 3s ease-in-out infinite;
+  transform: rotate(-8deg);
+}
+
+.ap-visual-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(242, 101, 34, 0.22) 0%,
+    rgba(59, 130, 246, 0.12) 50%,
+    transparent 80%
+  );
+  filter: blur(18px);
+  animation: ap-glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes ap-visual-glow-pulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: rotate(-8deg) scale(1);
+    box-shadow:
+      0 0 24px rgba(242, 101, 34, 0.35),
+      0 0 60px rgba(242, 101, 34, 0.18),
+      inset 0 0 20px rgba(242, 101, 34, 0.08);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(-8deg) scale(1.06);
+    box-shadow:
+      0 0 36px rgba(242, 101, 34, 0.55),
+      0 0 80px rgba(242, 101, 34, 0.28),
+      inset 0 0 30px rgba(242, 101, 34, 0.14);
+  }
+}
 
 @media (max-width: 640px) {
-  .about-pro        { padding: 56px 0 !important; }
-  .ap-eyebrow       { margin-bottom: 20px !important; }
-  .ap-grid          { gap: 40px !important; }
+  .about-pro        { padding: 40px 0 !important; }
+  .ap-eyebrow       { margin-bottom: 16px !important; }
+  .ap-grid          { gap: 32px !important; }
 }
 
 /* ─────────────────────────────────────
@@ -14588,11 +14724,98 @@ header.past-hero .nav-dropdown__toggle.active {
   justify-content: center !important;
   overflow: hidden !important;
   box-shadow: 0 2px 10px rgba(0,0,0,0.25) !important;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
 }
-.product-icon-wrapper:hover {
-  border-color: rgba(242,101,34,0.5) !important;
-  box-shadow: 0 4px 16px rgba(242,101,34,0.2) !important;
+
+/* Per-product brand color glassy backgrounds */
+[data-category="Taskly"] .product-icon-wrapper {
+  background: rgba(37, 99, 235, 0.18) !important;
+  border-color: rgba(37, 99, 235, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Taskly"] .product-icon-wrapper:hover {
+  background: rgba(37, 99, 235, 0.28) !important;
+  border-color: rgba(37, 99, 235, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.40) !important;
+}
+
+[data-category="Chatly"] .product-icon-wrapper {
+  background: rgba(124, 58, 237, 0.18) !important;
+  border-color: rgba(124, 58, 237, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Chatly"] .product-icon-wrapper:hover {
+  background: rgba(124, 58, 237, 0.28) !important;
+  border-color: rgba(124, 58, 237, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.40) !important;
+}
+
+[data-category="Peoplely"] .product-icon-wrapper {
+  background: rgba(22, 163, 74, 0.18) !important;
+  border-color: rgba(22, 163, 74, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(22, 163, 74, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Peoplely"] .product-icon-wrapper:hover {
+  background: rgba(22, 163, 74, 0.28) !important;
+  border-color: rgba(22, 163, 74, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(22, 163, 74, 0.40) !important;
+}
+
+[data-category="Cliently"] .product-icon-wrapper {
+  background: rgba(8, 145, 178, 0.18) !important;
+  border-color: rgba(8, 145, 178, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(8, 145, 178, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Cliently"] .product-icon-wrapper:hover {
+  background: rgba(8, 145, 178, 0.28) !important;
+  border-color: rgba(8, 145, 178, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(8, 145, 178, 0.40) !important;
+}
+
+[data-category="Meetly"] .product-icon-wrapper {
+  background: rgba(79, 70, 229, 0.18) !important;
+  border-color: rgba(79, 70, 229, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Meetly"] .product-icon-wrapper:hover {
+  background: rgba(79, 70, 229, 0.28) !important;
+  border-color: rgba(79, 70, 229, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.40) !important;
+}
+
+[data-category="Hirely"] .product-icon-wrapper {
+  background: rgba(234, 88, 12, 0.18) !important;
+  border-color: rgba(234, 88, 12, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(234, 88, 12, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Hirely"] .product-icon-wrapper:hover {
+  background: rgba(234, 88, 12, 0.28) !important;
+  border-color: rgba(234, 88, 12, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(234, 88, 12, 0.40) !important;
+}
+
+[data-category="Learnly"] .product-icon-wrapper {
+  background: rgba(30, 64, 175, 0.18) !important;
+  border-color: rgba(30, 64, 175, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(30, 64, 175, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Learnly"] .product-icon-wrapper:hover {
+  background: rgba(30, 64, 175, 0.28) !important;
+  border-color: rgba(30, 64, 175, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(30, 64, 175, 0.40) !important;
+}
+
+[data-category="Supportly"] .product-icon-wrapper {
+  background: rgba(5, 150, 105, 0.18) !important;
+  border-color: rgba(5, 150, 105, 0.40) !important;
+  box-shadow: 0 2px 12px rgba(5, 150, 105, 0.25), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+[data-category="Supportly"] .product-icon-wrapper:hover {
+  background: rgba(5, 150, 105, 0.28) !important;
+  border-color: rgba(5, 150, 105, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(5, 150, 105, 0.40) !important;
 }
 .product-icon-wrapper img {
   width: 100% !important;
