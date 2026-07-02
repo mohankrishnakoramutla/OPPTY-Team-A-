@@ -3269,16 +3269,17 @@ header.past-hero .phone-link:hover {
 }
 
 .nav-dropdown.open .nav-dropdown__toggle::after,
-.nav-dropdown__toggle.active::after {
+.nav-dropdown__toggle.active::after,
+.nav-dropdown__toggle.nav-active::after {
     width: calc(100% - 18px);
 }
 
 header.past-hero .nav-dropdown__toggle {
-    color: var(--orange);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 header.past-hero .nav-dropdown.open .nav-dropdown__toggle {
-    color: #d4530e;
+    color: #fff;
 }
 
 .nav-dropdown__arrow {

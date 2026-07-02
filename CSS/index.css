@@ -785,7 +785,7 @@ nav a.rs-nav-active:hover {
 .nav-dropdown__toggle.nav-active::after {
     width: calc(100% - 18px);
 }
-}
+
 
 /* Nav text stays white after hero */
 header.past-hero nav a {
@@ -1357,7 +1357,7 @@ header.past-hero .phone-link:hover {
     backdrop-filter: blur(24px) saturate(180%) brightness(1.05) !important;
     -webkit-backdrop-filter: blur(24px) saturate(180%) brightness(1.05) !important;
     border-radius: 16px !important;
-    height: 340px !important;
+    height: 280px !important;
     min-width: 0 !important;
     width: 100% !important;
     display: flex !important;
@@ -1515,9 +1515,10 @@ header.past-hero .phone-link:hover {
 .product-top {
     display: flex !important;
     align-items: center;
-    gap: 7px;
-    margin-bottom: 5px !important;       /* reduced */
+    gap: 0;
+    margin-bottom: 8px !important;
     min-width: 0;
+    width: 100%;
 }
 
 .product-meta {
@@ -1550,16 +1551,54 @@ header.past-hero .phone-link:hover {
 
 /* DASHBOARD */
 .dashboard-mask {
-    flex-grow: 1 !important;
-    background: rgba(0, 0, 0, 0.25) !important;
-    border-radius: 8px !important;
-    overflow: hidden !important;
-    margin: 6px 0 !important;
-    border: 1px solid rgba(255, 255, 255, 0.10) !important;
-    position: relative;
-    height: 160px !important;
-    min-height: 160px !important;
+    display: none;
 }
+
+/* Category display — replaces scrolling images */
+.card-category-display {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin: 6px 0 !important;
+    padding: 10px 12px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 10px !important;
+    text-align: center;
+}
+
+.card-category-icon {
+    font-size: 1rem;
+    line-height: 1;
+    display: block;
+    filter: drop-shadow(0 0 8px rgba(242, 101, 34, 0.6));
+    color: var(--accent-primary);
+    flex-shrink: 0;
+}
+
+.card-category-label {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    display: block;
+}
+
+/* Per-product accent colours on the display area */
+[data-category="Taskly"] .card-category-display   { border-color: rgba(37, 99, 235, 0.25) !important; background: rgba(37, 99, 235, 0.06) !important; }
+[data-category="Chatly"] .card-category-display   { border-color: rgba(124, 58, 237, 0.25) !important; background: rgba(124, 58, 237, 0.06) !important; }
+[data-category="Peoplely"] .card-category-display { border-color: rgba(22, 163, 74, 0.25) !important; background: rgba(22, 163, 74, 0.06) !important; }
+[data-category="Cliently"] .card-category-display { border-color: rgba(8, 145, 178, 0.25) !important; background: rgba(8, 145, 178, 0.06) !important; }
+[data-category="Meetly"] .card-category-display   { border-color: rgba(79, 70, 229, 0.25) !important; background: rgba(79, 70, 229, 0.06) !important; }
+[data-category="Hirely"] .card-category-display   { border-color: rgba(234, 88, 12, 0.25) !important; background: rgba(234, 88, 12, 0.06) !important; }
+[data-category="Learnly"] .card-category-display  { border-color: rgba(147, 170, 247, 0.25) !important; background: rgba(135, 158, 235, 0.06) !important; }
+[data-category="Supportly"] .card-category-display{ border-color: rgba(5, 150, 105, 0.25) !important; background: rgba(5, 150, 105, 0.06) !important; }
+
 
 /* Slider: stack images absolutely, fade in/out */
 .dashboard-track {
@@ -8887,14 +8926,14 @@ header.past-hero .nav-dropdown__toggle.active {
 
 /* Logo icon  bigger box, image fills it fully */
 .product-icon-wrapper {
-  width: 130px !important;
-  height: 50px !important;
-  min-width: 130px !important;
+  width: 100% !important;
+  height: 64px !important;
+  min-width: unset !important;
   flex-shrink: 0 !important;
   border-radius: 10px !important;
   background: rgba(255,255,255,0.08) !important;
   border: 1px solid rgba(255,255,255,0.16) !important;
-  padding: 3px !important;
+  padding: 6px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -8904,6 +8943,7 @@ header.past-hero .nav-dropdown__toggle.active {
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
 }
+
 
 /* Per-product brand color glassy backgrounds */
 [data-category="Taskly"] .product-icon-wrapper {
@@ -9002,6 +9042,11 @@ header.past-hero .nav-dropdown__toggle.active {
 
 /* Hide product name (Taskly, Chatly)  keep only category */
 .product-name {
+  display: none !important;
+}
+
+/* Hide product-meta (category label next to logo) */
+.product-meta {
   display: none !important;
 }
 
