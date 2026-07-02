@@ -3912,17 +3912,18 @@ header.past-hero .phone-link:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 500px;
+    min-height: 560px;
 }
 
 .wo-visual__wrap {
     position: relative;
     width: 100%;
-    max-width: 450px;
+    max-width: 480px;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 /* Animated rings */
@@ -4117,29 +4118,39 @@ header.past-hero .phone-link:hover {
 /* Mini floating badges */
 .wo-mini {
     position: absolute;
-    width: 56px;
-    height: 56px;
+    width: 62px;
+    height: 62px;
     border-radius: 16px;
-    background: linear-gradient(135deg,
-            rgba(255, 255, 255, 0.95) 0%,
-            rgba(255, 255, 255, 0.85) 100%);
-    backdrop-filter: blur(10px);
+    background: rgba(10, 20, 50, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--orange);
     box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.3),
-        0 0 0 1px rgba(242, 101, 34, 0.3) inset;
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        0 0 0 1.5px rgba(255, 255, 255, 0.12) inset;
     z-index: 3;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 7px;
 }
 
 .wo-mini:hover {
-    transform: scale(1.15) rotate(-5deg);
+    transform: scale(1.18) rotate(-4deg);
     box-shadow:
-        0 15px 40px rgba(242, 101, 34, 0.4),
-        0 0 0 1px var(--orange) inset;
+        0 18px 44px rgba(242, 101, 34, 0.45),
+        0 0 0 2px rgba(242, 101, 34, 0.6) inset;
+}
+
+/* Product logo images inside mini badges */
+.wo-mini--product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
 }
 
 .wo-mini svg {
@@ -4147,48 +4158,69 @@ header.past-hero .phone-link:hover {
     height: 26px;
 }
 
+/* Inner ring — 4 products */
 .wo-mini--1 {
-    top: 10%;
-    left: 5%;
+    top: 8%;
+    left: 12%;
     animation: wo-mini-float 5s ease-in-out infinite;
 }
 
 .wo-mini--2 {
-    top: 15%;
-    right: 5%;
-    color: #3b82f6;
+    top: 8%;
+    right: 12%;
     animation: wo-mini-float 6s ease-in-out infinite 1s;
 }
 
 .wo-mini--3 {
-    bottom: 20%;
-    left: 0%;
-    color: #3b82f6;
+    bottom: 18%;
+    left: 5%;
     animation: wo-mini-float 5.5s ease-in-out infinite 0.5s;
 }
 
 .wo-mini--4 {
-    bottom: 10%;
-    right: 8%;
+    bottom: 18%;
+    right: 5%;
     animation: wo-mini-float 7s ease-in-out infinite 1.5s;
 }
 
-@keyframes wo-mini-float {
+/* Outer ring — 4 more products */
+.wo-mini--5 {
+    top: 42%;
+    left: -4%;
+    animation: wo-mini-float 6.5s ease-in-out infinite 0.3s;
+}
 
-    0%,
-    100% {
+.wo-mini--6 {
+    top: 42%;
+    right: -4%;
+    animation: wo-mini-float 5.8s ease-in-out infinite 0.8s;
+}
+
+.wo-mini--7 {
+    top: -2%;
+    left: 40%;
+    animation: wo-mini-float 5.2s ease-in-out infinite 1.2s;
+}
+
+.wo-mini--8 {
+    bottom: 2%;
+    left: 38%;
+    animation: wo-mini-float 6.2s ease-in-out infinite 0.6s;
+}
+
+@keyframes wo-mini-float {
+    0%, 100% {
         transform: translateY(0) rotate(0deg);
     }
-
     50% {
-        transform: translateY(-15px) rotate(5deg);
+        transform: translateY(-12px) rotate(4deg);
     }
 }
 
 /* Stats overlay */
 .wo-stat-overlay {
     position: absolute;
-    bottom: -10px;
+    bottom: -130px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
