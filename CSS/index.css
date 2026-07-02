@@ -1577,10 +1577,6 @@ header.past-hero .phone-link:hover {
     animation: none !important;
 }
 
-.premium-card:hover .dashboard-track {
-    /* no pause needed  JS controls */
-}
-
 /* PRODUCT BOTTOM */
 .product-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.10) !important;
