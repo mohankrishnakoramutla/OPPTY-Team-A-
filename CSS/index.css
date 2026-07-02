@@ -1596,7 +1596,7 @@ header.past-hero .phone-link:hover {
 }
 
 .benefit-text::before {
-    content: 'Ô£ô';
+    content: '✓';
     color: var(--accent-primary) !important;
     margin-right: 4px;
     font-weight: 900;
