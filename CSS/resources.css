@@ -783,6 +783,7 @@ body { background: #080a0e; color: #fff; }
 }
 .sp-card:hover .sp-card__icon { transform: scale(1.1) rotate(-5deg); }
 .sp-card__icon svg { width: 40px; height: 40px; }
+.sp-card__icon-img { width: 44px; height: 44px; object-fit: contain; display: block; border-radius: 8px; }
 
 .sp-card__icon--blue     { background: rgba(37,99,235,0.18);   border: 1px solid rgba(37,99,235,0.4);   }
 .sp-card__icon--purple   { background: rgba(124,58,237,0.18);  border: 1px solid rgba(124,58,237,0.4);  }
@@ -1049,6 +1050,7 @@ body { background: #080a0e; color: #fff; }
 }
 .sp-card:hover .sp-card__icon { transform: scale(1.12) rotate(-5deg); }
 .sp-card__icon svg { width: 40px; height: 40px; }
+.sp-card__icon-img { width: 44px; height: 44px; object-fit: contain; display: block; border-radius: 8px; }
 .sp-card__icon--blue     { background: rgba(37,99,235,0.18);   border: 1px solid rgba(37,99,235,0.35);   }
 .sp-card__icon--purple   { background: rgba(124,58,237,0.18);  border: 1px solid rgba(124,58,237,0.35);  }
 .sp-card__icon--green    { background: rgba(22,163,74,0.18);   border: 1px solid rgba(22,163,74,0.35);   }
